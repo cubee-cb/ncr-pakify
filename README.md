@@ -6,7 +6,7 @@ By default loads files starting with `3`, `4`, `5`, or `6`. Each outputs to a js
 
 Format files like: `3-1.json 3-2.json 3-3.json` and it will output a `pack-3.json` file with those levels converted. You will need to insert this into a new or pre-existing level pack `.ncl` file (which are just `json` files with a funny extension... which doesn't even matter really)
 
-Adding a level pack, copy one of the original ones, delete the `"levels"` part and replace it with the output file content, then update the other details.
+Adding a level pack, copy one of the original ones, delete the `"levels"` part and replace it with the output file content, then update the other details. Finally, add the pack's filename to the `packs.json` file so the game knows to load it.
 
 Level pack glyphs for the menu use the PICO-8 gfx format. They can be made inside PICO-8 and copy-pasted in. Remove the `[gfx]` and `[/gfx]` tags and it should just work.
 - Keep the width and height bytes though, those are used to format the icon properly. Max size is 64x64px, typical size is 16x16px plus a 1px border. (18x18px total)
