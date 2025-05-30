@@ -1,24 +1,36 @@
 #!/usr/bin/env python3
 
 import os
-import json
+import json5 as json
 import math
+
+# i'm lazy. this should be platform-agnostic
+outputPath = "C:\\Users\\jaymo\\source\\repos\\ninjacat-remewstered\\Ninja Cat Desktop 383\\Content\\levels"
+
+# folder/ncl names of the packs. it will be `./<pack>/1.json` for Ogmo input levels and `<outputPath>/<pack>.ncl` for output level data
+pakFiles = ["sequel", "finale", "bouldo"]
+
 
 print("pakify 0.1 for ninja cat remewstered!")
 
-paks = [3, 4, 5, 6]
+outPaks = list(filter(lambda x: x.endswith(".ncl") and any(pak in x for pak in pakFiles), os.listdir(outputPath)))
+print("working on paks:", pakFiles)
+print("found corresponding output paks:", outPaks)
 
-files = os.listdir()
-files.sort()
-
-print("reading: " + str(files))
-
-for pak in paks:
+for pak in pakFiles:
   print("processing pak", pak)
   levels = []
-  jsonFiles = filter(lambda x: x.startswith(str(pak)) and x.endswith('.json'), files)
+
+  files = os.listdir(os.path.join(".", pak))
+  files.sort()
+  print("reading: " + str(files))
+
+
+  jsonFiles = list(filter(lambda x: x.endswith('.json'), files))
+  jsonFiles.sort()
 
   for jsonFile in jsonFiles:
+    print("converting", jsonFile)
     level = {
       "theme": "world1",
       "music": "sneaking",
@@ -28,7 +40,7 @@ for pak in paks:
     }
 
     data = ""
-    with open(jsonFile, 'r') as file:
+    with open(os.path.join(".", pak, jsonFile), 'r') as file:
       data = file.read()
 
     if data == "":
@@ -88,10 +100,24 @@ for pak in paks:
   print("converted", len(levels), "levels")
 
   # write file
-  out = "// generated ncl from pakify by cubee\n\"levels\": " + json.dumps(levels) + ""
-  outFile = "pack-" + str(pak) + ".json"
-  #print(out)
-  with open(outFile, 'w') as file:
-    file.write(out)
+  
+  path = os.path.join(outputPath, pak + ".ncl")
+  print(path)
+  
+  content = ""
+  with open(path, 'r') as file:
+    content = file.read()
+  
+  
+  # todo: replace load original pack ncl as json and replace its levels component
+  nclLevelPak = json.loads(content)
+
+  nclLevelPak["levels"] = levels
+  out = "// generated ncl from pakify by cubee\n" + json.dumps(nclLevelPak) + ""
+  
+  # write ncl file
+  #with open(path, 'w') as file:
+  #  file.write(out)
+  print(out)
 
 print("done!")
