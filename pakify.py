@@ -3,12 +3,24 @@
 import os
 import json5 as json
 import math
+from sys import platform
 
-# i'm lazy. this should be platform-agnostic
-outputPath = "C:\\Users\\jaymo\\source\\repos\\ninjacat-remewstered\\Ninja Cat Desktop 383\\Content\\levels"
 
-# folder/ncl names of the packs. it will be `./<pack>/1.json` for Ogmo input levels and `<outputPath>/<pack>.ncl` for output level data
+# === settings, etc === #
+
+
+# i'm lazy. this should be configurable
+if platform == "linux" or platform == "linux2":
+  outputPath = "/mnt/big-chungus/projects/monogame/Ninja_Cat_Remewstered/Ninja Cat Android/Content/levels/"
+
+elif platform == "win32":
+  outputPath = "C:\\Users\\jaymo\\source\\repos\\ninjacat-remewstered\\Ninja Cat Desktop 383\\Content\\levels"
+
+# folder/ncl names of the packs to process. it will be `./<pack>/1.json` for Ogmo input levels and `<outputPath>/<pack>.ncl` for output level data
 pakFiles = ["basepak", "sequel", "finale", "bouldo"]
+
+
+# === other code below === #
 
 
 print("pakify 0.1 for ninja cat remewstered!")
