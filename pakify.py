@@ -15,7 +15,7 @@ if platform == "linux" or platform == "linux2":
   outputPath = "/mnt/big-chungus/heroic/games/ninja-cat-remewstered/ninja-cat-1.2mg/Content/levels/"
 
 elif platform == "win32":
-  outputPath = "C:\\Users\\jaymo\\source\\repos\\ninjacat-remewstered\\Ninja Cat Desktop 383\\Content\\levels"
+  outputPath = "C:\\Users\\jaymo\\source\\repos\\ninjacat-remewstered\\Ninja Cat Android\\Content\\levels"
 
 # folder/ncl names of the packs to process. it will be `./<pack>/1.json` for Ogmo input levels and `<outputPath>/<pack>.ncl` for output level data
 pakFiles = ["basepak", "sequel", "finale", "bouldo"]
