@@ -117,10 +117,10 @@ for pak in pakFiles:
         "y": 0,
         "flipped": False
       }
-      entity["id"] = ogmoEntity.get("name")
-      entity["x"] = math.floor(ogmoEntity.get("x") / 8)
-      entity["y"] = math.floor(ogmoEntity.get("y") / 8)
-      entity["flipped"] = ogmoEntity.get("flippedX")
+      entity["id"] = ogmoEntity.get("name") or "ninja"
+      entity["x"] = math.floor(ogmoEntity.get("x") / 8) or 0
+      entity["y"] = math.floor(ogmoEntity.get("y") / 8) or 0
+      entity["flipped"] = ogmoEntity.get("flippedX") or False
 
       # optional
       if values:
