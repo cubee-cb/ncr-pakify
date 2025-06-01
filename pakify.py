@@ -49,6 +49,7 @@ for pak in pakFiles:
   altLevelsCount = 0
   for jsonFile in jsonFiles:
     print("converting", jsonFile)
+    baseName = os.path.splitext(jsonFile)[0]
 
     level = {
       "theme": "world1",
@@ -67,7 +68,7 @@ for pak in pakFiles:
       print(jsonFile, "is an alternate level!")
       parent = levels[-1]
       altLevel = True
-      altLevelKey = jsonFile.split('_')[1]
+      altLevelKey = baseName.split('_')[1]
 
     # this is NOT an alt level
     else:
