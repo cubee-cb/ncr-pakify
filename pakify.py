@@ -4,6 +4,7 @@ import os
 import json5 as json
 import math
 from sys import platform
+from sys import argv
 
 
 # === settings, etc === #
@@ -11,7 +12,7 @@ from sys import platform
 
 # i'm lazy. this should be configurable
 if platform == "linux" or platform == "linux2":
-  outputPath = "/mnt/big-chungus/projects/monogame/Ninja_Cat_Remewstered/Ninja Cat Android/Content/levels/"
+  outputPath = "/mnt/big-chungus/heroic/games/ninja-cat-remewstered/ninja-cat-1.2mg/Content/levels/"
 
 elif platform == "win32":
   outputPath = "C:\\Users\\jaymo\\source\\repos\\ninjacat-remewstered\\Ninja Cat Desktop 383\\Content\\levels"
@@ -24,6 +25,9 @@ pakFiles = ["basepak", "sequel", "finale", "bouldo"]
 
 
 print("pakify 0.1 for ninja cat remewstered!")
+
+if len(argv) > 1:
+  pakFiles = argv[1::]
 
 outPaks = list(filter(lambda x: x.endswith(".ncl") and any(pak in x for pak in pakFiles), os.listdir(outputPath)))
 print("working on paks:", pakFiles)
@@ -42,20 +46,10 @@ for pak in pakFiles:
   jsonFiles.sort()
 
   # todo: process levels by incrementing index so altlevels don't get added separately
+  altLevelsCount = 0
   for jsonFile in jsonFiles:
-    
-    # todo: check for altlevels and append them to the current level under "alternateMaps"
-    # currently, just skip any sublevels that happen to be in here
-    altLevel = False
-    if "_" in jsonFile:
-      print(jsonFile, "is an alternate level!")
-      altLevel = True
-      continue
-    #altLevels = list(filter(lambda x: x.startswith() and '_' in x, files))
-
-
     print("converting", jsonFile)
-    
+
     level = {
       "theme": "world1",
       "music": "sneaking",
@@ -63,6 +57,21 @@ for pak in pakFiles:
       "objects": [],
       "tilemap": []
     }
+
+    parent = None
+    altLevel = False
+    altLevelKey = ""
+
+    # this is an alt level
+    if "_" in jsonFile:
+      print(jsonFile, "is an alternate level!")
+      parent = levels[-1]
+      altLevel = True
+      altLevelKey = jsonFile.split('_')[1]
+
+    # this is NOT an alt level
+    else:
+      level["alternateMaps"] = {}
 
     data = ""
     with open(os.path.join(".", pak, jsonFile), 'r') as file:
@@ -114,15 +123,20 @@ for pak in pakFiles:
       entity["flipped"] = ogmoEntity.get("flippedX")
 
       # optional
-      if values.get("easy"):
-        entity["easy"] = True
+      if values:
+        if values.get("easy"):
+          entity["easy"] = True
 
       level["objects"].append(entity)
 
-    levels.append(level)
+    if altLevel:
+      parent["alternateMaps"][altLevelKey] = level
+      altLevelsCount += 1
+    else:
+      levels.append(level)
 
   # generate levels file
-  print("converted", len(levels), "levels")
+  print("converted", len(levels), "levels,", altLevelsCount, "alt levels")
 
   # write file
   
