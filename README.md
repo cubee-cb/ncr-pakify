@@ -32,14 +32,19 @@ The important part is the `_`. That marks where the condition starts. You should
   - You should put names BEFORE the `_` if you wanna do that. Ideally follow a format like `1-<name>_<condition>.json`, so `1-first-level_goldRush.json` or `3-pacifist-hallway_noHarm.json`
 
 Alternates will be appended to the last processed level alphabetically. That is, having the following:
+
 - `a.json`
 - `b_goldRush.json`
 - `c.json`
+
 Would put `b` as an alternate of `a`, and `c` would be processed as Level 2:
+
 - `a.json` - Level 1
 - `b_goldRush.json` - Level 1 (with Gold Rush modifier)
 - `c.json` - Level 2
+
 Adding a level sorted after `a` and before `b_goldRush` would change the flow again:
+
 - `a.json` - Level 1
 - `b.json` or `ab.json` or `another.json` - Level 2
 - `b_goldRush.json` - Level 2 (with Gold Rush modifier)
