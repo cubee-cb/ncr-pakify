@@ -42,7 +42,7 @@ if len(outPaks) > 0:
   input("is this ok? (press enter to continue, or ctrl+c to cancel)")
 
 for pak in pakFiles:
-  print("processing pak", pak)
+  print("processing pak \"" + pak + "\"")
   levels = []
 
   files = os.listdir(os.path.join(".", pak))
@@ -73,10 +73,10 @@ for pak in pakFiles:
 
     # this is an alt level
     if "_" in jsonFile:
-      print(jsonFile, "is an alternate level!")
       parent = levels[-1]
       altLevel = True
       altLevelKey = baseName.split('_')[1]
+      print("treating", jsonFile, "as an alternate for the previous level")
 
     # this is NOT an alt level
     else:
@@ -161,7 +161,6 @@ for pak in pakFiles:
       content += line.split("//")[0] + "\n"
   
   print("processing json and writing ncl file...")
-  print(content)
   nclLevelPak = json.loads(content)
 
   # only replace levels if there are any, otherwise just passthrough whatever's already in the file (used for basepak since that was a separate conversion from pico-8)

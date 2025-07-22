@@ -9,8 +9,8 @@ Formats:
 * `pakify.py /path/to/ninjacat/Content/levels` - build all packs.
 * `pakify.py /path/to/ninjacat/Content/levels sequel finale` - build only packs `sequel` and `finale`.
 
-Needed software:
-- Python3 + Json5 package
+Required software:
+- Python3
 - Ogmo Editor 3 (or compatible version)
 - Ninja Cat Remewstered 1.2mg or higher (technically not needed, but good luck playing the levels you make without it)
   - You could use release version 1.1mg if you're only editing `basepak`. Other packs are non-functional as this version is hardcoded to load only `basepak` and does not have the menu to select packs.
@@ -71,6 +71,3 @@ Valid alternates are the following:
 - `elenn` - Playing as Elenn.
 
 The lack of Easy Mode here is simply due to enemies having a property on them already to remove them if easy is enabled. Might add it if I feel like it later, or if people actually want proper easy alternates. BUT! This way you CAN combine Easy Mode with other alternates! How rare!
-
-## Dependencies
-- `json5` so json comments don't break it, otherwise should work fine if you make it `import json` instead as long as you remove any comments.
