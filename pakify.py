@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
 import os
-import json5 as json
+#import json5 as json
+import json
 import math
 from sys import platform
 from sys import argv
@@ -153,9 +154,14 @@ for pak in pakFiles:
   
   content = ""
   with open(baseNclPath, 'r') as file:
-    content = file.read()
+    fileContent = file.read()
+
+    # strip comments
+    for line in fileContent.split("\n"):
+      content += line.split("//")[0] + "\n"
   
   print("processing json and writing ncl file...")
+  print(content)
   nclLevelPak = json.loads(content)
 
   # only replace levels if there are any, otherwise just passthrough whatever's already in the file (used for basepak since that was a separate conversion from pico-8)
