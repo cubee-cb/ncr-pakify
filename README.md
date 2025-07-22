@@ -13,7 +13,7 @@ Required software:
 - Python3
 - Ogmo Editor 3 (or compatible version)
 - Ninja Cat Remewstered 1.2mg or higher (technically not needed, but good luck playing the levels you make without it)
-  - You could use release version 1.1mg if you're only editing `basepak`. Other packs are non-functional as this version is hardcoded to load only `basepak` and does not have the menu to select packs.
+  - While it is possible to use release version 1.1mg, it is more difficult as the menu is hardcoded to only play `basepak` and does not have the ability to change packs. This version also expects the `"displayName"` field to be a string despite it going unused, so remember to account for that by editing or removing that field from your `base.ncl` while testing. There is a field you can add to the 
 
 Basic workflow:
 - If you're making a new level pack, create a folder for your level pack and edit `pakify.py` to point to your folder rather than the originals.
@@ -23,7 +23,7 @@ Basic workflow:
 - Find your Ninja Cat Remewstered's `Content/levels` folder. (or wherever you want the output `.ncl` files to go)
 - Running `pakify.py /path/to/Content/levels <pack folder>` should produce `<pak>.ncl` files in the game's directory.
   - These are just `json` files with a funny extension... which doesn't even matter really.
-- Finally, if you have made a new pack, make sure to add your pack's filename to the `packs.json` file so the game knows to load it.
+- Finally, if you have made a new pack, add your pack's filename to the `packs.json` file so the game knows to load it.
 
 The level pack's `glyph` uses the PICO-8 gfx format. They can be made inside PICO-8 and copy-pasted in. Remove the `[gfx]` and `[/gfx]` tags and it should just work.
 - Keep the width and height bytes though, those are used to format the icon properly. Max size is 64x64px, typical size is 16x16px plus a 1px border. (18x18px total)
@@ -55,8 +55,9 @@ Adding a level sorted after `a` and before `b_goldRush` would change the flow ag
 - `c.json` - Level 3
 
 Only one condition can be used at a time; the first alternate with a matching condition wins.
-- If you have the Gold Rush and No Harm modifiers enabled, then your alternates were converted as `0 = goldRush` and `1 = noHarm`, it would load the alternate level for Gold Rush mode as that is listed first.
+- If you have the Gold Rush and No Harm modifiers enabled, and your alternates were converted as `0 = goldRush` and `1 = noHarm` (as they would be by alphabetical order), the game would load the alternate level for Gold Rush mode as that is listed first.
   - You can guide pakify to process your alternates in a specific order by naming the file like `1-1_noHarm.json` and `1-2_goldRush.json`, as it processes them alphabetically. Do not add more `_`'s!
+  - This is helpful if for example your `goldRush` alternate is impossible to complete when No Harm mode is enabled.
 
 Valid alternates are the following:
 - `noHarm` - No Harm modifier is enabled.
@@ -66,8 +67,15 @@ Valid alternates are the following:
 - `newGamePlus` - New Game Plus modifier is enabled.
   - Add more enemies, make tighter jumps, smaller platforms, it's up to you. Or subvert people's expectations and make it easier?
 - `hasDoubleJump` - Player has unlocked Double-Jump.
+  - If your pack features any extra exits where the player may not have Double Jump, you can check for that here.
 - `hasSword` - Player has the Sword available.
+  - If your pack features any levels where Ensy wouldn't have the Sword, you can check for that here.
 - `hasShuriken` - Player has the Shuriken available.
+  - If your pack features any levels where Elenn wouldn't have Shuriken, you can check for that here.
 - `elenn` - Playing as Elenn.
+  - This can be used to make challenges tailored for Elenn's faster, more slippery movement.
 
-The lack of Easy Mode here is simply due to enemies having a property on them already to remove them if easy is enabled. Might add it if I feel like it later, or if people actually want proper easy alternates. BUT! This way you CAN combine Easy Mode with other alternates! How rare!
+The lack of Easy Mode here is simply due to enemies having a property on them already which when set to True will remove them if easy is enabled. Might add it if I feel like it later, or if people actually want proper easy alternates. BUT! This way you CAN combine Easy Mode with other alternates! How rare!
+
+## Notes
+- `.ncl` is short for Ninja Cat Level. A holdover from early development where each level was an individual file instead of being grouped in packs.
