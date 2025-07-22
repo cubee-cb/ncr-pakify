@@ -16,13 +16,12 @@ Required software:
   - While it is possible to use release version 1.1mg, it is more difficult as the menu is hardcoded to only play `basepak` and does not have the ability to change packs. This version also expects the `"displayName"` field to be a string despite it going unused, so remember to account for that by editing or removing that field from your `base.ncl` while testing.
 
 Basic workflow:
-- If you're making a new level pack, create a folder for your level pack and edit `pakify.py` to point to your folder rather than the originals.
-- Add a `base.ncl` file, with the base details for the pack. Use the default level packs (except `basepak`) in this repository as examples.
-- Using Ogmo Editor, open the `.ogmo` file.
-- When creating levels, place them in the pack folder and name them by number like `1.json 2.json 3.json`.
-- Find your Ninja Cat Remewstered's `Content/levels` folder. (or wherever you want the output `.ncl` files to go)
+- If you're making a new level pack, create a folder for your level pack next to `pakify.py`.
+- Add a `base.ncl` file inside the new folder, with the base details for the pack. Use the default level packs (except `basepak`) in this repository as examples.
+- Using Ogmo Editor, open the `.ogmo` project file.
+- When creating levels, place them in the pack folder and name them by number like `1.json`, `2.json`, `3.json`.
+- Find the `Content/levels` folder in your Ninja Cat Remewstered install. (or wherever you want the output `.ncl` files to go)
 - Running `pakify.py /path/to/Content/levels <pack folder>` should produce `<pak>.ncl` files in the game's directory.
-  - These are just `json` files with a funny extension... which doesn't even matter really.
 - Finally, if you have made a new pack, add your pack's filename to the `packs.json` file so the game knows to load it.
 
 The level pack's `glyph` uses the PICO-8 gfx format. They can be made inside PICO-8 and copy-pasted in. Remove the `[gfx]` and `[/gfx]` tags and it should just work.
@@ -79,3 +78,5 @@ The lack of Easy Mode here is simply due to enemies having a property on them al
 
 ## Notes
 - `.ncl` is short for Ninja Cat Level. A holdover from early development where each level was an individual file instead of being grouped in packs.
+- NCLs are just `json` files with a funny extension... which doesn't even matter really. You should be able to use whatever extension you want as long as the file content is valid and the `pack.json` includes it, but using a specific one like this makes it more obvious what the file is for.
+- `basepak`'s `base.ncl` is pre-generated NCL with all the levels included, as it was generated inside PICO-8 from the original game's map data rather than an Ogmo project. This is why there are seemingly no levels inside it. I have little to no reason to convert the original levels to Ogmo at this time, but maybe in the future just for parity?
