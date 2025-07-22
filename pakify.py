@@ -7,31 +7,38 @@ from sys import platform
 from sys import argv
 
 
-# === settings, etc === #
-
-
-# i'm lazy. this should be configurable
-if platform == "linux" or platform == "linux2":
-  outputPath = "/mnt/big-chungus/heroic/games/ninja-cat-remewstered/ninja-cat-1.2mg/Content/levels/"
-
-elif platform == "win32":
-  outputPath = "C:\\Users\\jaymo\\source\\repos\\ninjacat-remewstered\\Ninja Cat Android\\Content\\levels"
+# === defaults === #
 
 # folder/ncl names of the packs to process. it will be `./<pack>/1.json` for Ogmo input levels and `<outputPath>/<pack>.ncl` for output level data
 pakFiles = ["basepak", "sequel", "finale", "bouldo"]
 
+outputPath = None
+
 
 # === other code below === #
 
-
-print("pakify 0.1 for ninja cat remewstered!")
+print("pakify for ninja cat remewstered!")
 
 if len(argv) > 1:
-  pakFiles = argv[1::]
+  outputPath = argv[1]
+
+  if len(argv) > 2:
+    pakFiles = argv[2::]
+
+if outputPath is None:
+  print("please specify the output directory")
+  exit()
+
+if not os.path.exists(outputPath):
+  print("output directory does not exist: " + outputPath)
+  exit()
 
 outPaks = list(filter(lambda x: x.endswith(".ncl") and any(pak in x for pak in pakFiles), os.listdir(outputPath)))
-print("working on paks:", pakFiles)
-print("found corresponding output paks:", outPaks)
+print("writing to:", outputPath)
+print("building paks:", pakFiles)
+if len(outPaks) > 0:
+  print("the following paks already in the output directory will be overwritten:", outPaks)
+  input("is this ok? (press enter to continue, or ctrl+c to cancel)")
 
 for pak in pakFiles:
   print("processing pak", pak)

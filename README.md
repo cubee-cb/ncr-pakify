@@ -3,13 +3,17 @@
 Converts level data from Ogmo Editor into a level pack format for Ninja Cat Remewstered. Includes an Ogmo project with entities and tilesets already set up.
 - Specifically Ogmo Editor 3 from their website. idk how compatible CE or any other fork are.
 
-By default loads files in pack folders `basepak`, `sequel`, `finale` and `bouldo` next to the `pakify.py` file (or the working dir, untested).
+By default loads files in pack subfolders `basepak`, `sequel`, `finale` and `bouldo`.
+
+Formats:
+* `pakify.py /path/to/ninjacat/Content/levels` - build all packs.
+* `pakify.py /path/to/ninjacat/Content/levels sequel finale` - build only packs `sequel` and `finale`.
 
 Needed software:
 - Python3 + Json5 package
 - Ogmo Editor 3 (or compatible version)
 - Ninja Cat Remewstered 1.2mg or higher (technically not needed, but good luck playing the levels you make without it)
-  - You could use release version 1.1mg if you're only editing `basepak`. Other packs there are non-functional as this version is hardcoded to load `basepak`.
+  - You could use release version 1.1mg if you're only editing `basepak`. Other packs are non-functional as this version is hardcoded to load only `basepak` and does not have the menu to select packs.
 
 Basic workflow:
 - Edit the path near the top of the `pakify.py` script to point to your Ninja Cat Remewstered's `Content/levels` folder. (or wherever you want the output `.ncl` files to go)
