@@ -11,7 +11,13 @@
   "levelMinSize": {"x": 128, "y": 120},
   "levelMaxSize": {"x": 4096, "y": 4096},
   "levelValues": [
-    {"name": "music", "definition": "String", "display": 0, "defaults": "sneaking", "maxLength": 0, "trimWhitespace": true}
+    {
+      "name": "music",
+      "definition": "Enum",
+      "display": 0,
+      "choices": ["sneaking", "wind", "last ninjacat", "eighty-six", "moss town", "kitsune underpass", "trance of kitsu", "stilt town", "dragon spires", "trial of dago", "land of greed", "bouldos tantrum"],
+      "defaults": 0
+    }
   ],
   "defaultExportMode": ".json",
   "compactExport": false,
@@ -797,7 +803,7 @@
         {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
       ],
       "texture": "assets/entities/obj-magitsu.png",
-      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMBLYSQkOcAAACKSURBVBjTdY4xDsIwEATHEvThEzQpXbiiDx/gE7znPsEHSO+KgjLNfcGSce/iKBKHgMRKJ93ennYXgOirAQRRC6K2vbnoq/Vj4Xx7scX9cmAaOlxOyX7F7ZNrlv+wa8vjeiT6CsDpuSeIzkIQteirLaUMWHkQtdWhHwuZtLDCNHSfnCBqOaWvad3eW6pQtXi2iWwAAAAASUVORK5CYII="
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMWHj7DdWcAAACLSURBVBjTdY6xDQIxFENfJOhJcSvQUKZIRQ8L3BLMkyVY4OhTUVDSZIUvHfQpTHFEyiFhyZL1bfkbgByqAGIqiqmov7kcqg63N+frix7T6HmedrjZTL9mH3Kt8h82Tdwve3KoABwfW2IqixFTUQ5V31EClEOVYBncArOZZjMJVnStZRr96rcfBhy4Dz9eTrT4uryaAAAAAElFTkSuQmCC"
     },
     {
       "exportID": "26782958",
@@ -837,7 +843,7 @@
         {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
       ],
       "texture": "assets/entities/obj-archer.png",
-      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAI6Ma3hSacAAACSSURBVBjTdY2xDYMwFESfI7KDBTNQWEgskIYlaLxEZvAcXsJNFkCKKDIDCMkSjUsXnyYkQUledTo93QGQXSMAxmsxXstnV2TXSLIBU9bCE+O1pC6Q6UStMcol1Pzi1j1Q++Q/TgDDXDH2C8NcHTJAsZvZNZyv91c+LAAkG1hjZI2RZMNbGPtFteX09d2WE2O/qA2E5z6c6edW9gAAAABJRU5ErkJggg=="
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMWF0cfzcMAAACYSURBVBjTdY7BCYNAEEXfiulhiTV4WBbSQC424SVNWMPWsU14SQOCeEgNEWFADx73MDkkSoTkwcDj85kZAFLwCuCiVRetfmd5Cl7XW4s7l8oHF62uVUuiUjOL6LUt+cW9emC2lf/IALqxYKgnurE4OEC+NVPwnJp+97zpIdr3Qyl4nUV0FlGFw2RDPZnL+bnfXERYRAAwYF5i9E1cqusJvwAAAABJRU5ErkJggg=="
     },
     {
       "exportID": "26786990",
@@ -957,7 +963,7 @@
         {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
       ],
       "texture": "assets/entities/obj-bould-dasher.png",
-      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAI7E2GaOQIAAABwSURBVBjTjYyxDUBQFEUPMYKWVvHHYRYL6A0gVjAECgtQaJnABFfzX/jRuMnLfck778DPqKl7TfOiaV4EKLg2dS+DrP1O/IKCDpK50rQCJD8AyQt6PraB3JVoGxQDtMX5sR7jSmAwqOouSIF0J4LoBpS5MgLpGUhiAAAAAElFTkSuQmCC"
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMXIOa5WY0AAAB3SURBVBjTlY69DYMwFIQ/IXoa2tBSeBzvkBG8gPtM4BHIEDEFC5CC1rTZ4SgizF/Fa07v7vTp4MYp9oNiP8i7IEA58S5k86QUe4R34aB/Lkigh7ErVmw/JUBjLOn7pjH2MqwASJ/xErzamUygnuDXkhjpntWhuAD8eTFcWTZAEwAAAABJRU5ErkJggg=="
     },
     {
       "exportID": "32638924",
@@ -997,7 +1003,7 @@
         {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
       ],
       "texture": "assets/entities/obj-bould-roller.png",
-      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMAFiyASIIAAABvSURBVBjTY2AgFjSXzfl/6PDx/4cOH//fXDbnP0ycESaJTVNtVwojjP2fgYEBphOZDTFBVjv4f5q3J0LnmWRUo2S1g+E6GRgY/jM4/f8vqx38n8Hp/39GNEUMDAwMDI/F10AY+xgZsXvJ6f9/GA0A+OswVxVkfmgAAAAASUVORK5CYII="
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMXCj0CkFsAAABpSURBVBjTY2AgFjSXzfl/6PDx/4cOH//fXDbnP0ycESaJTVNtVwojA5KC/wwMDP+R2RATnP7DdTebzIXrnrV1O8Pjq2sZGRic/v+X1Q7+D1UIx7LawagmyL4MQbEfopuBgQFuBZJVyAAAylk2FzV3o2MAAAAASUVORK5CYII="
     },
     {
       "exportID": "32631154",
@@ -1037,7 +1043,7 @@
         {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
       ],
       "texture": "assets/entities/obj-bould-jumper.png",
-      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAI7MbT6eOYAAABrSURBVBjTY2AgAfw/dPj4fwYGhv/NZXP+wwQZGRgYGJAFkEFtVwojCxIHLtFcNgdVpax28H9Z7eD/DAwMEPo/PxwzoSmE0DouUAd8ZGRiYGBg6FN/jGLio4NX4Gy4G2CKQmZ9ZGAUfgFXAAAZBCV87GB06wAAAABJRU5ErkJggg=="
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMXAarQSdMAAAB0SURBVBjTY2AgFjSXzfnPwMDw/9Dh4/8ZGBj+w8QZkSQxQG1XCiMLmgCyiVDWf/7/MCyrHfyfgYHhv6x2MIzNwMTA+JGRgYGBQVbHhYGBgYFBVjsYxRomGOPRwSsoEn3qjxkYGBgYWBj+8/9HVrQmjR9FIQCxwSaue7u1+AAAAABJRU5ErkJggg=="
     },
     {
       "exportID": "32638756",
@@ -1117,7 +1123,7 @@
         {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
       ],
       "texture": "assets/entities/obj-durgen.png",
-      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMBBigsaacAAABVSURBVBjTY2BgYGDoslP7D8MwPoxm+hRv+r/s0C1GBgT4j8RmYGJgYGBAVtRlp4aikPFTvCmKDr6FpxlhVsBN4Ft4Gm4FugYU1dgAI7KrcSpAB8gaAIhQJXw4QzO/AAAAAElFTkSuQmCC"
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMWK2hwsUQAAABTSURBVBjTY+iyU/vPwMDAgEzDMAMDAwMTAyr4D2OUHbrF+Cne9D8TskSXnRqKJAMDAwMjzCh0CRhAsQJZkm/haUYME7ABJnySZYduMbKgC6ArAgAnVCZkOGnpZgAAAABJRU5ErkJggg=="
     }
   ],
   "tilesets": [
