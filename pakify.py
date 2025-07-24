@@ -111,13 +111,17 @@ for pak in pakFiles:
     # port layers.entities.entities to ncl entities
     for ogmoEntity in layers.get("entities").get("entities"):
 
+      values = ogmoEntity.get("values")
+
       # if this is the start point, set start point instead
       if ogmoEntity.get("name") == "start point":
         level["spawn"]["x"] = math.floor(ogmoEntity.get("x") / 8)
         level["spawn"]["y"] = math.floor(ogmoEntity.get("y") / 8)
-        continue
+        level["spawn"]["entrance"] = "rappel"
 
-      values = ogmoEntity.get("values")
+        if values:
+          level["spawn"]["entrance"] = values.get("entrance") or "rappel"
+        continue
 
       # convert ogmo entity format to ncl
       entity = {
