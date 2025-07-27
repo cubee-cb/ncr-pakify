@@ -56,13 +56,13 @@ for pak in pakFiles:
   # todo: process levels by incrementing index so altlevels don't get added separately
   altLevelsCount = 0
   for jsonFile in jsonFiles:
-    print("converting", jsonFile)
     baseName = os.path.splitext(jsonFile)[0]
 
     level = {
       "theme": "world1",
       "music": "sneaking",
       "spawn": {"x": 0, "y": 0},
+      "entrance": "rappel",
       "objects": [],
       "tilemap": []
     }
@@ -80,6 +80,7 @@ for pak in pakFiles:
 
     # this is NOT an alt level
     else:
+      print("converting level", jsonFile)
       level["alternateMaps"] = {}
 
     data = ""
@@ -117,10 +118,10 @@ for pak in pakFiles:
       if ogmoEntity.get("name") == "start point":
         level["spawn"]["x"] = math.floor(ogmoEntity.get("x") / 8)
         level["spawn"]["y"] = math.floor(ogmoEntity.get("y") / 8)
-        level["spawn"]["entrance"] = "rappel"
+        level["entrance"] = "rappel"
 
         if values:
-          level["spawn"]["entrance"] = values.get("entrance") or "rappel"
+          level["entrance"] = values.get("entrance") or "rappel"
         continue
 
       # convert ogmo entity format to ncl
