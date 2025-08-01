@@ -104,10 +104,11 @@ for pak in pakFiles:
     level["music"] = values.get("music")
 
     # port layers.tiles.tileset to ncl format
+    level["theme"] = layers.get("tiles").get("tileset") or "world1"
 
     # port layers.tiles.data2D to ncl format
     for row in layers.get("tiles").get("data2D"):
-      level["tilemap"].append(list(map(lambda x: 0 if x < 0 else x, row)))
+      level["tilemap"].append(list(map(lambda x: -1 if x < 0 else x, row)))
 
     # port layers.entities.entities to ncl entities
     for ogmoEntity in layers.get("entities").get("entities"):

@@ -3,6 +3,9 @@
   "displayName": {
     "english": "greed of bouldo"
   },
+  "description": {
+    "english": "bouldo reaches his melting point"
+  },
   // shown in the menu. pico-8 gfx data, 32x32, 0 is transparent. remove gfx tags, keep the size bytes.
   "glyph": "1010dddd667777766dd0d6777777777766dd677777777777766d777777777777766d77777777777776677777777777777666777777777777666677777777777766666777777777776666667777777776666666667777766666676666666666666667766666666666667dd7666666666667dddd76666666667dd00ddd76666777dd00",
   "author": "cubee",
