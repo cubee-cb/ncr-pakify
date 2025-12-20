@@ -11,7 +11,7 @@ from sys import argv
 # === defaults === #
 
 # folder/ncl names of the packs to process. it will be `./<pack>/1.json` for Ogmo input levels and `<outputPath>/<pack>.ncl` for output level data
-pakFiles = ["basepak", "sequel", "finale", "bouldo"]
+pakFiles = ["basepak", "outset", "sequel", "finale", "bouldo"]
 
 outputPath = None
 

@@ -102,18 +102,6 @@
           "values": {"entrance": "rappel"}
         }
       ]
-    },
-    {
-      "name": "deco",
-      "_eid": "69756120",
-      "offsetX": 0,
-      "offsetY": 0,
-      "gridCellWidth": 8,
-      "gridCellHeight": 8,
-      "gridCellsX": 84,
-      "gridCellsY": 15,
-      "decals": [],
-      "folder": ""
     }
   ]
 }
