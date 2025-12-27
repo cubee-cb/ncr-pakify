@@ -37,9 +37,9 @@ if not os.path.exists(outputPath):
 outPaks = list(filter(lambda x: x.endswith(".ncl") and any(pak in x for pak in pakFiles), os.listdir(outputPath)))
 print("writing to:", outputPath)
 print("building paks:", pakFiles)
-if len(outPaks) > 0:
-  print("the following paks already in the output directory will be overwritten:", outPaks)
-  input("is this ok? (press enter to continue, or ctrl+c to cancel)")
+#if len(outPaks) > 0:
+#  print("the following paks already in the output directory will be overwritten:", outPaks)
+#  input("is this ok? (press enter to continue, or ctrl+c to cancel)")
 
 for pak in pakFiles:
   print("processing pak \"" + pak + "\"")
