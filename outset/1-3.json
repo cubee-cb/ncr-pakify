@@ -54,7 +54,7 @@
           "y": 16,
           "originX": 0,
           "originY": 0,
-          "values": {"entrance": "rappel"}
+          "values": {"entrance": "walk"}
         },
         {
           "name": "bomb maker",

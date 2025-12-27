@@ -86,7 +86,9 @@
           "choices": ["rappel", "walk", "jump", "none"],
           "defaults": 0
         }
-      ]
+      ],
+      "texture": "assets/entities/obj-start.png",
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kMGwYYD6leJA8AAACJSURBVBjTbY4hDsJQFASnCMKXPUBxPUK5QHUNvQuyCCRXwCEJshcAgeAG2Jo6UoMdBPAJpE9N3m42QxCDmGaFY5wE8ZFUfG6dTyNvb0eQyiavTbNCh17a0s1qJ235XQCYzQsA7t01LgRh8h+6fwXBd8uhj2KAgKfzJUoyZg78Fg7LRXwEscnryE/7fmMgR6aP/AAAAABJRU5ErkJggg=="
     },
     {
       "exportID": "26727995",
