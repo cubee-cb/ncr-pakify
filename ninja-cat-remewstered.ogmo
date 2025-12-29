@@ -1157,9 +1157,10 @@
           "display": 1,
           "choices": ["round", "camellia", "cherry", "whisk", "holly", "lily"],
           "defaults": 0
-        }
+        },
+        {"name": "trapped", "definition": "Boolean", "display": 2, "defaults": false}
       ],
-      "texture": "../../../../../mnt/big-chungus/projects/ogmo/ninja-cat-remewstered/assets/entities/obj-plantpot.png",
+      "texture": "assets/entities/obj-plantpot.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kMFgglAkXz5dsAAABUSURBVBjTY2CgOWBkYGBgWB1k9h9Z8PJlWQYGBgaGpttrGVmQBZDBab4XCBMYGBgYPI2tUUzZfvYoIwMDAwMLTCBJ/jeK8duh4izo9iIbz8DAwAAAST8VDe8rvdcAAAAASUVORK5CYII="
     }
   ],

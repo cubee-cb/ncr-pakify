@@ -84,7 +84,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round"}
+          "values": {"variant": "round", "trapped": false}
         },
         {
           "name": "plant",
@@ -94,7 +94,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round"}
+          "values": {"variant": "round", "trapped": false}
         },
         {
           "name": "ninja",
@@ -115,7 +115,7 @@
           "y": 72,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round"}
+          "values": {"variant": "round", "trapped": false}
         },
         {
           "name": "plant",
@@ -125,7 +125,7 @@
           "y": 72,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round"}
+          "values": {"variant": "round", "trapped": false}
         },
         {
           "name": "plant",
@@ -135,7 +135,7 @@
           "y": 80,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round"}
+          "values": {"variant": "round", "trapped": false}
         },
         {
           "name": "plant",
@@ -145,7 +145,7 @@
           "y": 80,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round"}
+          "values": {"variant": "round", "trapped": false}
         },
         {
           "name": "shield ninja",

@@ -75,7 +75,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round"}
+          "values": {"variant": "round", "trapped": false}
         },
         {
           "name": "plant",
@@ -85,7 +85,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "camellia"}
+          "values": {"variant": "camellia", "trapped": false}
         },
         {
           "name": "plant",
@@ -95,7 +95,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "cherry"}
+          "values": {"variant": "cherry", "trapped": false}
         },
         {
           "name": "plant",
@@ -105,7 +105,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "whisk"}
+          "values": {"variant": "whisk", "trapped": false}
         },
         {
           "name": "plant",
@@ -115,7 +115,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "holly"}
+          "values": {"variant": "holly", "trapped": false}
         },
         {
           "name": "plant",
@@ -125,7 +125,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "lily"}
+          "values": {"variant": "lily", "trapped": false}
         },
         {
           "name": "plant",
@@ -135,7 +135,7 @@
           "y": 48,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round"}
+          "values": {"variant": "round", "trapped": true}
         },
         {
           "name": "plant",
@@ -145,7 +145,7 @@
           "y": 48,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round"}
+          "values": {"variant": "round", "trapped": false}
         },
         {
           "name": "plant",
@@ -155,7 +155,7 @@
           "y": 8,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "lily"}
+          "values": {"variant": "lily", "trapped": true}
         },
         {
           "name": "shield ninja",

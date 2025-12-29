@@ -110,7 +110,7 @@
           "y": 192,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "cherry"}
+          "values": {"variant": "cherry", "trapped": false}
         },
         {
           "name": "plant",
@@ -120,7 +120,7 @@
           "y": 192,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "cherry"}
+          "values": {"variant": "cherry", "trapped": false}
         }
       ]
     }

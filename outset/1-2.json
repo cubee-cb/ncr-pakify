@@ -107,7 +107,7 @@
           "y": 80,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round"}
+          "values": {"variant": "round", "trapped": false}
         }
       ]
     }

@@ -109,7 +109,7 @@
           "y": 48,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "cherry"}
+          "values": {"variant": "cherry", "trapped": false}
         },
         {
           "name": "plant",
@@ -119,7 +119,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "cherry"}
+          "values": {"variant": "cherry", "trapped": false}
         },
         {
           "name": "plant",
@@ -129,7 +129,7 @@
           "y": 72,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "cherry"}
+          "values": {"variant": "cherry", "trapped": false}
         },
         {
           "name": "plant",
@@ -139,7 +139,7 @@
           "y": 16,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "whisk"}
+          "values": {"variant": "whisk", "trapped": false}
         }
       ]
     }
