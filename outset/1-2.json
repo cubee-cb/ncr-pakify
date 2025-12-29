@@ -98,7 +98,17 @@
           "flippedX": true,
           "values": {"easy": false}
         },
-        {"name": "sparkler", "id": 5, "_eid": "26734037", "x": 848, "y": 48, "originX": 0, "originY": 0}
+        {"name": "sparkler", "id": 5, "_eid": "26734037", "x": 848, "y": 48, "originX": 0, "originY": 0},
+        {
+          "name": "plant",
+          "id": 6,
+          "_eid": "30502269",
+          "x": 328,
+          "y": 80,
+          "originX": 0,
+          "originY": 0,
+          "values": {"variant": "round"}
+        }
       ]
     }
   ]
