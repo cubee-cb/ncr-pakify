@@ -144,6 +144,10 @@ for pak in pakFiles:
         if values.get("variant"):
           entity["variant"] = values.get("variant")
 
+        # flags
+        if values.get("trapped"):
+          entity["trapped"] = values.get("trapped")
+
       level["objects"].append(entity)
 
     if altLevel:

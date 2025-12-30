@@ -2,7 +2,7 @@
 
 Converts level data from Ogmo Editor into a level pack format for Ninja Cat Remewstered. Includes an Ogmo project with entities and tilesets already set up.
 
-By default loads files in pack subfolders `basepak`, `sequel`, `finale` and `bouldo`.
+By default loads files in pack subfolders `basepak`, `outset`, `sequel`, `finale` and `bouldo`.
 
 Formats:
 * `pakify.py /path/to/ninjacat/Content/levels` - build all packs.
@@ -10,21 +10,27 @@ Formats:
 
 Required software:
 - Python3
-- Ogmo Editor 3 (from [here](https://ogmo-editor-3.github.io/) or compatible version, idk how compatible CE and other forks are)
-- Ninja Cat Remewstered 1.2mg or higher (technically not needed, but good luck playing the levels you make without it)
-  - While it is possible to use release version 1.1mg, it is more difficult due to various small changes in level format, and the menu is hardcoded to only play `basepak` and does not have the ability to change packs. Assets and entities from future worlds are also not present and will use fallbacks.
+- Ogmo Editor 3 (from [here](https://ogmo-editor-3.github.io/) or a compatible version)
+- Ninja Cat Remewstered 1.2mg or higher (not *technically* required, but good luck playing the levels you make without it)
+  - While it may be possible to use release version 1.1mg, it is more difficult due to various small changes in level format, and the menu is hardcoded to only play `basepak`. Assets, entities, and mechanics from newer worlds are also not present and will either use fallbacks or crash.
 
 Basic workflow:
 - If you're making a new level pack, create a folder for your level pack next to `pakify.py`.
 - Add a `base.ncl` file inside the new folder, with the base details for the pack. Use the default level packs (except `basepak`) in this repository as examples.
 - Using Ogmo Editor, open the `.ogmo` project file.
 - When creating levels, place them in the pack folder and name them by number like `1.json`, `2.json`, `3.json`.
+  - If your pack contains multiple "worlds", it may be beneficial to adopt a `world-level` naming scheme, i.e. `1-1.json`, `1-9.json`, `2-1.json`, just to makes things clearer.
 - Find the `Content/levels` folder in your Ninja Cat Remewstered install. (or wherever you want the output `.ncl` files to go)
-- Running `pakify.py /path/to/Content/levels <pack folder>` should produce `<pak>.ncl` files in the game's directory.
+- Running `pakify.py /path/to/Content/levels` should produce `<pak>.ncl` files in the game's directory.
+  - You can also specify which packs to build after the path. e.g. `pakify.py /path/to/Content/levels outset sequel` would build only the packs `outset` and `sequel`.
 - Finally, if you have made a new pack, add your pack's filename to the `packs.json` file so the game knows to load it.
+
+## Pack glyph
 
 The level pack's `glyph` uses the PICO-8 gfx format. They can be made inside PICO-8 and copy-pasted in. Remove the `[gfx]` and `[/gfx]` tags and it should just work.
 - Keep the width and height bytes though, those are used to format the icon properly. Max size is 64x64px, typical size is 16x16px plus a 1px border. (18x18px total)
+
+`[gfx]WWHHxxxxxxxxxxxxxxxx[/gfx]` -> `WWHHxxxxxxxxxxxxxxxx`
 
 ## Alternate levels
 
@@ -53,29 +59,28 @@ Adding a level sorted after `a` and before `b_goldRush` would change the flow ag
 - `c.json` - Level 3
 
 Only one condition can be used at a time; the first alternate with a matching condition wins.
-- If you have the Gold Rush and No Harm modifiers enabled, and your alternates were converted as `0 = goldRush` and `1 = noHarm` (as they would be by alphabetical order), the game would load the alternate level for Gold Rush mode as that is listed first.
+- If you have the Gold Rush and Pacifism modifiers enabled, and your alternates were converted as `0 = goldRush` and `1 = noHarm` (as they would be by alphabetical order), the game would load the alternate level for Gold Rush mode as that is listed first.
   - You can guide pakify to process your alternates in a specific order by naming the file like `1-1_noHarm.json` and `1-2_goldRush.json`, as it processes them alphabetically. Do not add more `_`'s!
-  - This is helpful if for example your `goldRush` alternate is impossible to complete when No Harm mode is enabled.
+  - This is helpful if for example your `goldRush` alternate is impossible to complete when Pacifism mode is enabled.
 
 Valid alternates are the following:
-- `noHarm` - No Harm modifier is enabled.
-  - I use this to replace the boss fights with vault rooms, which are usually to try teaching niche mechanics like how hitting a Shield Ninja's shield with shuriken will not kill the player, or otherwise as small puzzle rooms.
+- `noHarm` - Pacifism modifier is enabled.
+  - I use this to replace the boss fights with vault rooms, which usually try teaching niche mechanics like how hitting a Shield Ninja's shield with shuriken will not kill the player, or otherwise as small puzzle rooms.
 - `goldRush` - Gold Rush modifier is enabled.
   - You can use this to add extra gold or an alternative layout to make gold the main focus of the level.
 - `newGamePlus` - New Game Plus modifier is enabled.
   - Add more enemies, make tighter jumps, smaller platforms, it's up to you. Or subvert people's expectations and make it easier?
-- `hasDoubleJump` - Player has unlocked Double-Jump.
+- `hasDoubleJump` and `notDoubleJump` - Player has unlocked Double-Jump.
   - If your pack features any extra exits where the player may not have Double Jump, you can check for that here.
-- `hasSword` - Player has the Sword available.
+- `hasSword` and `notSword` - Player has the Sword available.
   - If your pack features any levels where Ensy wouldn't have the Sword, you can check for that here.
-- `hasShuriken` - Player has the Shuriken available.
+- `hasShuriken` and `notShuriken` - Player has the Shuriken available.
   - If your pack features any levels where Elenn wouldn't have Shuriken, you can check for that here.
-- `elenn` - Playing as Elenn.
+- `elenn` and `notElenn` - Playing as Elenn.
   - This can be used to make challenges tailored for Elenn's faster, more slippery movement.
 
-The lack of Easy Mode here is simply due to enemies having a property on them already which when set to True will remove them if easy is enabled. Might add it if I feel like it later, or if people actually want proper easy alternates. BUT! This way you CAN combine Easy Mode with other alternates! How rare!
+The lack of Guard Bell here is simply due to enemies having an "Easy" property on them which when set to True will remove them when Guard Bell is enabled. Might add it if I feel like it later, or if people actually want proper easy alternates. BUT! This way you CAN combine Guard Bell with other alternates! How rare!
 
 ## Notes
-- `.ncl` is short for Ninja Cat Level. A holdover from early development where each level was an individual file instead of being grouped in packs.
-- NCLs are just `json` files with a funny extension... which doesn't even matter really. You should be able to use whatever extension you want as long as the file content is valid and the `pack.json` includes it, but using a specific one like this makes it more obvious what the file is for.
-- `basepak`'s `base.ncl` is pre-generated NCL with all the levels included, as it was generated inside PICO-8 from the original game's map data rather than an Ogmo project. This is why there are seemingly no levels inside it. I have little to no reason to convert the original levels to Ogmo at this time, but maybe in the future just for parity?
+- `.ncl` is short for Ninja Cat Level. A holdover from early development where each level was an individual file instead of being grouped in packs. They are just `json` files internally, but the extension makes it more obvious what the file is for.
+- `basepak`'s `base.ncl` is pre-generated NCL with all the levels included, as it was generated inside PICO-8 directly from the original game's map data rather than an Ogmo project. This is why there are seemingly no levels inside the pack folder.
