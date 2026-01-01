@@ -84,7 +84,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round", "trapped": false}
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         },
         {
           "name": "plant",
@@ -94,7 +94,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round", "trapped": false}
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         },
         {
           "name": "ninja",
@@ -109,33 +109,13 @@
         },
         {
           "name": "plant",
-          "id": 6,
-          "_eid": "30502269",
-          "x": 320,
-          "y": 72,
-          "originX": 0,
-          "originY": 0,
-          "values": {"variant": "round", "trapped": false}
-        },
-        {
-          "name": "plant",
-          "id": 7,
-          "_eid": "30502269",
-          "x": 352,
-          "y": 72,
-          "originX": 0,
-          "originY": 0,
-          "values": {"variant": "round", "trapped": false}
-        },
-        {
-          "name": "plant",
           "id": 8,
           "_eid": "30502269",
           "x": 600,
           "y": 80,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round", "trapped": false}
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         },
         {
           "name": "plant",
@@ -145,7 +125,7 @@
           "y": 80,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "round", "trapped": false}
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         },
         {
           "name": "shield ninja",
