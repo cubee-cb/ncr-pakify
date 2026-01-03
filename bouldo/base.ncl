@@ -1,7 +1,7 @@
 {
   "id": "bouldo",
   "displayName": {
-    "english": "greed of bouldo",
+    "english": "greed of bouldo", // prism highway
     "meowlang": "meow mew"
   },
   "description": {

@@ -2,17 +2,17 @@
 
 Converts level data from Ogmo Editor into a level pack format for Ninja Cat Remewstered. Includes an Ogmo project with entities and tilesets already set up.
 
-By default loads files in pack subfolders `basepak`, `outset`, `sequel`, `finale` and `bouldo`.
+The default packs are `basepak`, `outset`, `sequel`, `finale` and `bouldo`.
 
 Formats:
-* `pakify.py /path/to/ninjacat/Content/levels` - build all packs.
-* `pakify.py /path/to/ninjacat/Content/levels sequel finale` - build only packs `sequel` and `finale`.
+* `pakify.py /path/to/ninjacat/Content/levels` - build all default packs.
+* `pakify.py /path/to/ninjacat/Content/levels office prismHighway` - build packs `office` and `prismHighway`.
 
 Required software:
 - Python3
 - Ogmo Editor 3 (from [here](https://ogmo-editor-3.github.io/) or a compatible version)
 - Ninja Cat Remewstered 1.2mg or higher (not *technically* required, but good luck playing the levels you make without it)
-  - While it may be possible to use release version 1.1mg, it is more difficult due to various small changes in level format, and the menu is hardcoded to only play `basepak`. Assets, entities, and mechanics from newer worlds are also not present and will either use fallbacks or crash.
+  - While it may be possible to use release version 1.1mg, it is more difficult due to various small changes in level format, and the menu is hardcoded to only play `basepak`. Assets, entities, mechanics and changes from newer worlds are also not present and will use fallbacks, be ignored or crash.
 
 Basic workflow:
 - If you're making a new level pack, create a folder for your level pack next to `pakify.py`.
@@ -37,49 +37,53 @@ The level pack's `glyph` uses the PICO-8 gfx format. They can be made inside PIC
 Alternate levels are named in the following format: `<level>_<condition>.json`, like `1_goldRush.json`
 The important part is the `_`. That marks where the condition starts. You should only ever have ONE `_` in the filename.
 - In theory `1_goldRush_blah blah blah.json` shouldn't break anything though... if you wanna give them recognisable names. MIGHT change in the future though!
-  - You should put names BEFORE the `_` if you wanna do that. Ideally follow a format like `1-<name>_<condition>.json`, so `1-first-level_goldRush.json` or `3-pacifist-hallway_noHarm.json`
+  - I would recommend putting names BEFORE the `_` if you wanna do that. Ideally follow a format like `<index>-<name>_<condition>.json`, so `1-first-level_goldRush.json` or `3-pacifist-hallway_pacifism.json`
 
 Alternates will be appended to the last processed level alphabetically. That is, having the following:
 
-- `a.json`
-- `b_goldRush.json`
-- `c.json`
+- `1.json`
+- `2_goldRush.json`
+- `3.json`
 
-Would put `b` as an alternate of `a`, and `c` would be processed as Level 2:
+Would put `2_goldRush` as an alternate of `1`, and `3` would be processed as Level 2:
 
-- `a.json` - Level 1
-- `b_goldRush.json` - Level 1 (with Gold Rush modifier)
-- `c.json` - Level 2
+- `1.json` - Level 1
+- `2_goldRush.json` - Level 1 (Gold Rush alternate)
+- `3.json` - Level 2
 
-Adding a level sorted after `a` and before `b_goldRush` would change the flow again:
+Adding a level sorted after `1` and before `2_goldRush` would change the flow again:
 
-- `a.json` - Level 1
-- `b.json` or `ab.json` or `another.json` - Level 2
-- `b_goldRush.json` - Level 2 (with Gold Rush modifier)
-- `c.json` - Level 3
+- `1.json` - Level 1
+- `2.json` or `22.json` or `1a.json` - Level 2
+- `2_goldRush.json` - Level 2 (Gold Rush alternate)
+- `3.json` - Level 3
 
 Only one condition can be used at a time; the first alternate with a matching condition wins.
-- If you have the Gold Rush and Pacifism modifiers enabled, and your alternates were converted as `0 = goldRush` and `1 = noHarm` (as they would be by alphabetical order), the game would load the alternate level for Gold Rush mode as that is listed first.
-  - You can guide pakify to process your alternates in a specific order by naming the file like `1-1_noHarm.json` and `1-2_goldRush.json`, as it processes them alphabetically. Do not add more `_`'s!
+- If you have the Gold Rush and Pacifism modifiers enabled, and your alternates were converted as `0 = goldRush` and `1 = pacifism` (as they would be by alphabetical order), the game would load the alternate level for Gold Rush mode as that is listed first.
+  - You can guide pakify to process your alternates in a specific order by naming the file like `3a_pacifism.json` and `3b_goldRush.json`, as it processes them alphabetically. Do not add more `_`'s!
   - This is helpful if for example your `goldRush` alternate is impossible to complete when Pacifism mode is enabled.
 
 Valid alternates are the following:
-- `noHarm` - Pacifism modifier is enabled.
+- `pacifism` - Pacifism modifier is enabled.
   - I use this to replace the boss fights with vault rooms, which usually try teaching niche mechanics like how hitting a Shield Ninja's shield with shuriken will not kill the player, or otherwise as small puzzle rooms.
+- `perfection` - Perfection modifier is enabled.
+  - Maybe your level is really precise. You can make an alternate to make it easier to not make a mistake.
+- `guardBell` - Guard Bell modifier is enabled.
+  - Maybe you want to prevent people from cheesing your level. You could make an alternate tailored for Guard Bell's hitpoint system? Or troll them, idk it's up to you.
 - `goldRush` - Gold Rush modifier is enabled.
-  - You can use this to add extra gold or an alternative layout to make gold the main focus of the level.
+  - You could use this to add extra gold or an alternative layout to make gold the main focus of the level.
 - `newGamePlus` - New Game Plus modifier is enabled.
   - Add more enemies, make tighter jumps, smaller platforms, it's up to you. Or subvert people's expectations and make it easier?
-- `hasDoubleJump` and `notDoubleJump` - Player has unlocked Double-Jump.
-  - If your pack features any extra exits where the player may not have Double Jump, you can check for that here.
-- `hasSword` and `notSword` - Player has the Sword available.
-  - If your pack features any levels where Ensy wouldn't have the Sword, you can check for that here.
-- `hasShuriken` and `notShuriken` - Player has the Shuriken available.
-  - If your pack features any levels where Elenn wouldn't have Shuriken, you can check for that here.
-- `elenn` and `notElenn` - Playing as Elenn.
+- `elenn` and `notElenn` - Playing as Elenn or not.
   - This can be used to make challenges tailored for Elenn's faster, more slippery movement.
-
-The lack of Guard Bell here is simply due to enemies having an "Easy" property on them which when set to True will remove them when Guard Bell is enabled. Might add it if I feel like it later, or if people actually want proper easy alternates. BUT! This way you CAN combine Guard Bell with other alternates! How rare!
+- `hasDoubleJump` and `notDoubleJump` - Player has unlocked Double-Jump.
+  - If your pack has any extra exits where the player may not obtain Double Jump, you can check for that here.
+- `hasBow` and `notBow` - Player has or doesn't have the Bow weapon.
+  - If your pack has any extra exits where the player may not obtain the Bow, you can check for that here.
+- `hasSword` and `notSword` - Player has or doesn't have the Sword weapon.
+  - If your pack has any levels where the player may not have the Sword, but needs it, you can check for that here.
+- `hasShuriken` and `notShuriken` - Player has or doesn't have the Shuriken weapon.
+  - If your pack has any levels where the player may not have Shuriken, but needs them, you can check for that here.
 
 ## Notes
 - `.ncl` is short for Ninja Cat Level. A holdover from early development where each level was an individual file instead of being grouped in packs. They are just `json` files internally, but the extension makes it more obvious what the file is for.
