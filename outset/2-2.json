@@ -64,18 +64,9 @@
           "y": 0,
           "originX": 0,
           "originY": 0,
-          "values": {"easy": false, "variant": 64}
+          "values": {"variant": 64}
         },
-        {
-          "name": "bomb maker",
-          "id": 2,
-          "_eid": "26737363",
-          "x": 320,
-          "y": 80,
-          "originX": 0,
-          "originY": 0,
-          "values": {"easy": false}
-        },
+        {"name": "bomb maker", "id": 2, "_eid": "26737363", "x": 320, "y": 80, "originX": 0, "originY": 0},
         {
           "name": "searchlight",
           "id": 3,
@@ -84,19 +75,9 @@
           "y": 0,
           "originX": 0,
           "originY": 0,
-          "values": {"easy": false, "variant": 32}
+          "values": {"variant": 32}
         },
-        {
-          "name": "ninja",
-          "id": 4,
-          "_eid": "26727995",
-          "x": 208,
-          "y": 72,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": true,
-          "values": {"easy": false}
-        },
+        {"name": "ninja", "id": 4, "_eid": "26727995", "x": 208, "y": 72, "originX": 0, "originY": 0, "flippedX": true},
         {
           "name": "plant",
           "id": 5,

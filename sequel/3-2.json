@@ -81,60 +81,11 @@
           "originY": 0,
           "values": {"entrance": "rappel"}
         },
-        {
-          "name": "magitsu",
-          "id": 13,
-          "_eid": "26776184",
-          "x": 16,
-          "y": 136,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": true,
-          "values": {"easy": false}
-        },
-        {
-          "name": "demond",
-          "id": 14,
-          "_eid": "26736337",
-          "x": 40,
-          "y": 280,
-          "originX": 0,
-          "originY": 0,
-          "values": {"easy": false}
-        },
-        {
-          "name": "ninja",
-          "id": 15,
-          "_eid": "26727995",
-          "x": 112,
-          "y": 56,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": true,
-          "values": {"easy": false}
-        },
-        {
-          "name": "ninja",
-          "id": 17,
-          "_eid": "26727995",
-          "x": 136,
-          "y": 216,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": true,
-          "values": {"easy": false}
-        },
-        {
-          "name": "shield ninja",
-          "id": 18,
-          "_eid": "26724739",
-          "x": 72,
-          "y": 296,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": false,
-          "values": {"easy": true}
-        },
+        {"name": "magitsu", "id": 13, "_eid": "26776184", "x": 16, "y": 136, "originX": 0, "originY": 0, "flippedX": true},
+        {"name": "demond", "id": 14, "_eid": "26736337", "x": 40, "y": 280, "originX": 0, "originY": 0},
+        {"name": "ninja", "id": 15, "_eid": "26727995", "x": 112, "y": 56, "originX": 0, "originY": 0, "flippedX": true},
+        {"name": "ninja", "id": 17, "_eid": "26727995", "x": 136, "y": 216, "originX": 0, "originY": 0, "flippedX": true},
+        {"name": "shield ninja", "id": 18, "_eid": "26724739", "x": 72, "y": 296, "originX": 0, "originY": 0, "flippedX": false},
         {
           "name": "plant",
           "id": 19,

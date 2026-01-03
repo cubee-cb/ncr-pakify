@@ -59,38 +59,9 @@
           "values": {"entrance": "walk"}
         },
         {"name": "sparkler", "id": 1, "_eid": "26734037", "x": 528, "y": 32, "originX": 0, "originY": 0},
-        {
-          "name": "bomb maker",
-          "id": 3,
-          "_eid": "26737363",
-          "x": 440,
-          "y": 8,
-          "originX": 0,
-          "originY": 0,
-          "values": {"easy": false}
-        },
-        {
-          "name": "ninja",
-          "id": 4,
-          "_eid": "26727995",
-          "x": 104,
-          "y": 96,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": false,
-          "values": {"easy": false}
-        },
-        {
-          "name": "archer",
-          "id": 5,
-          "_eid": "26782958",
-          "x": 440,
-          "y": 104,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": true,
-          "values": {"easy": true}
-        }
+        {"name": "bomb maker", "id": 3, "_eid": "26737363", "x": 440, "y": 8, "originX": 0, "originY": 0},
+        {"name": "ninja", "id": 4, "_eid": "26727995", "x": 104, "y": 96, "originX": 0, "originY": 0, "flippedX": false},
+        {"name": "archer", "id": 5, "_eid": "26782958", "x": 440, "y": 104, "originX": 0, "originY": 0, "flippedX": true}
       ]
     }
   ]

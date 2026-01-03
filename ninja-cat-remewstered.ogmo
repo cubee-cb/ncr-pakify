@@ -124,9 +124,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-ninja.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg01ElOL+MwAAAB0SURBVBjTY2SAgv8Mvv8ZkAAjw2ZGCM3AwBAf7g+X3HeFBa7o8dW1jAzx4f7/ZbWD/0NN+M/AwPAfquE/3ARkK+pV2eAmNN1ey8iITbLp9lq4RqZDh4//hzkIBprL5qA4GMMXdarBcDYTTAeyKQ+N/sA1AgBrVy4fl8H/bQAAAABJRU5ErkJggg=="
     },
@@ -164,9 +162,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-shield-ninja.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg4HDEayL4cAAAC4SURBVBjTRYwxCwFhAIaf77o/oLBc10lXBjadMjDYDCY/wWqW3eoPkIVByaTvFxgvk0GHTjlS0kVho87i7t7p7X2eXsE/er4ZhP39PAHwOK+EGo61wpfxbAFAQrcYWgKsUqAC9DqjAKBe9InzwT68UEPoepLjZRdzIwuA4noS15PcXJ+MlgNgMJeRp7TaXUyjQdpMRuNSbmKhWimL8AHAufpiOulGggqQ2u5JAf21IwAyWg77cAfgB4UiPDDibszjAAAAAElFTkSuQmCC"
     },
@@ -280,9 +276,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-demond.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEALQA1ADhQYlaqQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg00Ne+afOYAAACZSURBVBjTZYy9CYNAHMV/d4hlMoKNt0CyReCwsLjSNFkjomtkBivHCJngrrETsbENgX+K5ESSBw8e70vxhWAFoDYpAK3vFNtQlvFDrAhWrqYUACVYYbmtZfaXVdYmJalNSvNjRjT+iW59p7bmNlT0SgMMh9ff8uw0ALpyheSZJT7FZZ5ZKldIMoUZ6AG470ZOR+ABYeiZwswbWwJBK3JcvOQAAAAASUVORK5CYII="
     },
@@ -359,7 +353,6 @@
       "nodeGhost": true,
       "tags": [],
       "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false},
         {"name": "variant", "definition": "Integer", "display": 2, "defaults": 64, "bounded": false, "min": 0, "max": 64}
       ],
       "texture": "assets/entities/obj-searchlight.png",
@@ -437,9 +430,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-bomb.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEALQA1ADhQYlaqQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg00Alcn2ekAAABFSURBVBjTY2CgCfj/8cX/Q4eP//+/mOE/huShw8f/MzAwMPx/o44pKasd/F9WOxhFgglZ0knnD9wWrFZDdWOYgk0RHAAA+gcfJJjD0i4AAAAASUVORK5CYII="
     },
@@ -477,9 +468,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-bomb-maker.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEALQA1ADhQYlaqQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg00BydNLWYAAACCSURBVBjTY4wP9//PgAQWzJrJwLBJgiFhiz/DvissDCwq8r5wyVlbtzMw8kswxIdDJJ10/kAkmsvm/Iea9J+BgeG/rHbwf1nt4P8MDAwMLAwMDAx3Hm5m2HeFhUFWOxhumpPOH4aFV6Gc/4sZ/v9/ow7Bixn+/1/M8H91kBmK22gIAJOtL+mnIV2GAAAAAElFTkSuQmCC"
     },
@@ -517,9 +506,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-ghost.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg01CzfgUAwAAABVSURBVBjTY2SAgv8fX/xnQAKM/BKMDAwMDIzYJJEVMcEkGfklkCXgpjL+//ji/+FL9xkYGBgYbPUUGRgYGBiQ+YzIxiPphJvGBGPAdKGzCTqSkZA3ASrZLZ+fWecSAAAAAElFTkSuQmCC"
     },
@@ -558,8 +545,7 @@
       "nodeGhost": true,
       "tags": [],
       "values": [
-        {"name": "thing", "definition": "Text", "display": 0, "defaults": "old ghost"},
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
+        {"name": "label", "definition": "Text", "display": 1, "defaults": "old ghost"}
       ],
       "texture": "assets/entities/obj-ghost.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg01CzfgUAwAAABVSURBVBjTY2SAgv8fX/xnQAKM/BKMDAwMDIzYJJEVMcEkGfklkCXgpjL+//ji/+FL9xkYGBgYbPUUGRgYGBiQ+YzIxiPphJvGBGPAdKGzCTqSkZA3ASrZLZ+fWecSAAAAAElFTkSuQmCC"
@@ -599,8 +585,7 @@
       "nodeGhost": true,
       "tags": [],
       "values": [
-        {"name": "thing", "definition": "Text", "display": 0, "defaults": "demond ghost"},
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
+        {"name": "label", "definition": "Text", "display": 1, "defaults": "demond ghost"}
       ],
       "texture": "assets/entities/obj-ghost.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg01CzfgUAwAAABVSURBVBjTY2SAgv8fX/xnQAKM/BKMDAwMDIzYJJEVMcEkGfklkCXgpjL+//ji/+FL9xkYGBgYbPUUGRgYGBiQ+YzIxiPphJvGBGPAdKGzCTqSkZA3ASrZLZ+fWecSAAAAAElFTkSuQmCC"
@@ -815,9 +800,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-magitsu.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMWHj7DdWcAAACLSURBVBjTdY6xDQIxFENfJOhJcSvQUKZIRQ8L3BLMkyVY4OhTUVDSZIUvHfQpTHFEyiFhyZL1bfkbgByqAGIqiqmov7kcqg63N+frix7T6HmedrjZTL9mH3Kt8h82Tdwve3KoABwfW2IqixFTUQ5V31EClEOVYBncArOZZjMJVnStZRr96rcfBhy4Dz9eTrT4uryaAAAAAElFTkSuQmCC"
     },
@@ -855,9 +838,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-archer.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMWF0cfzcMAAACYSURBVBjTdY7BCYNAEEXfiulhiTV4WBbSQC424SVNWMPWsU14SQOCeEgNEWFADx73MDkkSoTkwcDj85kZAFLwCuCiVRetfmd5Cl7XW4s7l8oHF62uVUuiUjOL6LUt+cW9emC2lf/IALqxYKgnurE4OEC+NVPwnJp+97zpIdr3Qyl4nUV0FlGFw2RDPZnL+bnfXERYRAAwYF5i9E1cqusJvwAAAABJRU5ErkJggg=="
     },
@@ -895,9 +876,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-sworder.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMCLa+9wyQAAABESURBVBjTfcq7EQAQEADRPb1ItCHQiS40ohdtaOdEjPG5Td8Kn2rrCiAWPocdcwwiFgK4krz+EMABzOnEVUle9+lCaxrFxSCNYFj7mwAAAABJRU5ErkJggg=="
     },
@@ -935,9 +914,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-shurikener.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMCD3rdgsAAAAA4SURBVBjTY2AgBfTsuPEfXYyJkCJGfLpLPDQYGRkYGBgSW+ZiSM6vSWbEcENiy9z/2BRjKCLJZwASBRW+xiyR8AAAAABJRU5ErkJggg=="
     },
@@ -975,9 +952,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-bould-dasher.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMXIOa5WY0AAAB3SURBVBjTlY69DYMwFIQ/IXoa2tBSeBzvkBG8gPtM4BHIEDEFC5CC1rTZ4SgizF/Fa07v7vTp4MYp9oNiP8i7IEA58S5k86QUe4R34aB/Lkigh7ErVmw/JUBjLOn7pjH2MqwASJ/xErzamUygnuDXkhjpntWhuAD8eTFcWTZAEwAAAABJRU5ErkJggg=="
     },
@@ -1015,9 +990,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-bould-roller.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMXCj0CkFsAAABpSURBVBjTY2AgFjSXzfl/6PDx/4cOH//fXDbnP0ycESaJTVNtVwojA5KC/wwMDP+R2RATnP7DdTebzIXrnrV1O8Pjq2sZGRic/v+X1Q7+D1UIx7LawagmyL4MQbEfopuBgQFuBZJVyAAAylk2FzV3o2MAAAAASUVORK5CYII="
     },
@@ -1055,9 +1028,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-bould-jumper.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMXAarQSdMAAAB0SURBVBjTY2AgFjSXzfnPwMDw/9Dh4/8ZGBj+w8QZkSQxQG1XCiMLmgCyiVDWf/7/MCyrHfyfgYHhv6x2MIzNwMTA+JGRgYGBQVbHhYGBgYFBVjsYxRomGOPRwSsoEn3qjxkYGBgYWBj+8/9HVrQmjR9FIQCxwSaue7u1+AAAAABJRU5ErkJggg=="
     },
@@ -1095,9 +1066,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-spotlight.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAI2H92CC2QAAABqSURBVBjTY2BAAvHh/v+by+b8RxZjQuaoyPsy3Hm4mQEr+P9G/f//jy/+Hzp8/P//xQz/sStggEjAFMD4DP/fqEMEPr5AKILSKG5g5JdgZGRgYPzPwPCfYTG6FUjG/l/MADcJVRFUEpkPAGogO6qLLQZ5AAAAAElFTkSuQmCC"
     },
@@ -1135,9 +1104,7 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [
-        {"name": "easy", "definition": "Boolean", "display": 0, "defaults": false}
-      ],
+      "values": [],
       "texture": "assets/entities/obj-durgen.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kHGAMWK2hwsUQAAABTSURBVBjTY+iyU/vPwMDAgEzDMAMDAwMTAyr4D2OUHbrF+Cne9D8TskSXnRqKJAMDAwMjzCh0CRhAsQJZkm/haUYME7ABJnySZYduMbKgC6ArAgAnVCZkOGnpZgAAAABJRU5ErkJggg=="
     },

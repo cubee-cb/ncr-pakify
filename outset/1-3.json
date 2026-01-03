@@ -56,26 +56,8 @@
           "originY": 0,
           "values": {"entrance": "walk"}
         },
-        {
-          "name": "bomb maker",
-          "id": 1,
-          "_eid": "26737363",
-          "x": 72,
-          "y": 72,
-          "originX": 0,
-          "originY": 0,
-          "values": {"easy": false}
-        },
-        {
-          "name": "bomb maker",
-          "id": 2,
-          "_eid": "26737363",
-          "x": 88,
-          "y": 72,
-          "originX": 0,
-          "originY": 0,
-          "values": {"easy": true}
-        },
+        {"name": "bomb maker", "id": 1, "_eid": "26737363", "x": 72, "y": 72, "originX": 0, "originY": 0},
+        {"name": "bomb maker", "id": 2, "_eid": "26737363", "x": 88, "y": 72, "originX": 0, "originY": 0},
         {
           "name": "plant",
           "id": 3,
@@ -96,17 +78,7 @@
           "originY": 0,
           "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         },
-        {
-          "name": "ninja",
-          "id": 5,
-          "_eid": "26727995",
-          "x": 368,
-          "y": 72,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": true,
-          "values": {"easy": false}
-        },
+        {"name": "ninja", "id": 5, "_eid": "26727995", "x": 368, "y": 72, "originX": 0, "originY": 0, "flippedX": true},
         {
           "name": "plant",
           "id": 8,
@@ -127,17 +99,7 @@
           "originY": 0,
           "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         },
-        {
-          "name": "shield ninja",
-          "id": 10,
-          "_eid": "26724739",
-          "x": 984,
-          "y": 48,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": true,
-          "values": {"easy": false}
-        },
+        {"name": "shield ninja", "id": 10, "_eid": "26724739", "x": 984, "y": 48, "originX": 0, "originY": 0, "flippedX": true},
         {"name": "sparkler", "id": 11, "_eid": "26734037", "x": 1024, "y": 32, "originX": 0, "originY": 0}
       ]
     }

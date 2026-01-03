@@ -139,8 +139,6 @@ for pak in pakFiles:
 
       # optional
       if values:
-        if values.get("easy"):
-          entity["easy"] = True
         if values.get("variant"):
           entity["variant"] = values.get("variant")
 

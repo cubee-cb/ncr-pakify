@@ -64,17 +64,7 @@
           "originY": 0,
           "values": {"entrance": "none"}
         },
-        {
-          "name": "ninja",
-          "id": 1,
-          "_eid": "26727995",
-          "x": 608,
-          "y": 48,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": false,
-          "values": {"easy": false}
-        },
+        {"name": "ninja", "id": 1, "_eid": "26727995", "x": 608, "y": 48, "originX": 0, "originY": 0, "flippedX": false},
         {
           "name": "plant",
           "id": 2,
@@ -165,61 +155,11 @@
           "originY": 0,
           "values": {"variant": "lily", "trapped": true, "gilded": false, "restorative": false}
         },
-        {
-          "name": "shield ninja",
-          "id": 11,
-          "_eid": "26724739",
-          "x": 768,
-          "y": 96,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": true,
-          "values": {"easy": false}
-        },
-        {
-          "name": "shield ninja",
-          "id": 12,
-          "_eid": "26724739",
-          "x": 784,
-          "y": 96,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": false,
-          "values": {"easy": false}
-        },
-        {
-          "name": "shield ninja",
-          "id": 13,
-          "_eid": "26724739",
-          "x": 816,
-          "y": 96,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": false,
-          "values": {"easy": false}
-        },
-        {
-          "name": "shield ninja",
-          "id": 14,
-          "_eid": "26724739",
-          "x": 864,
-          "y": 96,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": false,
-          "values": {"easy": false}
-        },
-        {
-          "name": "magitsu",
-          "id": 15,
-          "_eid": "26776184",
-          "x": 840,
-          "y": 96,
-          "originX": 0,
-          "originY": 0,
-          "flippedX": false,
-          "values": {"easy": false}
-        },
+        {"name": "shield ninja", "id": 11, "_eid": "26724739", "x": 768, "y": 96, "originX": 0, "originY": 0, "flippedX": true},
+        {"name": "shield ninja", "id": 12, "_eid": "26724739", "x": 784, "y": 96, "originX": 0, "originY": 0, "flippedX": false},
+        {"name": "shield ninja", "id": 13, "_eid": "26724739", "x": 816, "y": 96, "originX": 0, "originY": 0, "flippedX": false},
+        {"name": "shield ninja", "id": 14, "_eid": "26724739", "x": 864, "y": 96, "originX": 0, "originY": 0, "flippedX": false},
+        {"name": "magitsu", "id": 15, "_eid": "26776184", "x": 840, "y": 96, "originX": 0, "originY": 0, "flippedX": false},
         {
           "name": "plant",
           "id": 16,
@@ -280,46 +220,10 @@
           "originY": 0,
           "values": {"variant": "round", "trapped": true, "gilded": false, "restorative": false}
         },
-        {
-          "name": "bomb maker",
-          "id": 22,
-          "_eid": "26737363",
-          "x": 288,
-          "y": 0,
-          "originX": 0,
-          "originY": 0,
-          "values": {"easy": false}
-        },
-        {
-          "name": "bomb maker",
-          "id": 23,
-          "_eid": "26737363",
-          "x": 288,
-          "y": 24,
-          "originX": 0,
-          "originY": 0,
-          "values": {"easy": false}
-        },
-        {
-          "name": "bomb maker",
-          "id": 24,
-          "_eid": "26737363",
-          "x": 288,
-          "y": 48,
-          "originX": 0,
-          "originY": 0,
-          "values": {"easy": false}
-        },
-        {
-          "name": "bomb maker",
-          "id": 25,
-          "_eid": "26737363",
-          "x": 288,
-          "y": 72,
-          "originX": 0,
-          "originY": 0,
-          "values": {"easy": false}
-        },
+        {"name": "bomb maker", "id": 22, "_eid": "26737363", "x": 288, "y": 0, "originX": 0, "originY": 0},
+        {"name": "bomb maker", "id": 23, "_eid": "26737363", "x": 288, "y": 24, "originX": 0, "originY": 0},
+        {"name": "bomb maker", "id": 24, "_eid": "26737363", "x": 288, "y": 48, "originX": 0, "originY": 0},
+        {"name": "bomb maker", "id": 25, "_eid": "26737363", "x": 288, "y": 72, "originX": 0, "originY": 0},
         {
           "name": "searchlight",
           "id": 26,
@@ -328,7 +232,7 @@
           "y": 0,
           "originX": 0,
           "originY": 0,
-          "values": {"easy": false, "variant": 64}
+          "values": {"variant": 64}
         },
         {
           "name": "searchlight",
@@ -338,7 +242,7 @@
           "y": 16,
           "originX": 0,
           "originY": 0,
-          "values": {"easy": false, "variant": 48}
+          "values": {"variant": 48}
         },
         {
           "name": "searchlight",
@@ -348,7 +252,7 @@
           "y": 32,
           "originX": 0,
           "originY": 0,
-          "values": {"easy": false, "variant": 32}
+          "values": {"variant": 32}
         },
         {
           "name": "searchlight",
@@ -358,7 +262,7 @@
           "y": 48,
           "originX": 0,
           "originY": 0,
-          "values": {"easy": false, "variant": 16}
+          "values": {"variant": 16}
         },
         {
           "name": "searchlight",
@@ -368,7 +272,7 @@
           "y": 64,
           "originX": 0,
           "originY": 0,
-          "values": {"easy": false, "variant": 4}
+          "values": {"variant": 4}
         },
         {
           "name": "searchlight",
@@ -378,7 +282,7 @@
           "y": 80,
           "originX": 0,
           "originY": 0,
-          "values": {"easy": false, "variant": 2}
+          "values": {"variant": 2}
         },
         {
           "name": "searchlight",
@@ -388,7 +292,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"easy": false, "variant": 0}
+          "values": {"variant": 0}
         }
       ]
     }
