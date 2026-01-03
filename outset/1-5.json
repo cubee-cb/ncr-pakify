@@ -106,7 +106,7 @@
           "y": 0,
           "originX": 0,
           "originY": 0,
-          "values": {"easy": false}
+          "values": {"easy": false, "variant": 64}
         },
         {
           "name": "plant",

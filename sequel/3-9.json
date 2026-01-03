@@ -76,7 +76,7 @@
           "y": 24,
           "originX": 0,
           "originY": 0,
-          "values": {"easy": true}
+          "values": {"easy": true, "variant": 64}
         },
         {
           "name": "ninja",
