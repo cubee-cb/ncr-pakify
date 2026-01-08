@@ -14,11 +14,15 @@ from sys import argv
 pakFiles = ["basepak", "outset", "sequel", "finale", "bouldo"]
 
 outputPath = None
-
+ogmoScript = 'OGMO_BUILD_SCRIPT' in os.environ
 
 # === other code below === #
 
-print("pakify for ninja cat remewstered!")
+def verboseOut(output):
+  if not ogmoScript:
+    print(output)
+
+verboseOut("pakify for ninja cat remewstered!")
 
 if len(argv) > 1:
   outputPath = argv[1]
@@ -35,19 +39,19 @@ if not os.path.exists(outputPath):
   exit()
 
 outPaks = list(filter(lambda x: x.endswith(".ncl") and any(pak in x for pak in pakFiles), os.listdir(outputPath)))
-print("writing to:", outputPath)
+verboseOut("writing to: " + outputPath)
 print("building paks:", pakFiles)
 #if len(outPaks) > 0:
 #  print("the following paks already in the output directory will be overwritten:", outPaks)
 #  input("is this ok? (press enter to continue, or ctrl+c to cancel)")
 
 for pak in pakFiles:
-  print("processing pak \"" + pak + "\"")
+  verboseOut("processing pak \"" + pak + "\"")
   levels = []
 
   files = os.listdir(os.path.join(".", pak))
   files.sort()
-  print("reading: " + str(files))
+  verboseOut("reading: " + str(files))
 
 
   jsonFiles = list(filter(lambda x: x.endswith('.json'), files))
@@ -76,11 +80,11 @@ for pak in pakFiles:
       parent = levels[-1]
       altLevel = True
       altLevelKey = baseName.split('_')[1]
-      print("treating", jsonFile, "as an alternate for the previous level")
+      verboseOut("treating " + jsonFile + " as an alternate for the previous level")
 
     # this is NOT an alt level
     else:
-      print("converting level", jsonFile)
+      verboseOut("converting level " + jsonFile)
       level["alternateMaps"] = {}
 
     data = ""
@@ -155,7 +159,7 @@ for pak in pakFiles:
       levels.append(level)
 
   # generate levels file
-  print("converted", len(levels), "levels,", altLevelsCount, "alt levels")
+  verboseOut("converted " + str(len(levels)) + " levels, " + str(altLevelsCount) + " alt levels")
 
   # write file
   
@@ -170,7 +174,7 @@ for pak in pakFiles:
     for line in fileContent.split("\n"):
       content += line.split("//")[0] + "\n"
   
-  print("processing json and writing ncl file...")
+  verboseOut("processing json and writing ncl file...")
   nclLevelPak = json.loads(content)
 
   # only replace levels if there are any, otherwise just passthrough whatever's already in the file (used for basepak since that was a separate conversion from pico-8)
@@ -183,5 +187,8 @@ for pak in pakFiles:
     file.write(out)
   #print(outputNclPath )
 
-print("")
-print("done!")
+if ogmoScript:
+  print(" - done!")
+else:
+  print("")
+  print("done!")
