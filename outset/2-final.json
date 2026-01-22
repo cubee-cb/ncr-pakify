@@ -4,7 +4,7 @@
   "height": 120,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "catwalk to victory"},
+  "values": {"music": "catwalk to victory", "fadeVariant": "special"},
   "layers": [
     {
       "name": "tiles",

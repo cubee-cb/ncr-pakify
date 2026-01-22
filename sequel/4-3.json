@@ -4,7 +4,7 @@
   "height": 144,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "sneaking"},
+  "values": {"music": "wind", "fadeVariant": "special"},
   "layers": [
     {
       "name": "tiles",
