@@ -24,6 +24,13 @@
       "display": 0,
       "choices": ["cut", "circle", "square", "special"],
       "defaults": 0
+    },
+    {
+      "name": "sky",
+      "definition": "Enum",
+      "display": 0,
+      "choices": ["night", "aurora", "underground", "dawn", ""],
+      "defaults": 0
     }
   ],
   "defaultExportMode": ".json",

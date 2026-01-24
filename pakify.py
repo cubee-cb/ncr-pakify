@@ -107,6 +107,7 @@ for pak in pakFiles:
     values = ogmo.get("values")
     level["music"] = values.get("music") or "wind"
     level["fadeVariant"] = values.get("fadeVariant") or "cut"
+    level["sky"] = values.get("sky") or "cut"
 
     # port layers.tiles.tileset to ncl format
     level["theme"] = layers.get("tiles").get("tileset") or "world1"

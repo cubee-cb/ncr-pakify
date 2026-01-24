@@ -4,7 +4,7 @@
   "height": 136,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "kitsune underpass", "fadeVariant": "circle"},
+  "values": {"music": "kitsune underpass", "fadeVariant": "circle", "sky": "underground"},
   "layers": [
     {
       "name": "tiles",

@@ -4,7 +4,7 @@
   "height": 224,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "moss town", "fadeVariant": "circle"},
+  "values": {"music": "moss town", "fadeVariant": "circle", "sky": "night"},
   "layers": [
     {
       "name": "tiles",

@@ -4,7 +4,7 @@
   "height": 184,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "sneaking", "fadeVariant": "square"},
+  "values": {"music": "sneaking", "fadeVariant": "square", "sky": "aurora"},
   "layers": [
     {
       "name": "tiles",

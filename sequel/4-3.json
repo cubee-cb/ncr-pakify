@@ -4,7 +4,7 @@
   "height": 144,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "wind", "fadeVariant": "special"},
+  "values": {"music": "wind", "fadeVariant": "special", "sky": "underground"},
   "layers": [
     {
       "name": "tiles",
