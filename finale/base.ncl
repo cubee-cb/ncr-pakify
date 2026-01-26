@@ -14,8 +14,8 @@
   "revision": 1,
   "unlocked": false,
   "rewards": [
-    "modifier:new game plus",
-    "gold rush;region:bouldo"
+    "modifier:new game plus", // unlock New Game Plus mode
+    "gold rush;region:bouldo" // unlock pack "bouldo" if beaten with Gold Rush
   ],
 
   "levels": []

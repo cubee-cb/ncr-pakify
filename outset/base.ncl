@@ -5,7 +5,7 @@
     "meowlang": "meow meow"
   },
   "description": {
-    "english": "small cat in a big cat world",
+    "english": "a small cat in a big cat world",
     "meowlang": "meow meow meow"
   },
   // shown in the menu. pico-8 gfx data, 32x32, 0 is transparent. remove gfx tags, keep the size bytes.
@@ -14,8 +14,8 @@
   "revision": 1,
   "unlocked": true,
   "rewards": [
-    "region:sequel",
-    "gold rush;region:bouldo"
+    "region:sequel", // unlock pack "sequel"
+    "gold rush;region:bouldo" // unlock pack "bouldo" if beaten with Gold Rush
   ],
 
   "levels": []

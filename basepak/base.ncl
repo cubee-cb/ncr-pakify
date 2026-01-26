@@ -14,7 +14,7 @@
   "revision": 2,
   "unlocked": true,
   "rewards": [
-    "gold rush;region:bouldo"
+    "gold rush;region:bouldo" // unlock pack "bouldo" if beaten with Gold Rush
   ],
 
   "levels": [

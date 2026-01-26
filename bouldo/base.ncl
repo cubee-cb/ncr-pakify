@@ -15,7 +15,7 @@
   "hidden": true,
   "unlocked": false,
   "rewards": [
-    "modifier:new game plus"
+    "modifier:new game plus" // unlock New Game Plus mode
   ],
 
   "levels": []
