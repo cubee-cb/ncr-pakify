@@ -80,7 +80,47 @@
           "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         },
         {"name": "spotlight", "id": 10, "_eid": "32638756", "x": 272, "y": 32, "originX": 0, "originY": 0},
-        {"name": "spotlight", "id": 11, "_eid": "32638756", "x": 368, "y": 32, "originX": 0, "originY": 0}
+        {"name": "spotlight", "id": 11, "_eid": "32638756", "x": 368, "y": 32, "originX": 0, "originY": 0},
+        {
+          "name": "plant",
+          "id": 12,
+          "_eid": "30502269",
+          "x": 536,
+          "y": 32,
+          "originX": 0,
+          "originY": 0,
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
+        },
+        {
+          "name": "plant",
+          "id": 13,
+          "_eid": "30502269",
+          "x": 664,
+          "y": 32,
+          "originX": 0,
+          "originY": 0,
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
+        },
+        {
+          "name": "plant",
+          "id": 14,
+          "_eid": "30502269",
+          "x": 200,
+          "y": 96,
+          "originX": 0,
+          "originY": 0,
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
+        },
+        {
+          "name": "plant",
+          "id": 15,
+          "_eid": "30502269",
+          "x": 872,
+          "y": 96,
+          "originX": 0,
+          "originY": 0,
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
+        }
       ]
     }
   ]

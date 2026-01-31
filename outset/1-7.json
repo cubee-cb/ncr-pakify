@@ -110,6 +110,16 @@
           "originX": 0,
           "originY": 0,
           "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
+        },
+        {
+          "name": "plant",
+          "id": 13,
+          "_eid": "30502269",
+          "x": 1008,
+          "y": 40,
+          "originX": 0,
+          "originY": 0,
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         }
       ]
     }
