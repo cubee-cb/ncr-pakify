@@ -1,5 +1,8 @@
 {
   "id": "sequel",
+  "worldTheme": "world3",
+  "worldSky": "night",
+  "worldFade": "circle",
   "displayName": {
     "english": "kitsune depths",
     "meowlang": "mewmew meow"

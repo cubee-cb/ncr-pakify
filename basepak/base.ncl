@@ -1,5 +1,8 @@
 {
   "id": "basepak",
+  "worldTheme": "world1",
+  "worldSky": "night",
+  "worldFade": "cut",
   "displayName": {
     "english": "a domain past",
     "meowlang": "meow meow"

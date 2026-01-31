@@ -1,5 +1,8 @@
 {
   "id": "finale",
+  "worldTheme": "world6",
+  "worldSky": "aurora",
+  "worldFade": "square",
   "displayName": {
     "english": "spire summit",
     "meowlang": "meow mew mew"

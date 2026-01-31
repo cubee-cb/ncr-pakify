@@ -1,5 +1,8 @@
 {
   "id": "bouldo",
+  "worldTheme": "world4",
+  "worldSky": "night",
+  "worldFade": "special",
   "displayName": {
     "english": "greed of bouldo", // prism highway
     "meowlang": "meow mew"

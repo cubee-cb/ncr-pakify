@@ -1,5 +1,8 @@
 {
   "id": "outset",
+  "worldTheme": "world1",
+  "worldSky": "night",
+  "worldFade": "cut",
   "displayName": {
     "english": "tiger domain",
     "meowlang": "meow meow"
