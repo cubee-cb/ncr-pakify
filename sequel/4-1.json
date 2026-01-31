@@ -7,6 +7,35 @@
   "values": {"music": "kitsune underpass", "fadeVariant": "circle", "sky": "underground"},
   "layers": [
     {
+      "name": "entities",
+      "_eid": "26712369",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 80,
+      "gridCellsY": 15,
+      "entities": [
+        {"name": "shield ninja", "id": 0, "_eid": "26724739", "x": 112, "y": 40, "originX": 0, "originY": 0, "flippedX": false},
+        {
+          "name": "start point",
+          "id": 1,
+          "_eid": "26863091",
+          "x": 16,
+          "y": 40,
+          "originX": 0,
+          "originY": 0,
+          "values": {"entrance": "walk"}
+        },
+        {"name": "archer", "id": 2, "_eid": "26782958", "x": 72, "y": 96, "originX": 0, "originY": 0, "flippedX": false},
+        {"name": "archer", "id": 3, "_eid": "26782958", "x": 312, "y": 48, "originX": 0, "originY": 0, "flippedX": true},
+        {"name": "bomb maker", "id": 4, "_eid": "26737363", "x": 200, "y": 16, "originX": 0, "originY": 0},
+        {"name": "spotlight", "id": 5, "_eid": "32638756", "x": 360, "y": 24, "originX": 0, "originY": 0},
+        {"name": "spotlight", "id": 6, "_eid": "32638756", "x": 488, "y": 24, "originX": 0, "originY": 0},
+        {"name": "magitsu", "id": 7, "_eid": "26776184", "x": 424, "y": 80, "originX": 0, "originY": 0, "flippedX": false}
+      ]
+    },
+    {
       "name": "tiles",
       "_eid": "26593690",
       "offsetX": 0,
@@ -35,35 +64,6 @@
       ],
       "exportMode": 0,
       "arrayMode": 1
-    },
-    {
-      "name": "entities",
-      "_eid": "26712369",
-      "offsetX": 0,
-      "offsetY": 0,
-      "gridCellWidth": 8,
-      "gridCellHeight": 8,
-      "gridCellsX": 80,
-      "gridCellsY": 15,
-      "entities": [
-        {"name": "shield ninja", "id": 0, "_eid": "26724739", "x": 112, "y": 40, "originX": 0, "originY": 0, "flippedX": false},
-        {
-          "name": "start point",
-          "id": 1,
-          "_eid": "26863091",
-          "x": 16,
-          "y": 40,
-          "originX": 0,
-          "originY": 0,
-          "values": {"entrance": "walk"}
-        },
-        {"name": "archer", "id": 2, "_eid": "26782958", "x": 72, "y": 96, "originX": 0, "originY": 0, "flippedX": false},
-        {"name": "archer", "id": 3, "_eid": "26782958", "x": 312, "y": 48, "originX": 0, "originY": 0, "flippedX": true},
-        {"name": "bomb maker", "id": 4, "_eid": "26737363", "x": 200, "y": 16, "originX": 0, "originY": 0},
-        {"name": "spotlight", "id": 5, "_eid": "32638756", "x": 360, "y": 24, "originX": 0, "originY": 0},
-        {"name": "spotlight", "id": 6, "_eid": "32638756", "x": 488, "y": 24, "originX": 0, "originY": 0},
-        {"name": "magitsu", "id": 7, "_eid": "26776184", "x": 424, "y": 80, "originX": 0, "originY": 0, "flippedX": false}
-      ]
     }
   ]
 }

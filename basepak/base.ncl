@@ -132,7 +132,7 @@
         [33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33]
       ],
       "alternateMaps": {
-        "elenn" : {
+        "notHasShuriken" : {
           "theme": "world1",
           "music": "wind",
           "spawn": {"x": 1, "y": 10},
