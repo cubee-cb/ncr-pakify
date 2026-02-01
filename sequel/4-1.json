@@ -32,7 +32,17 @@
         {"name": "bomb maker", "id": 4, "_eid": "26737363", "x": 200, "y": 16, "originX": 0, "originY": 0},
         {"name": "spotlight", "id": 5, "_eid": "32638756", "x": 360, "y": 24, "originX": 0, "originY": 0},
         {"name": "spotlight", "id": 6, "_eid": "32638756", "x": 488, "y": 24, "originX": 0, "originY": 0},
-        {"name": "magitsu", "id": 7, "_eid": "26776184", "x": 424, "y": 80, "originX": 0, "originY": 0, "flippedX": false}
+        {"name": "magitsu", "id": 7, "_eid": "26776184", "x": 424, "y": 80, "originX": 0, "originY": 0, "flippedX": false},
+        {
+          "name": "plant",
+          "id": 8,
+          "_eid": "30502269",
+          "x": 616,
+          "y": 96,
+          "originX": 0,
+          "originY": 0,
+          "values": {"variant": "cherry", "trapped": false, "gilded": false, "restorative": false}
+        }
       ]
     },
     {

@@ -59,7 +59,7 @@
           "y": 72,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "whisk", "trapped": false, "gilded": false, "restorative": false}
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         },
         {
           "name": "plant",
@@ -69,7 +69,7 @@
           "y": 32,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "whisk", "trapped": false, "gilded": false, "restorative": false}
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         },
         {
           "name": "plant",
@@ -79,7 +79,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "whisk", "trapped": false, "gilded": false, "restorative": false}
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         },
         {
           "name": "plant",
@@ -89,7 +89,7 @@
           "y": 40,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "whisk", "trapped": false, "gilded": false, "restorative": false}
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         },
         {
           "name": "plant",
@@ -99,7 +99,7 @@
           "y": 40,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "whisk", "trapped": false, "gilded": false, "restorative": false}
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         },
         {
           "name": "plant",
@@ -109,7 +109,7 @@
           "y": 72,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "whisk", "trapped": false, "gilded": false, "restorative": false}
+          "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
         },
         {
           "name": "plant",

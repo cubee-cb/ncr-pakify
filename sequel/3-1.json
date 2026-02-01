@@ -48,9 +48,19 @@
           "y": 16,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "whisk", "trapped": false, "gilded": false, "restorative": false}
+          "values": {"variant": "cherry", "trapped": false, "gilded": false, "restorative": false}
         },
-        {"name": "ninja", "id": 18, "_eid": "26727995", "x": 56, "y": 24, "originX": 0, "originY": 0, "flippedX": false}
+        {"name": "ninja", "id": 18, "_eid": "26727995", "x": 56, "y": 24, "originX": 0, "originY": 0, "flippedX": false},
+        {
+          "name": "plant",
+          "id": 19,
+          "_eid": "30502269",
+          "x": 472,
+          "y": 64,
+          "originX": 0,
+          "originY": 0,
+          "values": {"variant": "cherry", "trapped": false, "gilded": false, "restorative": false}
+        }
       ]
     },
     {
