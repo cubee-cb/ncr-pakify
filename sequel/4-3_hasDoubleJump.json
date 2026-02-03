@@ -4,7 +4,7 @@
   "height": 144,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "wind", "fadeVariant": "special", "sky": "underground"},
+  "values": {"music": "wind", "background": "default", "sky": "underground", "fadeVariant": "special"},
   "layers": [
     {
       "name": "entities",

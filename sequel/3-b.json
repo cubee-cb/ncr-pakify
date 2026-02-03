@@ -4,7 +4,7 @@
   "height": 136,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "wind", "fadeVariant": "special", "sky": "night"},
+  "values": {"music": "wind", "background": "default", "sky": "night", "fadeVariant": "special"},
   "layers": [
     {
       "name": "entities",
@@ -37,15 +37,55 @@
           "values": {"variant": "normal"}
         },
         {
+          "name": "plant",
+          "id": 7,
+          "_eid": "30502269",
+          "x": 208,
+          "y": 112,
+          "originX": 0,
+          "originY": 0,
+          "values": {"variant": "whisk", "trapped": false, "gilded": false, "restorative": true}
+        },
+        {
+          "name": "plant",
+          "id": 8,
+          "_eid": "30502269",
+          "x": 96,
+          "y": 112,
+          "originX": 0,
+          "originY": 0,
+          "values": {"variant": "whisk", "trapped": false, "gilded": false, "restorative": true}
+        },
+        {
+          "name": "plant",
+          "id": 9,
+          "_eid": "30502269",
+          "x": 192,
+          "y": 56,
+          "originX": 0,
+          "originY": 0,
+          "values": {"variant": "cherry", "trapped": false, "gilded": false, "restorative": false}
+        },
+        {
+          "name": "plant",
+          "id": 10,
+          "_eid": "30502269",
+          "x": 112,
+          "y": 56,
+          "originX": 0,
+          "originY": 0,
+          "values": {"variant": "cherry", "trapped": false, "gilded": false, "restorative": false}
+        },
+        {
           "name": "elenn npc",
-          "id": 6,
+          "id": 11,
           "_eid": "91931981",
           "x": 192,
           "y": 112,
           "originX": 0,
           "originY": 0,
           "flippedX": false,
-          "values": {"variant": "jump away"}
+          "values": {"variant": "looking jump away"}
         }
       ]
     },

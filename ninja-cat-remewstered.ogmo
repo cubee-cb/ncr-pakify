@@ -19,10 +19,10 @@
       "defaults": 0
     },
     {
-      "name": "fadeVariant",
+      "name": "background",
       "definition": "Enum",
       "display": 0,
-      "choices": ["cut", "circle", "square", "special"],
+      "choices": ["default", "world1", "world2", "world3", "world4", "world5", "world6"],
       "defaults": 0
     },
     {
@@ -30,6 +30,13 @@
       "definition": "Enum",
       "display": 0,
       "choices": ["night", "aurora", "underground", "dawn", ""],
+      "defaults": 0
+    },
+    {
+      "name": "fadeVariant",
+      "definition": "Enum",
+      "display": 0,
+      "choices": ["cut", "circle", "square", "special"],
       "defaults": 0
     }
   ],
@@ -840,7 +847,7 @@
           "name": "variant",
           "definition": "Enum",
           "display": 1,
-          "choices": ["jump away", "hello", "friends", "fire bow left"],
+          "choices": ["jump away", "looking jump away", "hello", "friends", "fire bow left", "steal tile"],
           "defaults": 0
         }
       ],

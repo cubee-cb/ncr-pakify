@@ -4,7 +4,7 @@
   "height": 120,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "moss town", "fadeVariant": "circle", "sky": "night"},
+  "values": {"music": "moss town", "background": "default", "sky": "night", "fadeVariant": "circle"},
   "layers": [
     {
       "name": "entities",
