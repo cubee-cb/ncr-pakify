@@ -1,38 +1,52 @@
 # ncr-pakify
 
-Converts level data from Ogmo Editor into a level pack format for Ninja Cat Remewstered. Includes an Ogmo project with entities and tilesets already set up.
+Converts level data from Ogmo Editor into the region pack format for Ninja Cat Remewstered.
 
-The default packs are `basepak`, `outset`, `sequel`, `finale` and `bouldo`.
+Included is an Ogmo project with all of the entities and tilesets already set up.
 
-Formats:
+## Usage
+
+### Formats:
 * `pakify.py /path/to/ninjacat/Content/levels` - build all default packs.
 * `pakify.py /path/to/ninjacat/Content/levels office prismHighway` - build packs `office` and `prismHighway`.
 
-Required software:
+The default packs are `basepak`, `outset`, `sequel`, `finale` and `bouldo`.
+
+### Required software:
 - Python3
 - Ogmo Editor 3 (from [here](https://ogmo-editor-3.github.io/) or a compatible version)
 - Ninja Cat Remewstered 1.2mg or higher (not *technically* required, but good luck playing the levels you make without it)
   - While it may be possible to use release version 1.1mg, it is more difficult due to various small changes in level format, and the menu is hardcoded to only play `basepak`. Assets, entities, mechanics and changes from newer worlds are also not present and will use fallbacks, be ignored or crash.
 
-Basic workflow:
-- If you're making a new level pack, create a folder for your level pack next to `pakify.py`.
-- Add a `base.ncl` file inside the new folder, with the base details for the pack. Use the default level packs (except `basepak`) in this repository as examples.
+### Basic workflow:
+- If you're making a new region pack, create a folder for your region pack next to `pakify.py`.
+- Add a `base.ncl` file inside the new folder, with the base details for the pack. Use the default region packs (except `basepak`) in this repository as examples.
 - Using Ogmo Editor, open the `.ogmo` project file.
 - When creating levels, place them in the pack folder and name them by number like `1.json`, `2.json`, `3.json`.
   - If your pack contains multiple "worlds", it may be beneficial to adopt a `world-level` naming scheme, i.e. `1-1.json`, `1-9.json`, `2-1.json`, just to makes things clearer.
+  - The naming scheme I use personally is the following: `<world number>-<level number><alt order>_<alternate>.json`; that is:
+    - `1-2.json` for the base level.
+    - `1-2a_pacifism` - for a Pacifism alternate. Note the `a` used here is to make it the *first* alternate; thus taking priority.
+    - `1-2b_goldRush` - for a Gold Rush alternate that will be used as long as Pacifism isn't enabled.
 - Find the `Content/levels` folder in your Ninja Cat Remewstered install. (or wherever you want the output `.ncl` files to go)
 - Running `pakify.py /path/to/Content/levels` should produce `<pak>.ncl` files in the game's directory.
   - You can also specify which packs to build after the path. e.g. `pakify.py /path/to/Content/levels outset sequel` would build only the packs `outset` and `sequel`.
 - Finally, if you have made a new pack, add your pack's filename to the `packs.json` file so the game knows to load it.
 
-## Pack glyph
+## Specifics
 
-The level pack's `glyph` uses the PICO-8 gfx format. They can be made inside PICO-8 and copy-pasted in. Remove the `[gfx]` and `[/gfx]` tags and it should just work.
-- Keep the width and height bytes though, those are used to format the icon properly. Max size is 64x64px, typical size is 16x16px plus a 1px border. (18x18px total)
+### Pack Glyph
+
+The `base.ncl` `glyph` property uses the PICO-8 gfx format. They can be made inside PICO-8 and copy-pasted in (the Edu version should work fine for this use case). It will be shown in the New Game screen alongside the other packs.
+- Omitting/removing the pack glyph will result in a generic icon being used. If you want your pack to be easily recognisable, make sure to give it a cool icon!
+
+Remember to remove the `[gfx]` and `[/gfx]` tags, but keep the width and height bytes. These are used to decode the glyph properly. Typical glyph size is 16x16px plus a 1px border. (32x32px sprite)
 
 `[gfx]WWHHxxxxxxxxxxxxxxxx[/gfx]` -> `WWHHxxxxxxxxxxxxxxxx`
 
-## Alternate levels
+Pack Glyphs can be up to 128x128px in size (the same size as the PICO-8 spritesheet)
+
+### Alternate Levels
 
 Alternate levels are named in the following format: `<level>_<condition>.json`, like `1_goldRush.json`
 The important part is the `_`. That marks where the condition starts. You should only ever have ONE `_` in the filename.
