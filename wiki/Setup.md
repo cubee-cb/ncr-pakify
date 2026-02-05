@@ -13,7 +13,8 @@
 The default packs are `basepak`, `outset`, `sequel`, `finale` and `bouldo`.
 
 ## Basic workflow
-- If you're making a new region pack, create a folder for your region pack next to `pakify.py`.
+If you're making a new region pack, create a folder for your region pack next to `pakify.py`.
+
 - Add a `base.ncl` file inside the new folder, with the base details for the pack. Use the default region packs (except `basepak`) in this repository as examples.
 - Using Ogmo Editor, open the `.ogmo` project file.
 - When creating levels, place them in the pack folder and name them by number like `1.json`, `2.json`, `3.json`.
@@ -23,9 +24,9 @@ The default packs are `basepak`, `outset`, `sequel`, `finale` and `bouldo`.
     - `1-2a_pacifism` - for a Pacifism alternate. Note the `a` used here is to make it the *first* alternate; thus taking priority.
     - `1-2b_goldRush` - for a Gold Rush alternate that will be used as long as Pacifism isn't enabled.
 - Find the `Content/levels` folder in your Ninja Cat Remewstered install. (or wherever you want the output `.ncl` files to go)
-- Running `pakify.py /path/to/Content/levels` should produce `<pak>.ncl` files in the game's directory.
-  - You can also specify which packs to build after the path. e.g. `pakify.py /path/to/Content/levels outset sequel` would build only the packs `outset` and `sequel`.
-- Finally, if you have made a new pack, add your pack's filename to the `packs.json` file so the game knows to load it.
+- Running `pakify` should produce `<pak>.ncl` files in the game's directory.
+
+Finally, if you have made a new pack, add your pack's filename to the `packs.json` file so the game knows to load it.
 
 ## Developer Tools
 To access the in-game Dev Menu, open the System Menu and go to `Options` > `Technical` > `Dev Menu`.
