@@ -26,3 +26,10 @@ The default packs are `basepak`, `outset`, `sequel`, `finale` and `bouldo`.
 - Running `pakify.py /path/to/Content/levels` should produce `<pak>.ncl` files in the game's directory.
   - You can also specify which packs to build after the path. e.g. `pakify.py /path/to/Content/levels outset sequel` would build only the packs `outset` and `sequel`.
 - Finally, if you have made a new pack, add your pack's filename to the `packs.json` file so the game knows to load it.
+
+## Dev Menu
+To access the Dev Menu, open the System Menu and go to `Options` > `Technical` > `Dev Menu`.
+
+Here you can do various things, like hot-reload the level packs, grant yourself all upgrades, restore or set health, and so on.
+
+Entering Score Submission after using this menu will place a marker on your score, so that you can tell which scores are legitimate.
