@@ -15,6 +15,7 @@
   "glyph": "",
   "author": "cubee",
   "revision": 1,
+  "requireGameVersion": 1,
   "unlocked": true,
   "rewards": [],
 
