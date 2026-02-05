@@ -4,7 +4,7 @@ Converts level data from Ogmo Editor into the region pack format for Ninja Cat R
 
 Included is an Ogmo project with all of the entities and tilesets already set up.
 
-![.github/preview.png]
+![github/preview.png]
 
 See [the wiki folder](wiki) for documentation.
 
