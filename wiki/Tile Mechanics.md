@@ -51,7 +51,9 @@ Some tiles can be climbed when the player has Climbing Claws. (this is always th
 
 Typically, tiles that shuriken can stick to are climbable, but there are some exceptions. Consider the following:
 - Materials that have **small ridges** or are otherwise **grippable** are climbable. This includes **hard** materials like Tiles.
-- Materials that are **soft** or **stabbable** can hold shuriken and arrows. This is usually **softer** materials like Wood.
+  - **Little/no** impaling force required.
+- Materials that are **stabbable** can hold shuriken and arrows. This is usually **softer** materials like Wood.
+  - **High** impaling force required.
 
 ## Spikes
 Spikes will damage the player when fallen onto from above.
