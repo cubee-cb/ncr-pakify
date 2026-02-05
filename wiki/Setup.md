@@ -12,6 +12,10 @@
 
 The default packs are `basepak`, `outset`, `sequel`, `finale` and `bouldo`.
 
+### Linux Users:
+The Ogmo project is pre-configured to run a bash script that builds the default packs when pressing the Star button down in the bottom-left.
+Feel free to edit it to fit your install location.
+
 ## Basic workflow
 If you're making a new region pack, create a folder for your region pack next to `pakify.py`.
 
