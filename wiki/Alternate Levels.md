@@ -44,10 +44,12 @@ Valid alternates are the following:
 - `elenn` and `notElenn` - Playing as Elenn or not.
   - This can be used to make challenges tailored for Elenn's faster, more slippery movement.
 - `hasDoubleJump` and `notDoubleJump` - Player has unlocked Double-Jump.
-  - If your pack has any extra exits where the player may not obtain Double Jump, you can check for that here.
+  - If your pack has any paths where the player may not obtain Double Jump, or has it early due to New Game Plus, you can check for that here.
+- `hasClaws` and `notClaws` - Player has unlocked the Climbing Claws.
+  - If your pack has any paths where the player may not obtain the Climbing Claws, or has them early due to New Game Plus, you can check for that here.
 - `hasBow` and `notBow` - Player has or doesn't have the Bow weapon.
-  - If your pack has any extra exits where the player may not obtain the Bow, you can check for that here.
+  - If your pack has any paths where the player may not obtain the Bow, or has it early due to New Game Plus, you can check for that here.
 - `hasSword` and `notSword` - Player has or doesn't have the Sword weapon.
-  - If your pack has any levels where the player may not have the Sword, but needs it, you can check for that here.
+  - If your pack has any levels where the player may not have the Sword, but needs it (i.e. playing as Ensy), you can check for that here.
 - `hasShuriken` and `notShuriken` - Player has or doesn't have the Shuriken weapon.
-  - If your pack has any levels where the player may not have Shuriken, but needs them, you can check for that here.
+  - If your pack has any levels where the player may not have Shuriken, but needs them (i.e. playing as Elenn), you can check for that here.
