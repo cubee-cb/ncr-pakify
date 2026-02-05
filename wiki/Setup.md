@@ -27,9 +27,16 @@ The default packs are `basepak`, `outset`, `sequel`, `finale` and `bouldo`.
   - You can also specify which packs to build after the path. e.g. `pakify.py /path/to/Content/levels outset sequel` would build only the packs `outset` and `sequel`.
 - Finally, if you have made a new pack, add your pack's filename to the `packs.json` file so the game knows to load it.
 
-## Dev Menu
-To access the Dev Menu, open the System Menu and go to `Options` > `Technical` > `Dev Menu`.
+## Developer Tools
+To access the in-game Dev Menu, open the System Menu and go to `Options` > `Technical` > `Dev Menu`.
 
-Here you can do various things, like hot-reload the level packs, grant yourself all upgrades, restore or set health, and so on.
+Here you can do various things, like hot-reload the level packs, grant yourself all upgrades, restore or set health, and so on. Most of these will only have a visible effect while in a level.
 
 Entering Score Submission after using this menu will place a marker on your score, so that you can tell which scores are legitimate.
+
+If you have access to a Debug build, the following are available:
+- The Dev Menu is added to the base Pause menu while in-game.
+- `Tab` will reload level packs in-place.
+- `[` and `]` skip between levels.
+- `T` forces the touch layers to be shown.
+- `Right Alt` will stop the UI layer from rendering while held.
