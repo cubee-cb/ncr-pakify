@@ -1,0 +1,54 @@
+# Tile Mechanics
+
+## Channels and Colours
+There are two Channels in Ninja Cat: Red and Green.
+
+When referring to colours, the following non-colour identifiers are also used:
+
+Red:
+- Elements in Ones (one band across doors)
+- Bullseye Target
+- Outlines
+
+Green:
+- Elements in Twos (two bands across doors)
+- Dot Target
+- Filled Shapes
+
+## Platforms
+
+Removable platforms are considered solid, instead of as proper platforms, as they are sometimes used as Doors.
+
+## Targets
+Hitting these with any weapon, or headbutting them, will activate them.
+
+Red Targets:
+- Open Red Door tiles in its current and adjacent columns.
+- Toggle Red Cassette Blocks.
+
+Green Targets:
+- Open Green Door tiles across the entire level.
+- Open Removable Platform tiles across the entire level.
+- Toggle Green Cassette Blocks.
+
+## Falling Tiles
+Falling Tiles fall to the ground when a supporting tile is removed. If an entity or the player is contained within one and cannot be ejected, it will be killed. (excluding other Falling Tiles)
+
+These tiles will not fall if placed directly in the air; only when a tile below them is removed.
+
+## Cassette Blocks
+Cassette Blocks are toggleable. If an entity or the player is contained within one when it turns solid and cannot be ejected, it will be killed. (excluding Falling Tiles)
+
+Currently these blocks are toggled by the corresponding target colour, and turned on or off directly by Boss Kitsu.
+
+## Climbable Tiles
+Some tiles can be climbed when the player has Climbing Claws. (this is always the case in New Game Plus)
+
+Typically, tiles that shuriken can stick to are climbable, but there are some exceptions. Consider the following:
+- Materials that have **small ridges** or are otherwise **grippable** are climbable.
+- Materials that are **soft** or **stabbable** can hold shuriken and arrows.
+
+## Spikes
+Spikes will damage the player when fallen onto from above.
+
+Players can walk through spikes horizontally without harm, similarly to Spelunky.
