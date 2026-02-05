@@ -3,7 +3,7 @@
 ## Channels and Colours
 There are two Channels in Ninja Cat: Red and Green.
 
-When referring to colours, the following non-colour identifiers are also used:
+When using elements related to these Channels, the following non-colour visual identifiers are also used:
 
 Red:
 - Elements in Ones (one band across doors)
@@ -14,6 +14,7 @@ Green:
 - Elements in Twos (two bands across doors)
 - Dot Target
 - Filled Shapes
+- Vines or Lights
 
 ## Platforms
 
@@ -23,23 +24,27 @@ Removable platforms are considered solid, instead of as proper platforms, as the
 Hitting these with any weapon, or headbutting them, will activate them.
 
 Red Targets:
-- Open Red Door tiles in its current and adjacent columns.
-- Toggle Red Cassette Blocks.
+- Open Red Door tiles in their current and adjacent columns.
+- Toggle all Red Cassette Blocks.
 
 Green Targets:
 - Open Green Door tiles across the entire level.
 - Open Removable Platform tiles across the entire level.
-- Toggle Green Cassette Blocks.
+- Toggle all Green Cassette Blocks.
 
 ## Falling Tiles
 Falling Tiles fall to the ground when a supporting tile is removed. If an entity or the player is contained within one and cannot be ejected, it will be killed. (excluding other Falling Tiles)
 
 These tiles will not fall if placed directly in the air; only when a tile below them is removed.
 
+Like other entities, Falling Tiles will bounce on Wall Arrows.
+
 ## Cassette Blocks
 Cassette Blocks are toggleable. If an entity or the player is contained within one when it turns solid and cannot be ejected, it will be killed. (excluding Falling Tiles)
 
 Currently these blocks are toggled by the corresponding target colour, and turned on or off directly by Boss Kitsu.
+
+- Named after the Cassette areas in Celeste, for the similar behaviour of blocks. *looks it up - oh wait they genuinely are just called cassette blocks in celeste as well lol*
 
 ## Climbable Tiles
 Some tiles can be climbed when the player has Climbing Claws. (this is always the case in New Game Plus)
