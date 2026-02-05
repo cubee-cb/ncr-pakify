@@ -57,6 +57,8 @@ Packs made for a newer version of the game will not be loaded, and a notificatio
 ### `unlocked` - Unlocked by Default
 Set this to `false` if you would like this pack to be locked initially.
 
+This pack can then be added as a `reward` for completing a different pack, for example as part of a larger campaign.
+
 ### `displayName` - Name of the Pack
 Shown in the New Game menu.
 Contains a Dictionary of language keys, with corresponding text.
