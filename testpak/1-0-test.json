@@ -4,7 +4,7 @@
   "height": 184,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "sneaking", "background": "world3", "sky": "aurora", "fadeVariant": "square"},
+  "values": {"music": "sneaking", "background": "world3", "sky": "aurora", "fadeVariant": "square", "goalMode": "normal"},
   "layers": [
     {
       "name": "entities",

@@ -109,6 +109,7 @@ for pak in pakFiles:
     level["fadeVariant"] = values.get("fadeVariant") or "cut"
     level["sky"] = values.get("sky") or "cut"
     level["background"] = values.get("background") or "default"
+    level["goalMode"] = values.get("goalMode") or "normal"
 
     # port layers.tiles.tileset to ncl format
     level["theme"] = layers.get("tiles").get("tileset") or "world1"

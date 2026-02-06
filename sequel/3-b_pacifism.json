@@ -4,7 +4,7 @@
   "height": 136,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "vaulter", "background": "default", "sky": "night", "fadeVariant": "special"},
+  "values": {"music": "vaulter", "background": "default", "sky": "night", "fadeVariant": "special", "goalMode": "normal"},
   "layers": [
     {
       "name": "entities",
