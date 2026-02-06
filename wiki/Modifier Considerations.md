@@ -25,7 +25,7 @@ Elenn has vastly altered physics;
 - Much more slippery.
 - Way faster maximum speeds.
 - Longer Sword dash.
-- Less powerful Shuriken throws.
+- Less powerful Shuriken throws, but are affected by movement speed.
 
 In practice, she can do almost everything Ensy can, but it may be beneficial to make adjustments to cater to Elenn's physics.
 
