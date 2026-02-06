@@ -6,7 +6,7 @@ Included is an Ogmo project with all of the entities and tilesets already set up
 
 ![screenshot of the ogmo editor next to ninja cat remewstered, editing one of its levels](github/preview.png)
 
-See [the wiki folder](wiki) for documentation.
+See [the wiki folder](wiki) for [documentation](wiki/README.md).
 
 ## Notes
 - This workflow is untested on Windows. It should work in theory, albeit without some convenience things. Feel free to help test and/or contribute fixes!
