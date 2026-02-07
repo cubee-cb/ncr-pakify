@@ -4,8 +4,11 @@
 The player may be able to "damage boost" through an otherwise difficult challenge by sacrificing hitpoints.
 
 ## Gold Rush
-All levels are treated as if in Collectathon mode; players will need to collect ALL Goal Tiles.
-Make sure players can backtrack so that they can go back if they miss some Gold.
+All levels with multiple Goals are treated as if in Collectathon mode; players will need to collect ALL Goal Tiles before Bouldo will allow them to proceed.
+- This is because there is canonically only one Bouldo; it makes sense lore-wise that he'd want all the gems collected as well, anyway.
+  - "Bring me the seven Chaos Emeralds!"
+
+Make sure players can backtrack so that they can go back if they missed anything they need.
 
 ## Perfection / Pacifism
 If you have really precise level design, it might be worth loosening it up a little so these modes are easier.
