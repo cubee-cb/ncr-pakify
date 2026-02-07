@@ -5,8 +5,6 @@
 // base.ncl template
 {
   "id": "template",
-  "author": "YOUR NAME HERE",
-  "revision": 1,
   "requireGameVersion": 1, // v1.2mg
   "unlocked": true,
 

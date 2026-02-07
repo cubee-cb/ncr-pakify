@@ -19,6 +19,7 @@ Packs are formatted like so:
   - `set_B/`
     - `packOrder.json`
     - `level.ncl`
+
 That is, each "Set" of Packs is stored in its own folder. This is for organisational purposes, and so that it is possible to upload Sets of Level Packs to the Steam Workshop.
 - For example, a Set might contain a sequence of Packs that unlock one after the other.
 
@@ -39,6 +40,7 @@ It will build by default directly to the Custom Levels folder.
 You should Clone or Download this repository to begin with. Usage of Ogmo Editor itself will not be covered here.
 
 If you're making a new Region Pack:
+- Go to pakify's folder.
 - Create a folder for your Region Pack next to `pakify.py`.
   - Name it something simple that you will remember.
 - Create a `base.ncl` file inside this folder, with the base details for your Region Pack.
@@ -63,7 +65,7 @@ And finally, pakify:
 - Opening the game now should result in your Region Pack appearing in the New Game menu.
   - If not, you can see if it was loaded at all by running the game through a console. (Konsole, Terminal, CMD, PowerShell, etc)
 
-### `packorder.json` example
+### `packOrder.json` example
 ```json
 [
   "outset",
