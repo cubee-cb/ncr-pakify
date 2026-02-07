@@ -12,30 +12,32 @@ The Custom Levels folder is in the following locations:
 - Windows: `C:\Users\<user>\AppData\Roaming\cubee\ninjacat\customPacks`
 - Linux: `/home/<user>/.config/cubee/ninjacat/customPacks`
 
-Packs are formatted like so:
-- `customPacks/`
-  - `set_a/`
+Packs are formatted in a heirarchy like so:
+- `customPacks/` < Custom Levels Folder
+  - `setA/` < Level Set
     - `packOrder.json`
-    - `level.ncl`
-  - `set_B/`
+    - `levelA.ncl` < Region Pack
+    - `levelB.ncl` < Region Pack
+    - `levelC.ncl` < Region Pack
+  - `setB/` < Level Set
     - `packOrder.json`
-    - `level.ncl`
+    - `levels.ncl` < Region Pack
 
-That is, each "Set" of Packs is stored in its own folder. This is for organisational purposes, and so that it is possible to upload Sets of Level Packs to the Steam Workshop.
-- For example, a Set might contain a sequence of Packs that unlock one after the other.
+That is, each "Set" of Region Packs is stored in its own folder. This is for organisational purposes, and so that it is possible to upload sequential Region Packs to the Steam Workshop.
+- For example, a Level Set might contain a sequence of Region Packs that unlock one after the other.
 
-In fact, the folder name of the Set is irrelevent. Sets from the Workshop are named using their Workshop ID.
-- Workshop Sets are downloaded to Steam's `workshop` folder; the `customPacks` folder is for creating Packs and using Packs obtained outside the Steam Workshop.
+In fact, the folder name of the Level Set is more or less irrelevent; Workshop Sets are downloaded to Steam's `workshop` folder and named with their Workshop ID.
+- The `customPacks` folder is intended primarily for developing Packs and otherwise using Packs obtained outside the Steam Workshop.
 
 ## Command Usage
 * `pakify.py /path/to/ninjacat/customPacks` - build all default packs.
 * `pakify.py /path/to/ninjacat/customPacks office prismHighway` - build packs `office` and `prismHighway`.
 
-The default packs are `basepak`, `outset`, `sequel`, `finale` and `bouldo`.
+The default packs are `basepak`, `outset`, `sequel`, `finale`, and `bouldo`.
 
 ### Linux Users:
-The Ogmo project is pre-configured to run a bash script that builds the default packs when pressing the Star button down in the bottom-left.
-It will build by default directly to the Custom Levels folder.
+The Ogmo project is pre-configured to run a Bash script that builds the default Region Packs to Level Set Folders named `vanillaDevel` and `vanillaFuture` when pressing the Star button down in the bottom-left.
+You can edit this to build other Region Packs if you like.
 
 ## Basic Workflow
 You should Clone or Download this repository to begin with. Usage of Ogmo Editor itself will not be covered here.
