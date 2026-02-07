@@ -33,7 +33,16 @@
 ## Properties
 
 ### `id` - Identifier
-Used internally for scoreboards, save files, and the like.
+Used internally for scoreboards, save files, and the like. This is not typically visible to the player. (see `displayName` and `description`)
+
+When choosing an `id`, try to think of something unique to avoid conflicting with other people's Packs. A good idea might be to include your username with it, or add some random words:
+- `NinjaCatPlayer UltraChallengePack`
+- `doomcastle by creampuff`
+- `kaizo observatory - charlise hopscotch`
+- `orangejuice ledgehop inmost magicat`
+
+If the game tries to load a pack with an `id` that is already taken, the new pack will be skipped and a warning popup will be shown.
+- In `save.json`, you can set it to replace loaded Packs instead and/or turn off the warning popups. (for example, if you're editing the Vanilla Packs)
 
 ### `author` - Creator of the Pack.
 Currently unused.
@@ -58,16 +67,19 @@ Set this to `false` if you would like this pack to be locked initially.
 This pack can then be added as a `reward` for completing a different pack, for example as part of a larger campaign.
 
 ### `displayName` - Name of the Pack
-Shown in the New Game menu.
+Shown in the New Game menu under the Pack Glyph.
 Contains a Dictionary of language keys, with corresponding text.
+
+Keep these short, ideally around 12 characters maximum, as there is limited space.
 
 ### `description` - Short Description.
-Shown in the New Game menu.
+Shown in the New Game menu at the top of the screen.
 Contains a Dictionary of language keys, with corresponding text.
 
-### `glyph` - Pack Glyph
+Descriptions can be longer that the Display Name, but try to keep them within two lines when the resolution is set to Original.
 
-The `glyph` property expects a string in the PICO-8 gfx format. It will be shown in the New Game screen alongside the other packs.
+### `glyph` - Pack Glyph
+The `glyph` property expects a string in the PICO-8 gfx format. It will be shown in the New Game menu alongside the other packs.
 Glyphs can be made inside PICO-8 and copy-pasted directly from the sprite editor to the text file. (the Edu version should work fine for this use case)
 - Omitting/removing the pack glyph will result in a generic icon being used. If you want your pack to be easily recognisable, make sure to give it a cool icon!
 
