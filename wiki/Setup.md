@@ -7,14 +7,14 @@
   - While it may be possible to use release version 1.1mg, it is more difficult due to various small changes in level format, and the menu is hardcoded to only play `basepak`. Assets, entities, mechanics and changes from newer worlds are also not present and will use fallbacks, be ignored or crash.
 
 ## Command formats
-* `pakify.py /path/to/ninjacat/Content/levels` - build all default packs.
-* `pakify.py /path/to/ninjacat/Content/levels office prismHighway` - build packs `office` and `prismHighway`.
+* `pakify.py /path/to/ninjacat/customPacks` - build all default packs.
+* `pakify.py /path/to/ninjacat/customPacks office prismHighway` - build packs `office` and `prismHighway`.
 
 The default packs are `basepak`, `outset`, `sequel`, `finale` and `bouldo`.
 
 ### Linux Users:
 The Ogmo project is pre-configured to run a bash script that builds the default packs when pressing the Star button down in the bottom-left.
-Feel free to edit it to fit your install location.
+It will build by default directly to the Custom Levels folder.
 
 ## Basic workflow
 If you're making a new region pack, create a folder for your region pack next to `pakify.py`.

@@ -1,8 +1,7 @@
 #!/bin/bash
 
-export OGMO_BUILD_SCRIPT=1
+# for linux users; if your save is in another location, please edit this
+CUSTOMPATH="$HOME/.config/cubee/ninjacat/customPacks/vanillaDevel/"
 
-# for linux users; edit these to point to your install's levels folder
-GAMEPATH="/mnt/big-chungus/projects/monogame/Ninja_Cat_Remewstered/Ninja Cat Desktop 383"
-./pakify.py "$GAMEPATH/Content/levels/" basepak outset sequel finale
-./pakify.py "$GAMEPATH/bin/Debug/net8.0/Content/levels/" basepak outset sequel finale testpak
+export OGMO_BUILD_SCRIPT=1
+./pakify.py "$CUSTOMPATH" basepak outset sequel finale bouldo testpak
