@@ -3,7 +3,8 @@
 You will need:
 - Python 3 or newer
 - Ogmo Editor 3 (from [here](https://ogmo-editor-3.github.io/) or a compatible version)
-- Ninja Cat Remewstered 1.2mg or higher (not *technically* required, but good luck playing the levels you make without it!)
+- Ninja Cat Remewstered 1.2mg or higher
+  - I mean, it's not *technically* required, but good luck playing the levels you make without it!
 
 ## Required Information
 
@@ -39,6 +40,9 @@ It will build by default directly to the Custom Levels folder.
 ## Basic Workflow
 You should Clone or Download this repository to begin with. Usage of Ogmo Editor itself will not be covered here.
 
+There is a `template` Region Pack included, [here](../template).
+- You can try building this (or any of the Vanilla Packs) before making your own levels if you like.
+
 If you're making a new Region Pack:
 - Go to pakify's folder.
 - Create a folder for your Region Pack next to `pakify.py`.
@@ -57,13 +61,15 @@ To create a Level for your Region Pack:
   - See [Alternate Levels](Alternate%20Levels.md) for more information on Alternates and Sorting Order.
 
 And finally, pakify:
-- Go to the Custom Levels folder. (see Required Information)
+- Go to the Custom Levels folder. **(see Required Information)**
   - Create a folder for your Set. Its name can be whatever you like.
-  - Create a `packOrder.json` file inside this folder. See below for an example.
+  - Create a `packOrder.json` file **inside** this folder. **(see below for an example)**
     - Whenever you make a new Region Pack, add its filename to this file. (without the extension)
-- Running `pakify.py /path/to/customLevels/<yourSetName> <yourPackName>` should produce a `<pak>.ncl` file in your Set folder.
-- Opening the game now should result in your Region Pack appearing in the New Game menu.
-  - If not, you can see if it was loaded at all by running the game through a console. (Konsole, Terminal, CMD, PowerShell, etc)
+    - This file is used to determine which Regions to load and the order they will appear in the menus.
+- Open a console (Konsole, Terminal, CMD, PowerShell, etc) in the folder containing `pakify.py`.
+- Running `pakify.py /path/to/customLevels/yourSetFolder regionPackName` should produce `regionPackName.ncl` file in your Set Folder.
+- Opening the game now should result in your Region Pack appearing in the **New Game** menu.
+  - If not, you can see if it was loaded at all by running the game through a console.
 
 ### `packOrder.json` example
 ```json
