@@ -37,7 +37,7 @@
           "y": 0,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": 32}
+          "values": {"variant": 32, "cycleOffset": 0}
         },
         {"name": "demond", "id": 7, "_eid": "26736337", "x": 696, "y": 48, "originX": 0, "originY": 0},
         {

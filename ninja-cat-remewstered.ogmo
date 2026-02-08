@@ -51,7 +51,7 @@
   "compactExport": false,
   "externalScript": "",
   "playCommand": "bash ./build.sh",
-  "entityTags": [],
+  "entityTags": ["projectile", "deprecated"],
   "layers": [
     {
       "definition": "entity",
@@ -609,7 +609,8 @@
       "nodeGhost": true,
       "tags": [],
       "values": [
-        {"name": "variant", "definition": "Integer", "display": 2, "defaults": 64, "bounded": false, "min": 0, "max": 64}
+        {"name": "variant", "definition": "Integer", "display": 2, "defaults": 64, "bounded": false, "min": 0, "max": 64},
+        {"name": "cycleOffset", "definition": "Float", "display": 2, "defaults": 0, "bounded": true, "min": 0, "max": 1}
       ],
       "texture": "assets/entities/obj-searchlight.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg01FyPhDEMAAABeSURBVBjTY2BAAvHh/v+by+b8RxZjQuaoyPsy3Hm4mQEr+P9G/f//jy/+Hzp8/P//xQxwU1iQFTHySzAyMDAwICuA62ZgYGD4//EFXAKmiAmbCdjdgGQshhXIEuiSAGYvK3XhbVz0AAAAAElFTkSuQmCC"
@@ -703,7 +704,7 @@
     },
     {
       "exportID": "26737363",
-      "name": "bomb maker",
+      "name": "bomb dropper",
       "limit": -1,
       "size": {"x": 8, "y": 8},
       "origin": {"x": 0, "y": 0},
@@ -735,9 +736,89 @@
       "nodeDisplay": 0,
       "nodeGhost": true,
       "tags": [],
-      "values": [],
+      "values": [
+        {"name": "cycleOffset", "definition": "Float", "display": 2, "defaults": 0, "bounded": true, "min": 0, "max": 1}
+      ],
       "texture": "assets/entities/obj-bomb-maker.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEALQA1ADhQYlaqQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg00BydNLWYAAACCSURBVBjTY4wP9//PgAQWzJrJwLBJgiFhiz/DvissDCwq8r5wyVlbtzMw8kswxIdDJJ10/kAkmsvm/Iea9J+BgeG/rHbwf1nt4P8MDAwMLAwMDAx3Hm5m2HeFhUFWOxhumpPOH4aFV6Gc/4sZ/v9/ow7Bixn+/1/M8H91kBmK22gIAJOtL+mnIV2GAAAAAElFTkSuQmCC"
+    },
+    {
+      "exportID": "26733171",
+      "name": "ghost",
+      "limit": -1,
+      "size": {"x": 8, "y": 8},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ff0000ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": ["projectile"],
+      "values": [],
+      "texture": "assets/entities/obj-ghost.png",
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg01CzfgUAwAAABVSURBVBjTY2SAgv8fX/xnQAKM/BKMDAwMDIzYJJEVMcEkGfklkCXgpjL+//ji/+FL9xkYGBgYbPUUGRgYGBiQ+YzIxiPphJvGBGPAdKGzCTqSkZA3ASrZLZ+fWecSAAAAAElFTkSuQmCC"
+    },
+    {
+      "exportID": "26730503",
+      "name": "old ghost",
+      "limit": -1,
+      "size": {"x": 8, "y": 8},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ff0000ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": ["projectile"],
+      "values": [
+        {"name": "label", "definition": "Text", "display": 1, "defaults": "old ghost"}
+      ],
+      "texture": "assets/entities/obj-ghost.png",
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg01CzfgUAwAAABVSURBVBjTY2SAgv8fX/xnQAKM/BKMDAwMDIzYJJEVMcEkGfklkCXgpjL+//ji/+FL9xkYGBgYbPUUGRgYGBiQ+YzIxiPphJvGBGPAdKGzCTqSkZA3ASrZLZ+fWecSAAAAAElFTkSuQmCC"
     },
     {
       "exportID": "26735104",
@@ -772,10 +853,50 @@
       "nodeLimit": 0,
       "nodeDisplay": 0,
       "nodeGhost": true,
-      "tags": [],
+      "tags": ["projectile"],
       "values": [],
       "texture": "assets/entities/obj-bomb.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEALQA1ADhQYlaqQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg00Alcn2ekAAABFSURBVBjTY2CgCfj/8cX/Q4eP//+/mOE/huShw8f/MzAwMPx/o44pKasd/F9WOxhFgglZ0knnD9wWrFZDdWOYgk0RHAAA+gcfJJjD0i4AAAAASUVORK5CYII="
+    },
+    {
+      "exportID": "55385650",
+      "name": "arrow shooter",
+      "limit": -1,
+      "size": {"x": 8, "y": 8},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#afafafff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": true,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [
+        {"name": "cycleOffset", "definition": "Float", "display": 2, "defaults": 0, "bounded": true, "min": 0, "max": 1}
+      ],
+      "texture": "../../../../../home/curin/projects/ogmo/ninja-cat-remewstered/assets/entities/obj-arrow-maker.png",
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+oCCAwwDWySWuEAAACPSURBVBjThY6xDYJQFEXPI28NYmPyC3t3MNFQSEL1ww4WLuAaFg4ghaGwYwBrKEhoCC0bWDwKRaImett77smFf0mTyH71wXy2AbBwsbXD/vgFB08LXZXRtDnWO7Pe2RtQlEqaRJzWl9dyhLRpc0ApSuV8XxJzexArNxnG7OoQ8Yh4hGsNgAJ0VSaf58QjAAPICCkH7Xd5owAAAABJRU5ErkJggg=="
     },
     {
       "exportID": "26731909",
@@ -1076,84 +1197,6 @@
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg4GLRPADpgAAABISURBVBjTY2wum/OfAQ9gqu1KwSlZ25XCwARjYJNkYGCAKMBrBSEFjLLawXgdycLAwMDw+OparJKy2sEQK2S1g7FKMjAwMAAAZEwOIc0syY8AAAAASUVORK5CYII="
     },
     {
-      "exportID": "26733171",
-      "name": "ghost",
-      "limit": -1,
-      "size": {"x": 8, "y": 8},
-      "origin": {"x": 0, "y": 0},
-      "originAnchored": true,
-      "shape": {
-        "label": "Rectangle",
-        "points": [
-          {"x": -1, "y": -1},
-          {"x": 1, "y": -1},
-          {"x": -1, "y": 1},
-          {"x": 1, "y": -1},
-          {"x": -1, "y": 1},
-          {"x": 1, "y": 1}
-        ]
-      },
-      "color": "#ff0000ff",
-      "tileX": false,
-      "tileY": false,
-      "tileSize": {"x": 16, "y": 16},
-      "resizeableX": false,
-      "resizeableY": false,
-      "rotatable": false,
-      "rotationDegrees": 360,
-      "canFlipX": false,
-      "canFlipY": false,
-      "canSetColor": false,
-      "hasNodes": false,
-      "nodeLimit": 0,
-      "nodeDisplay": 0,
-      "nodeGhost": true,
-      "tags": [],
-      "values": [],
-      "texture": "assets/entities/obj-ghost.png",
-      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg01CzfgUAwAAABVSURBVBjTY2SAgv8fX/xnQAKM/BKMDAwMDIzYJJEVMcEkGfklkCXgpjL+//ji/+FL9xkYGBgYbPUUGRgYGBiQ+YzIxiPphJvGBGPAdKGzCTqSkZA3ASrZLZ+fWecSAAAAAElFTkSuQmCC"
-    },
-    {
-      "exportID": "26730503",
-      "name": "old ghost",
-      "limit": -1,
-      "size": {"x": 8, "y": 8},
-      "origin": {"x": 0, "y": 0},
-      "originAnchored": true,
-      "shape": {
-        "label": "Rectangle",
-        "points": [
-          {"x": -1, "y": -1},
-          {"x": 1, "y": -1},
-          {"x": -1, "y": 1},
-          {"x": 1, "y": -1},
-          {"x": -1, "y": 1},
-          {"x": 1, "y": 1}
-        ]
-      },
-      "color": "#ff0000ff",
-      "tileX": false,
-      "tileY": false,
-      "tileSize": {"x": 16, "y": 16},
-      "resizeableX": false,
-      "resizeableY": false,
-      "rotatable": false,
-      "rotationDegrees": 360,
-      "canFlipX": false,
-      "canFlipY": false,
-      "canSetColor": false,
-      "hasNodes": false,
-      "nodeLimit": 0,
-      "nodeDisplay": 0,
-      "nodeGhost": true,
-      "tags": [],
-      "values": [
-        {"name": "label", "definition": "Text", "display": 1, "defaults": "old ghost"}
-      ],
-      "texture": "assets/entities/obj-ghost.png",
-      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg01CzfgUAwAAABVSURBVBjTY2SAgv8fX/xnQAKM/BKMDAwMDIzYJJEVMcEkGfklkCXgpjL+//ji/+FL9xkYGBgYbPUUGRgYGBiQ+YzIxiPphJvGBGPAdKGzCTqSkZA3ASrZLZ+fWecSAAAAAElFTkSuQmCC"
-    },
-    {
       "exportID": "26731675",
       "name": "demond ghost",
       "limit": -1,
@@ -1186,12 +1229,50 @@
       "nodeLimit": 0,
       "nodeDisplay": 0,
       "nodeGhost": true,
-      "tags": [],
+      "tags": ["projectile"],
       "values": [
         {"name": "label", "definition": "Text", "display": 1, "defaults": "demond ghost"}
       ],
       "texture": "assets/entities/obj-ghost.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg01CzfgUAwAAABVSURBVBjTY2SAgv8fX/xnQAKM/BKMDAwMDIzYJJEVMcEkGfklkCXgpjL+//ji/+FL9xkYGBgYbPUUGRgYGBiQ+YzIxiPphJvGBGPAdKGzCTqSkZA3ASrZLZ+fWecSAAAAAElFTkSuQmCC"
+    },
+    {
+      "exportID": "55579773",
+      "name": "bomb maker",
+      "limit": -1,
+      "size": {"x": 8, "y": 8},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ff0000ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": ["deprecated"],
+      "values": [],
+      "texture": "assets/entities/obj-bomb-maker.png",
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEALQA1ADhQYlaqQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg00BydNLWYAAACCSURBVBjTY4wP9//PgAQWzJrJwLBJgiFhiz/DvissDCwq8r5wyVlbtzMw8kswxIdDJJ10/kAkmsvm/Iea9J+BgeG/rHbwf1nt4P8MDAwMLAwMDAx3Hm5m2HeFhUFWOxhumpPOH4aFV6Gc/4sZ/v9/ow7Bixn+/1/M8H91kBmK22gIAJOtL+mnIV2GAAAAAElFTkSuQmCC"
     },
     {
       "exportID": "26731871",
@@ -1226,7 +1307,7 @@
       "nodeLimit": 0,
       "nodeDisplay": 0,
       "nodeGhost": true,
-      "tags": [],
+      "tags": ["projectile"],
       "values": [],
       "texture": "assets/entities/obj-star.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg01LnzkhEsAAAArSURBVBjTY2CgKjh0+Ph/dDFGXArsbC0ZURQ0l82BS9Z2pTDitAZZIXUAAFOwDeLotdHHAAAAAElFTkSuQmCC"

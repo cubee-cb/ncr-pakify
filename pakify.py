@@ -149,6 +149,8 @@ for pak in pakFiles:
       if values:
         if values.get("variant"):
           entity["variant"] = values.get("variant")
+        if values.get("cycleOffset"):
+          entity["cycleOffset"] = values.get("cycleOffset")
 
         # flags
         if values.get("trapped"):

@@ -24,7 +24,7 @@
           "y": 72,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": 64}
+          "values": {"variant": 64, "cycleOffset": 0}
         },
         {"name": "shield ninja", "id": 3, "_eid": "26724739", "x": 456, "y": 32, "originX": 0, "originY": 0, "flippedX": true},
         {
@@ -35,7 +35,7 @@
           "y": 0,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": 64}
+          "values": {"variant": 64, "cycleOffset": 0}
         },
         {"name": "ninja", "id": 5, "_eid": "26727995", "x": 712, "y": 32, "originX": 0, "originY": 0, "flippedX": true},
         {"name": "demond", "id": 7, "_eid": "26736337", "x": 832, "y": 80, "originX": 0, "originY": 0},

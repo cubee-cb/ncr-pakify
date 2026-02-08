@@ -35,7 +35,7 @@
           "y": 0,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": 64}
+          "values": {"variant": 64, "cycleOffset": 0}
         },
         {
           "name": "plant",
@@ -70,8 +70,26 @@
         {"name": "ninja", "id": 6, "_eid": "26727995", "x": 248, "y": 56, "originX": 0, "originY": 0, "flippedX": true},
         {"name": "ninja", "id": 7, "_eid": "26727995", "x": 280, "y": 56, "originX": 0, "originY": 0, "flippedX": false},
         {"name": "shield ninja", "id": 8, "_eid": "26724739", "x": 344, "y": 56, "originX": 0, "originY": 0, "flippedX": true},
-        {"name": "bomb maker", "id": 9, "_eid": "26737363", "x": 400, "y": 72, "originX": 0, "originY": 0},
-        {"name": "bomb maker", "id": 10, "_eid": "26737363", "x": 432, "y": 72, "originX": 0, "originY": 0},
+        {
+          "name": "bomb dropper",
+          "id": 9,
+          "_eid": "26737363",
+          "x": 400,
+          "y": 72,
+          "originX": 0,
+          "originY": 0,
+          "values": {"cycleOffset": 0.1}
+        },
+        {
+          "name": "bomb dropper",
+          "id": 10,
+          "_eid": "26737363",
+          "x": 432,
+          "y": 72,
+          "originX": 0,
+          "originY": 0,
+          "values": {"cycleOffset": 0}
+        },
         {"name": "shield ninja", "id": 11, "_eid": "26724739", "x": 600, "y": 48, "originX": 0, "originY": 0, "flippedX": false},
         {
           "name": "searchlight",
@@ -81,7 +99,7 @@
           "y": 0,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": 32}
+          "values": {"variant": 32, "cycleOffset": 0}
         },
         {
           "name": "plant",

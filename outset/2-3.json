@@ -34,7 +34,7 @@
           "y": 0,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": 32}
+          "values": {"variant": 32, "cycleOffset": 0}
         },
         {"name": "spotlight", "id": 2, "_eid": "32638756", "x": 560, "y": 0, "originX": 0, "originY": 0},
         {"name": "shield ninja", "id": 3, "_eid": "26724739", "x": 696, "y": 48, "originX": 0, "originY": 0, "flippedX": true},

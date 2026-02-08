@@ -35,11 +35,29 @@
           "y": 0,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": 64}
+          "values": {"variant": 64, "cycleOffset": 0}
         },
         {"name": "demond", "id": 3, "_eid": "26736337", "x": 456, "y": 88, "originX": 0, "originY": 0},
-        {"name": "bomb maker", "id": 5, "_eid": "26737363", "x": 552, "y": 24, "originX": 0, "originY": 0},
-        {"name": "bomb maker", "id": 6, "_eid": "26737363", "x": 664, "y": 24, "originX": 0, "originY": 0},
+        {
+          "name": "bomb dropper",
+          "id": 5,
+          "_eid": "26737363",
+          "x": 552,
+          "y": 24,
+          "originX": 0,
+          "originY": 0,
+          "values": {"cycleOffset": 0.25}
+        },
+        {
+          "name": "bomb dropper",
+          "id": 6,
+          "_eid": "26737363",
+          "x": 664,
+          "y": 24,
+          "originX": 0,
+          "originY": 0,
+          "values": {"cycleOffset": 0}
+        },
         {
           "name": "searchlight",
           "id": 7,
@@ -48,7 +66,7 @@
           "y": 24,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": 64}
+          "values": {"variant": 64, "cycleOffset": 0}
         },
         {"name": "sparkler", "id": 8, "_eid": "26734037", "x": 848, "y": 40, "originX": 0, "originY": 0},
         {

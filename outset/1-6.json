@@ -37,7 +37,16 @@
           "originY": 0,
           "values": {"variant": "round", "trapped": false, "gilded": true, "restorative": false}
         },
-        {"name": "bomb maker", "id": 4, "_eid": "26737363", "x": 696, "y": 16, "originX": 0, "originY": 0},
+        {
+          "name": "bomb dropper",
+          "id": 4,
+          "_eid": "26737363",
+          "x": 696,
+          "y": 16,
+          "originX": 0,
+          "originY": 0,
+          "values": {"cycleOffset": 0.1}
+        },
         {"name": "shield ninja", "id": 5, "_eid": "26724739", "x": 840, "y": 88, "originX": 0, "originY": 0, "flippedX": true},
         {"name": "sparkler", "id": 6, "_eid": "26734037", "x": 872, "y": 72, "originX": 0, "originY": 0},
         {"name": "ninja", "id": 7, "_eid": "26727995", "x": 408, "y": 88, "originX": 0, "originY": 0, "flippedX": true},
