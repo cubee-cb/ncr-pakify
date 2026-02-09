@@ -12,6 +12,8 @@ The Custom Levels folder is in the following locations:
 - Windows: `C:\Users\<user>\AppData\Roaming\cubee\ninjacat\customPacks`
 - Linux: `/home/<user>/.config/cubee/ninjacat/customPacks`
 
+Steam Workshop support is planned, but is not implemented at the present time. Hold tight while I workshop (heh) a way to implement that.
+
 Packs are formatted in a heirarchy like so:
 - `customPacks/` < Custom Levels Folder
   - `setA/` < Level Set

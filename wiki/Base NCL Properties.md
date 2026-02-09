@@ -44,6 +44,18 @@ When choosing an `id`, try to think of something unique to avoid conflicting wit
 If the game tries to load a pack with an `id` that is already taken, the new pack will be skipped and a warning popup will be shown.
 - In `save.json`, you can set it to replace loaded Packs instead and/or turn off the warning popups. (for example, if you're editing the Vanilla Packs)
 
+### `displayName` - Name of the Pack
+Shown in the New Game menu under the Pack Glyph.
+Contains a Dictionary of language keys, with corresponding text.
+
+Each line of this label fits 16 characters, so keep these names reasonably short.
+
+### `description` - Short Description.
+Shown in the New Game menu at the top of the screen.
+Contains a Dictionary of language keys, with corresponding text.
+
+Descriptions can be longer than the Display Name, but try to keep them within 32-64 characters.
+
 ### `author` - Creator of the Pack.
 Currently unused.
 May be a User ID for Steam Workshop Uploads.
@@ -65,18 +77,6 @@ Packs made for a newer version of the game will not be loaded, and a notificatio
 Set this to `false` if you would like this pack to be locked initially.
 
 This pack can then be added as a `reward` for completing a different pack, for example as part of a larger campaign.
-
-### `displayName` - Name of the Pack
-Shown in the New Game menu under the Pack Glyph.
-Contains a Dictionary of language keys, with corresponding text.
-
-Keep these short, ideally around 12 characters maximum, as there is limited space.
-
-### `description` - Short Description.
-Shown in the New Game menu at the top of the screen.
-Contains a Dictionary of language keys, with corresponding text.
-
-Descriptions can be longer that the Display Name, but try to keep them within two lines when the resolution is set to Original.
 
 ### `glyph` - Pack Glyph
 The `glyph` property expects a string in the PICO-8 gfx format. It will be shown in the New Game menu alongside the other packs.
