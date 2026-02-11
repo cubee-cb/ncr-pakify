@@ -68,5 +68,5 @@ Changes how Goal tiles work. Valid values are the following:
   - This will cause a "goals" counter to appear, much like Gold Rush's "bars" counter.
   - Upgrade Goals will grant the player the upgrade immediately when collected. You could use this to make metroidvania-like stages with backtracking.
   - This mode is forced if a stage with multiple Goal Tiles is entered in Gold Rush mode, since there is only one Bouldo and he can't logically be at all of the goals at once.
-    - Bouldo will fly alongside the player until there is one Goal Tile remaining, then he will go sit on this final Goal. This will reveal the direction it is located.
-    - The goal will be disabled completely if there is still Gold left in the stage. Touching it before Bouldo reaches it will only complete the stage if all of his requirements are met.
+    - Bouldo will fly alongside the player until there is one Goal Tile remaining, then he will go sit on this Final Goal. This will reveal the direction it is located.
+    - The Final Goal will be disabled completely if there is still Gold left in the stage. Touching it before Bouldo blocks it will only complete the stage if all of his requirements are met.
