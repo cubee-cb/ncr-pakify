@@ -61,7 +61,12 @@ Basically, any stage that has a different pace or goal than others.
 
 ### Goal Mode
 Changes how Goal tiles work. Valid values are the following:
-- `normal` - The level ends when the player collects a Goal Tile.
-- `collectathon` - The player must collect ALL Goal Tiles (Gems, Statues, and Upgrades) to complete the level.
+- `normal` - The level ends when the player touches a Goal Tile.
+  - This is the "standard" format for Ninja Cat levels. Reach the Goal Tile to finish.
+  - If a level contains multiple Goal Tiles, only the one that the player touches will count: remember this if you have a Gem/Statue and an Upgrade in the same level, so the player doesn't softlock later if they lack the Upgrade.
+- `collectathon` - The player must collect ALL Goal Tiles. (Gems, Statues, and Upgrades)
   - This will cause a "goals" counter to appear, much like Gold Rush's "bars" counter.
-  - This mode is forced if a stage with multiple goals is entered in Gold Rush mode, since there is only one Bouldo, and for lore reasons he can't block all the goals.
+  - Upgrade Goals will grant the player the upgrade immediately when collected. You could use this to make metroidvania-like stages with backtracking.
+  - This mode is forced if a stage with multiple Goal Tiles is entered in Gold Rush mode, since there is only one Bouldo and he can't logically be at all of the goals at once.
+    - Bouldo will fly alongside the player until there is one Goal Tile remaining, then he will go sit on this final Goal. This will reveal the direction it is located.
+    - The goal will be disabled completely if there is still Gold left in the stage. Touching it before Bouldo reaches it will only complete the stage if all of his requirements are met.
