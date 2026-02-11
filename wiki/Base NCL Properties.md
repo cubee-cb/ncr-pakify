@@ -86,7 +86,7 @@ Unlocking a hidden pack will display alternative unlock text, saying that a **se
 
 ### `glyph` - Pack Glyph
 The `glyph` property expects a string in the PICO-8 gfx format. It will be shown in the New Game menu alongside the other packs.
-Glyphs can be made inside PICO-8 and copy-pasted directly from the sprite editor to the text file. (the Edu version should work fine for this use case)
+Glyphs can be made inside PICO-8 and copy-pasted directly from the sprite editor to the text file. (the web-based [Education Edition](https://www.pico-8-edu.com/) works fine for this use case)
 - Omitting/removing the pack glyph will result in a generic icon being used. If you want your pack to be easily recognisable, make sure to give it a cool icon!
 
 Remember to remove the `[gfx]` and `[/gfx]` tags, but keep the width and height bytes. These are used to decode the glyph properly. Typical glyph size is 16x16px plus a 1px border. (32x32px sprite)
