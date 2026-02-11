@@ -1,4 +1,7 @@
 # Ogmo Project
+This documents the properties accessible within the Ogmo Project File.
+
+**Before you proceed**, there will be values available that may spoil potential future content. Whether these are or will be implemented in any current or future release of the game is not guaranteed, and any implementation of these values that exist now may change in the future.
 
 ## Level Properties
 Right-click on the selected level in the sidebar, then click "Properties".
@@ -6,10 +9,10 @@ Right-click on the selected level in the sidebar, then click "Properties".
 ### Music
 Select the background music to play during the level.
 - `wind` - Ambient Wind
-- `sneaking` - World 1
-- `last ninjacat` - World 2
-- `moss town` - World 3, missing
-- `kitsune underpass` - World 4
+- `sneaking` - World 1 (Tiger Domain A)
+- `last ninjacat` - World 2 (Tiger Domain B)
+- `moss town` - World 3 (Kitsune Depths A) - missing
+- `kitsune underpass` - World 4 (Kitsune Depths B)
 - `eighty-six` - Tiga's boss track
 - `trance of kitsu` - Kitsu's boss track
 - `vaulter` - Vault Room theme
@@ -20,9 +23,9 @@ Select the background music to play during the level.
 - `snowflakes` - A cold but hopeful theme, created for Marshmallow Adventures (unreleased)
 
 The following are missing, but may be added in the future:
-- `stilt town` - World 5
-- `dragon spires` - World 6
-- `land of greed` - Bouldo's region
+- `stilt town` - World 5 (Dragon Spires A)
+- `dragon spires` - World 6 (Dragon Spires B)
+- `land of greed` - Bouldo's region (Greed of Bouldo A)
 - `trial of dago` - Dago's boss track
 - `bouldos tantrum` - Bouldo's boss track
 - `cactuckey cackle` - Cactuckey's boss track
