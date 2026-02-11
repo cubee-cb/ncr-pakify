@@ -7,6 +7,7 @@
   "id": "template",
   "requireGameVersion": 1, // v1.2mg
   "unlocked": true,
+  "hidden": false,
 
   "displayName": {
     "english": "template",
@@ -78,14 +79,27 @@ Set this to `false` if you would like this pack to be locked initially.
 
 This pack can then be added as a `reward` for completing a different pack, for example as part of a larger campaign.
 
+### `hidden` - Hide when Locked
+Set this to `true` if you would like this pack to be hidden until it is unlocked; it will not appear in the menus, nor the leaderboards. Good for "secret" regions.
+
+Unlocking a hidden pack will display alternative unlock text, saying that a **secret region** was found.
+
 ### `glyph` - Pack Glyph
-The `glyph` property expects a string in the PICO-8 gfx format. It will be shown in the New Game menu alongside the other packs.
-Glyphs can be made inside PICO-8 and copy-pasted directly from the sprite editor to the text file. (the Edu version should work fine for this use case)
+The `glyph` property expects a string in the PICO-8 gfx string format. It will be shown in the New Game and Leaderboard menus alongside the other packs.
+Glyphs can be made inside PICO-8 and copy-pasted directly from the sprite editor to the text file. (the web-based [Education Edition](https://www.pico-8-edu.com/) works fine for this use case)
 - Omitting/removing the pack glyph will result in a generic icon being used. If you want your pack to be easily recognisable, make sure to give it a cool icon!
 
-Remember to remove the `[gfx]` and `[/gfx]` tags, but keep the width and height bytes. These are used to decode the glyph properly. Typical glyph size is 16x16px plus a 1px border. (32x32px sprite)
+Typical glyph size is 16x16px plus a 1px border, drawn in the centre of a 32x32px sprite.
+
 ```
-[gfx]WWHHxxxxxxxxxxxxxxxx[/gfx]` -> `WWHHxxxxxxxxxxxxxxxx
+// pico-8 sprite string format
+// WW HH are the sprite Width and Height, in hex (e.g. 1010 for a 16x16 sprite)
+// xxxx is the piXel data, in hex
+// [gfx]WWHHxxxxxxxxxxxxxxxx[/gfx]
+
+// used as a pack glyph (note the [gfx] tags are optional)
+  "glyph": "[gfx]WWHHxxxxxxxxxxxxxxxx[/gfx]",
+  "glyph": "WWHHxxxxxxxxxxxxxxxx",
 ```
 
 Pack Glyphs can be up to 128x128px in size (the same size as the PICO-8 spritesheet)
