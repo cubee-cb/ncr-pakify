@@ -10,22 +10,22 @@ Select the background music to play during the level.
 - `last ninjacat` - World 2
 - `moss town` - World 3, missing
 - `kitsune underpass` - World 4
-- `eighty-six` - Tiga's Boss Theme
-- `trance of kitsu` - Kitsu's Boss Theme
-- `chill` - Leaderboards Theme
-- `vaulter` - Vault Rooms
-- `catwalk to victory` - Final Vaults (Region End)
-- `strange` - A goofy and confusing theme
-- `snowflakes` - A cold but hopeful theme
-- `sleepy` - A short and peaceful theme
+- `eighty-six` - Tiga's boss track
+- `trance of kitsu` - Kitsu's boss track
+- `vaulter` - Vault Room theme
+- `catwalk to victory` - Final Vault theme
+- `chill` - Leaderboards theme
+- `strange` - How To Play theme
+- `sleepy` - A short and peaceful theme, originally from Marshmallow Infinity
+- `snowflakes` - A cold but hopeful theme, created for Marshmallow Adventures (unreleased)
 
 The following are missing, but may be added in the future:
 - `stilt town` - World 5
 - `dragon spires` - World 6
-- `land of greed` - Bouldo's Region
-- `trial of dago` - Dago's Boss Theme
-- `bouldos tantrum` - Bouldo's Boss Theme
-- `cactuckey cackle` - Cactuckey's Boss Theme
+- `land of greed` - Bouldo's region
+- `trial of dago` - Dago's boss track
+- `bouldos tantrum` - Bouldo's boss track
+- `cactuckey cackle` - Cactuckey's boss track
 
 
 ### Background
