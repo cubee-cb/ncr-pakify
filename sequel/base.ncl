@@ -22,6 +22,12 @@
     "gold rush;region:bouldo", // unlock pack "bouldo" if beaten with Gold Rush
     "modifier:ln" // unlock Play as Elenn mode
   ],
+  "newGamePlusItems": [
+    "shuriken",
+    "sword",
+    "double jump",
+    "climbing claws"
+  ],
 
   "levels": []
 

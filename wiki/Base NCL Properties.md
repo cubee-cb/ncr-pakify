@@ -25,6 +25,7 @@
   "worldFade": "cut",
 
   "rewards": [],
+  "newGamePlusItems": [],
 
   "levels": []
 
@@ -154,6 +155,25 @@ Example:
     "gold rush;region:bouldo" // unlock pack "bouldo" if beaten with Gold Rush enabled
   ],
 ```
+
+### `newGamePlusItems`
+A list of items to grant the player in New Game Plus mode.
+
+Example of all valid values:
+```
+  "newGamePlusItems": [
+    "shuriken",
+    "sword",
+    "bow",
+    "double jump",
+    "climbing claws"
+  ],
+```
+
+When not specified, New Game Plus grants the following items:
+- Shuriken
+- Sword
+- Double Jump
 
 ### `levels` - Levels
 Normally, this should be left blank as it will be filled in by `pakify`.

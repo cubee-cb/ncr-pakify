@@ -21,6 +21,10 @@
     "modifier:new game plus", // unlock New Game Plus mode
     "gold rush;region:bouldo" // unlock pack "bouldo" if beaten with Gold Rush
   ],
+  "newGamePlusItems": [
+    "bow",
+    "climbing claws"
+  ],
 
   "levels": []
 
