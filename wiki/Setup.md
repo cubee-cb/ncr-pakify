@@ -94,5 +94,8 @@ If you have access to a Debug build, the following are available:
 - The Dev Menu is added to the base Pause menu while in-game.
 - `Tab` will reload level packs in-place.
 - `[` and `]` skip between levels.
-- `T` forces the touch layers to be shown.
-- `Right Alt` will stop the UI layer from rendering while held.
+- `T` when held will force the touch layers to be shown.
+- `Right Alt` toggles whether the UI layer is shown.
+- `Left Alt` toggles whether the system menu is disabled when in-game.
+  - This allows the game to be paused without showing the system menu, which is useful for screenshots.
+- `Right Control` will step one frame when the game is paused.
