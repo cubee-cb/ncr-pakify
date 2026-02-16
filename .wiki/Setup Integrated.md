@@ -20,23 +20,22 @@ The Development Folder should be formatted like so:
 - `pakify/` < Development Folder
   - `.assets/` < Ogmo Project assets folder
   - `setA/` < Level Set
-    - `regionA/` < Region Source
+    - `regionA/` < Region Folder
       - `levelA.json` < Ogmo Levels
       - `levelB.json`
-      - `base.json` < Region [Base Properties](Region%20Properties.md)
+      - `region.json` < [Region Properties](Region%20Properties.md)
       - `order.json` < Level Order
-    - `regionB/` < Region Source
+    - `regionB/` < Region Folder
       - `levelA.json` < Ogmo Level
-      - `base.json` < Region [Base Properties](Region%20Properties.md)
+      - `region.json` < [Region Properties](Region%20Properties.md)
       - `order.json` < Level Order
     - `set.json` < [Set Properties](Set%20Properties.md)
   - `ninja-cat-remewstered.ogmo` < [Ogmo Project](Ogmo%20Project.md)
 
-That is, each "Set" of Region Packs is stored in its own folder. This is for organisational purposes, and so that it is possible to upload sequential Region Packs to the Steam Workshop.
-- For example, a Level Set might contain a sequence of Region Packs that unlock one after the other.
+That is, each "Set" of Region Packs is stored in its own folder. This is for organisational purposes, and so that it is possible to upload sequential Regions to the Steam Workshop as one item.
 
 In fact, the folder name of the Level Set is more or less irrelevent; Workshop Sets are downloaded to Steam's `workshop` folder and named with their Workshop ID.
-- The Development Folder is intended only for developing Packs. To use packs from outside the workshop, add them to the Custom Levels Folder instead.
+- The Development Folder is only for developing Level Sets. To play Level Sets from outside the Workshop, add them to the Custom Levels Folder instead.
 
 Sets will be built into a structure like so, into the Custom Levels Folder:
 - `customPacks/` < Custom Levels Folder
