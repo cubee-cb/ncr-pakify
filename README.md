@@ -4,9 +4,9 @@ Documentation and tools to help make Custom Levels for Ninja Cat Remewstered.
 
 Included is an Ogmo project with all of the entities and tilesets already set up.
 
-![screenshot of the ogmo editor next to ninja cat remewstered, editing one of its levels](github/preview.png)
+![screenshot of the ogmo editor next to ninja cat remewstered, editing one of its levels](.github/preview.png)
 
-See [the wiki folder](wiki) for [documentation](wiki/README.md).
+See [the wiki folder](.wiki) for [documentation](.wiki/README.md).
 
 ## Notes
 - Workflows are untested on Windows. They should work in theory. Feel free to help test and/or contribute fixes!
