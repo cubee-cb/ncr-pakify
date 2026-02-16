@@ -1,12 +1,10 @@
 # Documentation for pakify
 
-This is just here as GitHub does not allow Wikis on private repos.
+I've just written this here as GitHub does not allow Wikis on private repos.
 
 Note: there are two versions of pakify:
-- Integrated - This pakify is integrated into Ninja Cat Remewstered, and handles more convenience things.
-- Standalone - This pakify requires Python, but can be used in external workflows.
-
-The main difference is that Standalone sorts levels alphabetically based on the filename, while Integrated uses a strict format that allows the user to specify the level order.
+- Integrated - is built into Ninja Cat Remewstered, and comes with a simple user-facing interface.
+- Standalone (deprecated) - requires Python, but can be used in external workflows.
 
 Steam Workshop support is planned, but is not implemented at the present time. Hold tight while I workshop (heh) a way to implement that.
 - Please ignore any mentions of Steam Workshop in this Wiki as long as this notice exists.
@@ -15,7 +13,7 @@ Steam Workshop support is planned, but is not implemented at the present time. H
 
 ### Tutorials
 - [Setup (pakify Integrated)](Setup%20Integrated.md)
-- [Setup (pakify Standalone)](Setup%20Standalone.md)
+- [Setup (pakify Standalone)](Setup%20Standalone.md) (deprecated)
 
 ### Properties and Templates
 - [Ogmo Project](Ogmo%20Project.md)
@@ -35,11 +33,11 @@ Here you can do various things, like hot-reload the level packs, grant yourself 
 Entering Score Submission after using this menu will place a marker on your score, so that you can tell which scores are legitimate.
 
 If you have access to a **Debug build**, the following are available:
-- The Dev Menu is added to the base Pause menu while in-game.
+- The Dev Menu is added to the base System Menu while in-game.
 - `Tab` will reload level packs in-place.
 - `[` and `]` skip between levels.
 - `T` when held will force the touch layers to be shown.
 - `Right Alt` toggles whether the UI layer is shown.
-- `Left Alt` toggles whether the system menu is disabled when in-game.
-  - This allows the game to be paused without showing the system menu, which is useful for screenshots.
+- `Left Alt` toggles whether the System Menu is disabled when in-game.
+  - This allows the game to be paused without showing the System Menu, which is useful for screenshots.
 - `Right Control` will step one frame when the game is paused.

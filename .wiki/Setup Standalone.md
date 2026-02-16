@@ -2,7 +2,7 @@
 
 This page is for the version of pakify that runs on Python externally to the game. For the built-in version, see [Setup (pakify Integrated)](Setup%20Integrated.md).
 
-**This variant of pakify should be considered deprecated;** I will only be maintaining it as long as I continue to use it in scripts.
+**This variant of pakify is deprecated**: I will not be maintaining it, nor this guide page. You will see outdated information.
 
 You will need:
 - Python 3 or newer
