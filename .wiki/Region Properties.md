@@ -1,8 +1,8 @@
-# Base NCL Properties
+# Region Properties
 ## Template
 
 ```
-// base.ncl template
+// base.json template
 {
   "id": "template",
   "requireGameVersion": 1, // v1.2mg
@@ -37,17 +37,17 @@
 ### `id` - Identifier
 Used internally for scoreboards, save files, and the like. This is not typically visible to the player. (see `displayName` and `description`)
 
-When choosing an `id`, try to think of something unique to avoid conflicting with other people's Packs. A good idea might be to include your username with it, or add some random words:
+When choosing an `id`, try to think of something unique to avoid conflicting with other people's regions. A good idea might be to include your username with it, or add some random words:
 - `NinjaCatPlayer UltraChallengePack`
 - `doomcastle by creampuff`
 - `kaizo observatory - charlise hopscotch`
 - `orangejuice ledgehop inmost magicat`
 
-If the game tries to load a pack with an `id` that is already taken, the new pack will be skipped and a warning popup will be shown.
-- In `save.json`, you can set it to replace loaded Packs instead and/or turn off the warning popups. (for example, if you're editing the Vanilla Packs)
+If the game tries to load a region with an `id` that is already taken, the new region will be skipped and a warning popup will be shown.
+- In `save.json`, you can set it to replace loaded regions instead and/or turn off the warning popups. (for example, if you're editing the Vanilla regions)
 
-### `displayName` - Name of the Pack
-Shown in the New Game menu under the Pack Glyph.
+### `displayName` - Name of the Region
+Shown in the New Game menu under the Region Glyph.
 Contains a Dictionary of language keys, with corresponding text.
 
 Each line of this label fits 16 characters, so keep these names reasonably short.
@@ -58,37 +58,39 @@ Contains a Dictionary of language keys, with corresponding text.
 
 Descriptions can be longer than the Display Name, but try to keep them within 32-64 characters.
 
-### `author` - Creator of the Pack.
+### `author` - Creator of the Region.
 Currently unused.
 May be a User ID for Steam Workshop Uploads.
 
-### `revision` - Version of the Pack.
+### `revision` - Version of the Region.
 Currently unused.
 May be used for Steam Workshop or removed in the future.
 
 ### `requireGameVersion` - Minimum Game Version
+This field is also part of `set.json`; this one can be used if you have only some Regions that require a newer version, but others will work on a lower version.
+
 Valid Values:
 - `0` - Any Version
-- `1` - v1.2mg - Region Packs introduced.
+- `1` - v1.2mg - Level Sets introduced.
 
 `0` and `1` are interchangeable.
 
-Packs made for a newer version of the game will not be loaded, and a notification will be displayed informing the user to update their game.
+Regions made for a newer version of the game will not be loaded, and a notification will be displayed informing the user to update their game.
 
 ### `unlocked` - Unlocked by Default
-Set this to `false` if you would like this pack to be locked initially.
+Set this to `false` if you would like this region to be locked initially.
 
-This pack can then be added as a `reward` for completing a different pack, for example as part of a larger campaign.
+This region can then be added as a `reward` for completing a different region, for example as part of a larger campaign.
 
 ### `hidden` - Hide when Locked
-Set this to `true` if you would like this pack to be hidden until it is unlocked; it will not appear in the menus, nor the leaderboards. Good for "secret" regions.
+Set this to `true` if you would like this region to be hidden until it is unlocked; it will not appear in the menus, nor the leaderboards. Good for "secret" regions.
 
-Unlocking a hidden pack will display alternative unlock text, saying that a **secret region** was found.
+Unlocking a hidden region will display alternative unlock text, saying that a **secret region** was found.
 
-### `glyph` - Pack Glyph
-The `glyph` property expects a string in the PICO-8 gfx string format. It will be shown in the New Game and Leaderboard menus alongside the other packs.
+### `glyph` - Region Glyph
+The `glyph` property expects a string in the PICO-8 gfx string format. It will be shown in the New Game and Leaderboard menus alongside the other regions.
 Glyphs can be made inside PICO-8 and copy-pasted directly from the sprite editor to the text file. (the web-based [Education Edition](https://www.pico-8-edu.com/) works fine for this use case)
-- Omitting/removing the pack glyph will result in a generic icon being used. If you want your pack to be easily recognisable, make sure to give it a cool icon!
+- Omitting/removing the region glyph will result in a generic icon being used. If you want your region to be easily recognisable, make sure to give it a cool icon!
 
 Typical glyph size is 16x16px plus a 1px border, drawn in the centre of a 32x32px sprite.
 
@@ -98,45 +100,45 @@ Typical glyph size is 16x16px plus a 1px border, drawn in the centre of a 32x32p
 // xxxx is the piXel data, in hex
 // [gfx]WWHHxxxxxxxxxxxxxxxx[/gfx]
 
-// used as a pack glyph (note the [gfx] tags are optional)
+// used as a region glyph (note the [gfx] tags are optional)
   "glyph": "[gfx]WWHHxxxxxxxxxxxxxxxx[/gfx]",
   "glyph": "WWHHxxxxxxxxxxxxxxxx",
 ```
 
-Pack Glyphs can be up to 128x128px in size (the same size as the PICO-8 spritesheet)
+Region Glyphs can be up to 128x128px in size (the same size as the PICO-8 spritesheet)
 
 ### `worldTheme` - Background
-World background to use on the pack's leaderboard page. Valid values:
+World background to use on the region's leaderboard page. Valid values:
 - `world1` - Sky Mountains
 - `world2` - Sky Mountains with trees and houses. (Skyscrapers in Old Style)
 - `world3` - Forest
 - `world4` - Underground Cavern
 
 ### `worldSky` - Sky
-Sky variant to use on the pack's leaderboard page. Valid values:
+Sky variant to use on the region's leaderboard page. Valid values:
 - `night` - Blue night sky with moon.
 - `underground` - Black sky with no moon or stars.
 - `dawn` - An orange sky. Subject to change.
 - `aurora` - Unfinished
 
 ### `worldFade` - Fade Style
-Fade style to use on the pack's leaderboard page. Valid values:
+Fade style to use on the region's leaderboard page. Valid values:
 - `cut` - Standard triangular fade pattern.
 - `circle` - Large circle fade pattern. (Small circles in Old Style)
 - `square` - Large square fade pattern. (Small squares in Old Style)
 - `special` - Star fade. (Weird pattern in Old Style)
 
-### `rewards` - Pack-completion Rewards
+### `rewards` - Region-completion Rewards
 Format: `<type>:<item>` or `<condition>;<type>:<item>`
 
-These allow you to unlock certain things for the player when they complete your level pack.
+These allow you to unlock certain things for the player when they complete your region.
 
 Valid items for type `modifier`:
 - `new game plus` - Unlock "New Game Plus" mode.
 - `ln` - Unlock "Play As Elenn" mode.
 
 Valid items for type `region`:
-- The `id` of any Region Pack. If the pack isn't loaded, this will be done without creating the notification.
+- The `id` of any Region. If the region isn't loaded, this will be done without creating the notification.
 
 Valid for `condition`:
 - `guard bell` - Unlock only if Guard Bell is active.
@@ -150,9 +152,9 @@ Valid for `condition`:
 Example:
 ```
   "rewards": [
-    "region:sequel", // unlock pack "sequel"
+    "region:sequel", // unlock region "sequel"
     "modifier:new game plus", // unlock New Game Plus mode
-    "gold rush;region:bouldo" // unlock pack "bouldo" if beaten with Gold Rush enabled
+    "gold rush;region:bouldo" // unlock region "bouldo" if beaten with Gold Rush enabled
   ],
 ```
 

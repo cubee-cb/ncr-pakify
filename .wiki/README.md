@@ -12,13 +12,20 @@ Steam Workshop support is planned, but is not implemented at the present time. H
 - Please ignore any mentions of Steam Workshop in this Wiki as long as this notice exists.
 
 ## Contents
+
+### Tutorials
 - [Setup (pakify Integrated)](Setup%20Integrated.md)
 - [Setup (pakify Standalone)](Setup%20Standalone.md)
+
+### Properties and Templates
 - [Ogmo Project](Ogmo%20Project.md)
-- [Base NCL Properties](Base%20NCL%20Properties.md)
+- [Region Properties](Region%20Properties.md)
+- [Set Properties](Set%20Properties.md)
+
+### Extra Info
 - [Tile Mechanics](Tile%20Mechanics.md)
-- [Modifier Considerations](Modifier%20Considerations.md)
 - [Alternate Levels](Alternate%20Levels.md)
+- [Modifier Considerations](Modifier%20Considerations.md)
 
 ## Developer Tools
 To access the in-game Dev Menu, open the System Menu and go to `Options` > `Technical` > `Dev Menu`.
