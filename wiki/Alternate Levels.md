@@ -1,17 +1,31 @@
 # Alternate Levels
-Alternate levels are named in the following format: `<level>_<condition>.json`, like `1_goldRush.json`
-The important part is the `_`. That marks where the condition starts. You should only ever have ONE `_` in the filename.
+For Standalone pakify, Alternate Levels are named in the following format: `<level>_<condition>.json`, like `1_goldRush.json`
+- The important part is the `_`. That marks where the condition starts. You should only ever have ONE `_` in the filename.
+- I would recommend following a format like `<index>-<name>_<condition>.json`, so `01-first-level_goldRush.json` or `03-pacifist-hallway_pacifism.json`, but as long as the levels are sorted as you like the only part of the name that matters is the condition.
 
-I would recommend following a format like `<index>-<name>_<condition>.json`, so `01-first-level_goldRush.json` or `03-pacifist-hallway_pacifism.json`, but as long as the levels are sorted as you like the only part of the name that matters is the condition.
+For Integrated pakify, the filename is irrelevant; Alternates are instead described as part of the `order.json` file.
 
-## Sorting Order
-Alternates will be appended to the last processed level alphabetically. That is, having the following:
+## Sorting Order (Integrated pakify)
+Alternates will be appended to the previous listed level. That is, having the following `order.json`:
+```json
+[
+  "first-stage.json",
+    "goldrushing.json:goldRush",
+    "pacifist-hall.json:pacifism",
+  "second-stage.json"
+]
+```
+
+puts `goldrushing.json` as the alternate of `first-stage.json` when Gold Rush Mode is active.
+
+## Sorting Order (Standalone pakify)
+Alternates will be appended to the last processed level. That is, having the following:
 
 - `01.json`
 - `02_goldRush.json`
 - `03.json`
 
-Would put `02_goldRush` as an alternate of `01`, and `03` would be processed as Level 2:
+puts `02_goldRush` as an alternate of `01`, and `03` would be processed as Level 2:
 
 - `01.json` - Level 1
 - `02_goldRush.json` - Level 1 (Gold Rush alternate)
@@ -26,9 +40,21 @@ Adding a level sorted after `01` and before `02_goldRush` would change the flow 
 
 ## Alternate Condition
 Only one condition can be used at a time; the first alternate with a matching condition wins.
-- If you have the Gold Rush and Pacifism modifiers enabled, and your alternates were converted as `0 = goldRush` and `1 = pacifism` (as they would be by alphabetical order), the game would load the alternate level for Gold Rush mode as that is listed first.
-  - You can guide pakify to process your alternates in a specific order by naming the file like `03a_pacifism.json` and `03b_goldRush.json`, as it processes them alphabetically. Do not add more `_`'s!
-  - This is helpful if for example your `goldRush` alternate is impossible to complete when Pacifism mode is enabled.
+
+For example, if you have the Gold Rush and Pacifism modifiers enabled, but the Gold Rush Alternate appears first, the game would load the alternate level for Gold Rush Mode even when Pacifism Mode is enabled.
+
+For Integrated, you can simply change the level order in `order.json` so the Pacifism Alternate appears first:
+```json
+[
+  "first-stage.json",
+    "pacifist-hall.json:pacifism",
+    "goldrushing.json:goldRush",
+  "second-stage.json"
+]
+```
+
+For Standalone, you can guide pakify to process your alternates in a specific order by naming the file like `03a_pacifism.json` and `03b_goldRush.json`, as it processes them alphabetically. Do not add more `_`'s!
+- This is helpful if for example your `goldRush` alternate is impossible to complete when Pacifism mode is enabled.
 
 Valid alternates are the following:
 - `pacifism` - Pacifism modifier is enabled.

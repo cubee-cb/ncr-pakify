@@ -1,4 +1,6 @@
-# Setup
+# Setup (Integrated)
+
+This page is for the version of pakify built-in to Ninja Cat Remewstered. For the Python version, see [Setup (pakify Standalone)](Setup%20Standalone.md).
 
 You will need:
 - Ogmo Editor 3 (from [here](https://ogmo-editor-3.github.io/) or a compatible version)
@@ -102,11 +104,16 @@ Pakify doesn't see the pack:
 ```
 
 ### `order.json` example
+Format:
+- `<filename>` - e.g. `epicLevel1.json`
+- `<filename>:<alternate>` - e.g. `epicLevel1.json:pacifism`
+
+The indentation here is optional; I use it to make it easie to read that Alternates are "sub-levels".
 ```json
 [
   "1.json",
   "2.json",
-  "2_goldRush.json",
+    "2-goldrush.json:goldRush",
   "3.json"
 ]
 
