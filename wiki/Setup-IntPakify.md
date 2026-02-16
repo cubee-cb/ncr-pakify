@@ -6,11 +6,11 @@ You will need:
 
 ## Required Information
 
-The Development folder is in the following locations:
+The Development Folder is in the following locations:
 - Windows: `C:\Users\<user>\AppData\Roaming\cubee\ninjacat\pakify`
 - Linux: `/home/<user>/.config/cubee/ninjacat/pakify`
 
-The Custom Levels folder is in the following locations:
+The Custom Levels Folder is in the following locations:
 - Windows: `C:\Users\<user>\AppData\Roaming\cubee\ninjacat\customPacks`
 - Linux: `/home/<user>/.config/cubee/ninjacat/customPacks`
 
@@ -37,9 +37,9 @@ That is, each "Set" of Region Packs is stored in its own folder. This is for org
 - For example, a Level Set might contain a sequence of Region Packs that unlock one after the other.
 
 In fact, the folder name of the Level Set is more or less irrelevent; Workshop Sets are downloaded to Steam's `workshop` folder and named with their Workshop ID.
-- The `customPacks` folder is intended primarily for developing Packs and otherwise using Packs obtained outside the Steam Workshop.
+- The Development Folder is intended only for developing Packs. To use packs from outside the workshop, add them to the Custom Levels Folder instead.
 
-Sets will be built into a structure like so:
+Sets will be built into a structure like so, into the Custom Levels Folder:
 - `customPacks/` < Custom Levels Folder
   - `setA/` < Level Set
     - `set.json` < Set Metadata
