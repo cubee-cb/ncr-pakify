@@ -50,7 +50,7 @@
   "defaultExportMode": ".json",
   "compactExport": false,
   "externalScript": "",
-  "playCommand": "bash ./build.sh",
+  "playCommand": "bash ./vanillaLevels/build.sh",
   "entityTags": ["projectile", "deprecated"],
   "layers": [
     {
@@ -895,7 +895,7 @@
       "values": [
         {"name": "cycleOffset", "definition": "Float", "display": 2, "defaults": 0, "bounded": true, "min": 0, "max": 1}
       ],
-      "texture": "../../../../../home/curin/projects/ogmo/ninja-cat-remewstered/assets/entities/obj-arrow-maker.png",
+      "texture": "assets/entities/obj-arrow-maker.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+oCCAwwDWySWuEAAACPSURBVBjThY6xDYJQFEXPI28NYmPyC3t3MNFQSEL1ww4WLuAaFg4ghaGwYwBrKEhoCC0bWDwKRaImett77smFf0mTyH71wXy2AbBwsbXD/vgFB08LXZXRtDnWO7Pe2RtQlEqaRJzWl9dyhLRpc0ApSuV8XxJzexArNxnG7OoQ8Yh4hGsNgAJ0VSaf58QjAAPICCkH7Xd5owAAAABJRU5ErkJggg=="
     },
     {

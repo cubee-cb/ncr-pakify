@@ -1,0 +1,14 @@
+{
+  "id": "vanilla",
+  "author": "cubee",
+  "revision": 2,
+  "requireGameVersion": 1,
+
+  "regions": [
+    "outset",
+    "sequel",
+    //"finale",
+    //"bouldo",
+    "basepak"
+  ]
+}

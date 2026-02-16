@@ -1,0 +1,11 @@
+{
+  "id": "example",
+  "author": "author",
+  "revision": 1,
+  "requireGameVersion": 1,
+
+  "regions": [
+    "template",
+    "testpak"
+  ]
+}

@@ -1,0 +1,39 @@
+// level order
+[
+  // world 3
+  "3-1.json",
+  "3-2.json",
+  "3-3.json",
+  "3-4.json",
+    "3-4a_newGamePlus.json:newGamePlus",
+    "3-4b_hasClaws.json:hasClaws",
+  "3-5.json",
+  "3-6.json",
+  "3-7.json",
+  "3-8.json",
+    "3-8a_notSword.json:notSword",
+    "3-8b_notShuriken.json:notShuriken",
+  "3-9.json",
+  "3-a.json",
+  "3-b.json",
+    "3-b_pacifism.json:pacifism",
+
+  // world 4
+  "4-1.json",
+  "4-2.json",
+  "4-3.json",
+    "4-3_hasDoubleJump.json:hasDoubleJump",
+  "4-4.json",
+  "4-5.json",
+  "4-6.json",
+  "4-7.json",
+  "4-8.json",
+  "4-9.json",
+  "4-a.json",
+  "4-b.json",
+    "4-b_pacifism.json:pacifism",
+
+  // final vault
+  "final.json",
+    "final_hasBow.json:hasBow",
+]
