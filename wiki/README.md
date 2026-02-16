@@ -6,12 +6,14 @@ Note: there are two versions of pakify:
 - Standalone - This pakify requires Python, but can be used in external workflows.
 - Integrated - This pakify is integrated into Ninja Cat Remewstered, and handles more convenience things.
 
+The main difference is that Standalone sort levels alphabetically based on the filename, while Integrated uses a strict format that allows the user to specify the level order.
+
 Steam Workshop support is planned, but is not implemented at the present time. Hold tight while I workshop (heh) a way to implement that.
 - Please ignore any mentions of Steam Workshop in this Wiki as long as this notice exists.
 
 ## Contents
-- [Setup (pakify Standalone)](Setup.md)
-- [Setup (pakify Integrated)](Setup-IntPakify.md)
+- [Setup (pakify Standalone)](Setup%20Standalone.md)
+- [Setup (pakify Integrated)](Setup%20Integrated.md)
 - [Ogmo Project](Ogmo%20Project.md)
 - [Base NCL Properties](Base%20NCL%20Properties.md)
 - [Tile Mechanics](Tile%20Mechanics.md)
