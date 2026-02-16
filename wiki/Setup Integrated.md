@@ -14,8 +14,9 @@ The Custom Levels Folder is in the following locations:
 - Windows: `C:\Users\<user>\AppData\Roaming\cubee\ninjacat\customPacks`
 - Linux: `/home/<user>/.config/cubee/ninjacat/customPacks`
 
-Development sets are formatted in a heirarchy like so:
+The Development Folder should be formatted like so:
 - `pakify/` < Development Folder
+  - `assets/` < Ogmo Project assets folder
   - `setA/` < Level Set
     - `regionA/` < Region Source
       - `levelA.json` < Ogmo Levels
@@ -25,13 +26,7 @@ Development sets are formatted in a heirarchy like so:
       - `levelA.json` < Ogmo Level
       - `order.json` < Level Order
     - `set.json` < Set Metadata
-  - `setB/` < Level Set
-    - `levels/` < Region Source
-      - `levelA.json` < Ogmo Levels
-      - `levelB.json`
-      - `levelC.json`
-      - `order.json` < Level Order
-    - `set.json` < Set Metadata
+  - `ncr.ogmo` < Ogmo Project
 
 That is, each "Set" of Region Packs is stored in its own folder. This is for organisational purposes, and so that it is possible to upload sequential Region Packs to the Steam Workshop.
 - For example, a Level Set might contain a sequence of Region Packs that unlock one after the other.
@@ -50,7 +45,8 @@ Sets will be built into a structure like so, into the Custom Levels Folder:
     - `levels.ncl` < Region
 
 ## Basic Workflow
-You should Clone or Download this repository to begin with. Usage of Ogmo Editor itself will not be covered here.
+Usage of Ogmo Editor itself will not be covered here.
+- Place the `.ogmo` file and assets folder into your Development Folder, like so: `ninjacat/pakify/ninja-cat-remewstered.ogmo` and `ninjacat/pakify/assets/`
 
 There is a `template` Region Pack included, [here](../template).
 - You can try building this (or any of the Vanilla Packs) before making your own levels if you like.
