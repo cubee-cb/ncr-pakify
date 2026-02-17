@@ -34,10 +34,16 @@ The Development Folder should be formatted like so:
 
 That is, each "Set" of Region Packs is stored in its own folder. This is for organisational purposes, and so that it is possible to upload sequential Regions to the Steam Workshop as one item.
 
+Here's a visual for a Level Set folder:
+![a file browser inside a level set's folder](images/pakfolderset.png)
+
+And another for a Region folder:
+![a file browser inside a region's folder](images/pakfolderregion.png)
+
 In fact, the folder name of the Level Set is more or less irrelevent; Workshop Sets are downloaded to Steam's `workshop` folder and named with their Workshop ID.
 - The Development Folder is only for developing Level Sets. To play Level Sets from outside the Workshop, add them to the Custom Levels Folder instead.
 
-Sets will be built into a structure like so, into the Custom Levels Folder:
+Sets will be built directly into the Custom Levels Folder, with a structure like so:
 - `customPacks/` < Custom Levels Folder
   - `setA/` < Level Set
     - `set.json` < Set Metadata
@@ -68,27 +74,32 @@ There is an example Level Set included, [`exampleSet`](../exampleSet).
 If you're making a new Region Pack:
 - Go to the Level Development Folder.
 - Create the Structure for your level set.
-  - See above, [Set Properties](Set%20Properties.md) and [Base NCL Properties](Region%20Properties.md) for templates.
+  - See above for visuals, or [Set Properties](Set%20Properties.md) and [Region Properties](Region%20Properties.md) for templates.
 
 To create a Level for a Region:
 - Using Ogmo Editor, open the `.ogmo` project file.
-- Find the Region's folder, then right click it and press **Create Level Here**.
-- Name it whatever you like, given the following:
-  - [Alternate Levels](Alternate%20Levels.md) have specific requirements for file names: do not use `_` for general names, as it will turn these levels into Alternates.
+- Find the Region's folder, then right click it and press **Create Level Here**. Name it whatever you like.
+  - Remember to add it into the Region's `order.json`. See [Alternate Levels](Alternate%20Levels.md) for modifier-specific level replacement.
 
 And finally, to pakify:
 - Open Ninja Cat Remewstered.
 - Go to the `System Menu` > `Options` > `Technical` > `Pakify`
+  - ![](images/pakroot.png)
 - Select the Level Set to run through pakify, then select `Build`.
   - !! You will be returned to the title screen automatically when it finishes.
-- Once complete, go to `New Game` menu and see if your pack is there.
+  - ![](images/paksets.png)
+  - ![](images/pakok.png)
+- Once complete, go to `New Game` in the main menu and see if your pack is there.
+  - ![](images/paknewgame.png)
 
 todo: Publishing to Steam Workshop:
 - You may only upload Level Sets you have the source for. That is, Sets that Pakify can see.
 - Go to the `System Menu` > `Options` > `Technical` > `Pakify`
+  - ![](images/pakroot.png)
 - Select the Level Set to publish, then select `Publish Level Set`.
   - If the Level Set has already been published, it will be updated instead.
   - !! You will be returned to the title screen automatically when it finishes.
+  - ![](images/pakpublish.png)
 - Pakify will build the Level Set and upload it with the details specified in `set.json`.
   - The Set will have a `workshop.json` file added to its project folder. Do not remove or modify this; it contains the Workshop ID of the Set.
 
