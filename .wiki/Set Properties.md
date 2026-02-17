@@ -19,11 +19,11 @@
 ### `id` - Identifier
 Not visible to the player. Used for debugging output.
 
-### `author` - Creator of the Pack.
+### `author` - Creator of the Set
 Currently unused.
 May be a User ID for Steam Workshop Uploads.
 
-### `revision` - Version of the Pack.
+### `revision` - Version of the Set
 Currently unused.
 May be used for Steam Workshop or removed in the future.
 
@@ -35,3 +35,8 @@ Valid Values:
 `0` and `1` are interchangeable.
 
 Level Sets made for a newer version of the game will not be loaded, and a notification will be displayed informing the user to update their game.
+
+### `regions` - List of regions to include in this Set
+Used by pakify to determine what Regions to build, and by the game to determine which Regions to load.
+
+Put the **folder name** of each Region here, *NOT* the `id`.
