@@ -35,9 +35,11 @@ The Development Folder should be formatted like so:
 That is, each "Set" of Region Packs is stored in its own folder. This is for organisational purposes, and so that it is possible to upload sequential Regions to the Steam Workshop as one item.
 
 Here's a visual for a Level Set folder:
+
 ![a file browser inside a level set's folder](images/pakfolderset.png)
 
 And another for a Region folder:
+
 ![a file browser inside a region's folder](images/pakfolderregion.png)
 
 In fact, the folder name of the Level Set is more or less irrelevent; Workshop Sets are downloaded to Steam's `workshop` folder and named with their Workshop ID.
@@ -71,42 +73,58 @@ These files are required for level creation and are not included with the game. 
 There is an example Level Set included, [`exampleSet`](../exampleSet).
 - You can copy this folder directly into your Development Folder if you like.
 
-If you're making a new Region Pack:
+#### If you're making a new Level Set or Region:
 - Go to the Level Development Folder.
 - Create the Structure for your level set.
-  - See above for visuals, or [Set Properties](Set%20Properties.md) and [Region Properties](Region%20Properties.md) for templates.
+  - See [Set Properties](Set%20Properties.md) and [Region Properties](Region%20Properties.md) for templates.
 
-To create a Level for a Region:
+![a file browser inside a level set's folder](images/pakfolderset.png)
+
+![a file browser inside a region's folder](images/pakfolderregion.png)
+
+#### To create a Level for a Region:
 - Using Ogmo Editor, open the `.ogmo` project file.
 - Find the Region's folder, then right click it and press **Create Level Here**. Name it whatever you like.
   - Remember to add it into the Region's `order.json`. See [Alternate Levels](Alternate%20Levels.md) for modifier-specific level replacement.
 
-And finally, to pakify:
+![image showing the previous steps in ogmo editor](images/ogmonew.png)
+
+#### And finally, to pakify:
 - Open Ninja Cat Remewstered.
 - Go to the `System Menu` > `Options` > `Technical` > `Pakify`
-  - ![](images/pakroot.png)
+
+![pakify root menu](images/pakroot.png)
+
 - Select the Level Set to run through pakify, then select `Build`.
   - !! You will be returned to the title screen automatically when it finishes.
-  - ![](images/paksets.png)
-  - ![](images/pakok.png)
-- Once complete, go to `New Game` in the main menu and see if your pack is there.
-  - ![](images/paknewgame.png)
 
-todo: Publishing to Steam Workshop:
+![pakify set menu](images/paksets.png)
+
+![pakify success banner](images/pakok.png)
+
+- Once complete, go to `New Game` in the main menu and see if your pack is there.
+
+![new game screen](images/paknewgame.png)
+
+#### todo: Publishing to Steam Workshop:
 - You may only upload Level Sets you have the source for. That is, Sets that Pakify can see.
 - Go to the `System Menu` > `Options` > `Technical` > `Pakify`
-  - ![](images/pakroot.png)
+
+![pakify root menu](images/pakroot.png)
+
 - Select the Level Set to publish, then select `Publish Level Set`.
   - If the Level Set has already been published, it will be updated instead.
   - !! You will be returned to the title screen automatically when it finishes.
-  - ![](images/pakpublish.png)
+
+![pakify publish menu](images/pakpublish.png)
+
 - Pakify will build the Level Set and upload it with the details specified in `set.json`.
   - The Set will have a `workshop.json` file added to its project folder. Do not remove or modify this; it contains the Workshop ID of the Set.
 
 ### Troubleshooting
 If your pack does not appear in the `New Game` menu:
 - Try running Ninja Cat Remewstered through a console, then rebuild.
-  - It will provide detailed output about what exactly pakify or the Level Set importer is failing on.
+  - It will provide detailed output about what exactly pakify or the Level Set importer is failing on -> look for lines tagged with `[pakify]`.
 - Make sure your files are formatted correctly.
 
 Pakify doesn't see the pack:
@@ -132,7 +150,7 @@ Format:
 - `<filename>` - e.g. `epicLevel1.json`
 - `<filename>:<alternate>` - e.g. `epicLevel1.json:pacifism`
 
-The indentation here is optional; I use it to make it easie to read that Alternates are "sub-levels".
+The indentation here is optional; I use it to more easily tell which levels are Alternates.
 ```json
 [
   "1.json",
