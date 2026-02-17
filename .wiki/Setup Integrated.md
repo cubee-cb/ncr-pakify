@@ -76,7 +76,7 @@ There is an example Level Set included, [`exampleSet`](../exampleSet).
 #### If you're making a new Level Set or Region:
 - Go to the Level Development Folder.
 - Create the Structure for your level set.
-  - See [Set Properties](Set%20Properties.md) and [Region Properties](Region%20Properties.md) for templates.
+  - See [Set Properties](Set%20Properties.md) and [Region Properties](Region%20Properties.md) for templates, and [Required Information](#required-information) for file structure.
 
 ![a file browser inside a level set's folder](images/pakfolderset.png)
 
@@ -102,7 +102,7 @@ There is an example Level Set included, [`exampleSet`](../exampleSet).
 
 ![pakify success banner](images/pakok.png)
 
-- Once complete, go to `New Game` in the main menu and see if your pack is there.
+- Once complete, go to `New Game` in the main menu and see if your Regions are there.
 
 ![new game screen](images/paknewgame.png)
 
