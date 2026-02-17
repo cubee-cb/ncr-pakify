@@ -16,7 +16,7 @@ Make sure players can backtrack so that they don't have to restart the level com
 If your levels become near impossible with these modifiers, it might be worth loosening them up a little or creating [Alternates](Alternate%20Levels.md) so these modes are easier.
 
 ## New Game Plus
-The player will start with the following Upgrade by default:
+The player will start with the following Upgrades by default:
 - Shuriken
 - Sword
 - Double Jump Scroll
