@@ -26,11 +26,11 @@ Steam Workshop support is planned, but is not implemented at the present time. H
 - [Modifier Considerations](Modifier%20Considerations.md)
 
 ## Developer Tools
-To access the in-game Dev Menu, open the System Menu and go to `Options` > `Technical` > `Dev Menu`.
+To access the in-game Dev Menu, open the System Menu and go to `Options` > `Technical` > `Developer Tools`.
 
-Here you can do various things, like hot-reload the level packs, grant yourself all upgrades, restore or set health, and so on. Most of these will only have a visible effect while in a level.
+Here you can do various things, like hot-reload the level packs, grant yourself all upgrades, restore or set health, change modifiers, and so on. Most of these will only have a visible effect while in a level.
 
-Entering Score Submission after using this menu will place a marker on your score, so that you can tell which scores are legitimate.
+Continuing a Region after using this menu will place a marker on its score, so that you can still tell which scores are legitimate.
 
 If you have access to a **Debug build**, the following are available:
 - The Dev Menu is added to the base System Menu while in-game.
