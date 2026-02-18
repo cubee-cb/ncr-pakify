@@ -8,16 +8,16 @@ You will need:
 
 ## Required Information
 
-The Development Folder is in the following locations:
+The Pakify Folder is in the following locations:
 - Windows: `C:\Users\<user>\AppData\Roaming\cubee\ninjacat\pakify`
 - Linux: `/home/<user>/.config/cubee/ninjacat/pakify`
 
-The Development Folder is only for developing Level Sets. To play Level Sets from outside the Workshop, add them to the Custom Levels Folder instead:
+The Pakify Folder is only for developing Level Sets. To play Level Sets from outside the Workshop, add them to the Custom Levels Folder instead:
 - Windows: `C:\Users\<user>\AppData\Roaming\cubee\ninjacat\customLevels`
 - Linux: `/home/<user>/.config/cubee/ninjacat/customLevels`
 
-The Development Folder should be formatted like so:
-- `pakify/` < Development Folder
+The Pakify Folder should be formatted like so:
+- `pakify/` < Pakify Folder
   - `.assets/` < Ogmo Project assets folder
   - `setA/` < Level Set
     - `regionA/` < Region Folder
@@ -55,7 +55,7 @@ Pakify will build sets directly into the Custom Levels Folder - if we build `set
 Usage of Ogmo Editor itself will not be covered here.
 
 ### Prerequisites
-Place the `.ogmo` file and `.assets` folder from this repository into your Development Folder, like so:
+Place the `.ogmo` file and `.assets` folder from this repository into your Pakify Folder, like so:
 - `pakify/`
   - `.assets/`
   - `ninja-cat-remewstered.ogmo`
@@ -67,10 +67,10 @@ These files are required for level creation and are not included with the game. 
 
 ### Steps
 There is an example Level Set included, [`exampleSet`](../exampleSet).
-- You can copy this folder directly into your Development Folder if you like.
+- You can copy this folder directly into your Pakify Folder if you like.
 
 #### If you're making a new Level Set or Region:
-- Go to the Level Development Folder.
+- Go to the Level Pakify Folder.
 - Create the Structure for your level set.
   - See [Set Properties](Set%20Properties.md) and [Region Properties](Region%20Properties.md) for templates, and [Required Information](#required-information) for file structure.
 
