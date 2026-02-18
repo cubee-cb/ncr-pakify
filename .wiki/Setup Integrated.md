@@ -13,8 +13,8 @@ The Development Folder is in the following locations:
 - Linux: `/home/<user>/.config/cubee/ninjacat/pakify`
 
 The Development Folder is only for developing Level Sets. To play Level Sets from outside the Workshop, add them to the Custom Levels Folder instead:
-- Windows: `C:\Users\<user>\AppData\Roaming\cubee\ninjacat\customPacks`
-- Linux: `/home/<user>/.config/cubee/ninjacat/customPacks`
+- Windows: `C:\Users\<user>\AppData\Roaming\cubee\ninjacat\customLevels`
+- Linux: `/home/<user>/.config/cubee/ninjacat/customLevels`
 
 The Development Folder should be formatted like so:
 - `pakify/` < Development Folder
