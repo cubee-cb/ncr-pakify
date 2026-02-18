@@ -12,7 +12,7 @@ The Development Folder is in the following locations:
 - Windows: `C:\Users\<user>\AppData\Roaming\cubee\ninjacat\pakify`
 - Linux: `/home/<user>/.config/cubee/ninjacat/pakify`
 
-The Custom Levels Folder is in the following locations:
+The Development Folder is only for developing Level Sets. To play Level Sets from outside the Workshop, add them to the Custom Levels Folder instead:
 - Windows: `C:\Users\<user>\AppData\Roaming\cubee\ninjacat\customPacks`
 - Linux: `/home/<user>/.config/cubee/ninjacat/customPacks`
 
@@ -32,7 +32,7 @@ The Development Folder should be formatted like so:
     - `set.json` < [Set Properties](Set%20Properties.md)
   - `ninja-cat-remewstered.ogmo` < [Ogmo Project](Ogmo%20Project.md)
 
-That is, each "Set" of Region Packs is stored in its own folder. This is for organisational purposes, and so that it is possible to upload sequential Regions to the Steam Workshop as one item.
+That is, each "Set" of Region Packs is stored in its own folder. This is for organisational purposes, and so that it is possible to group Campaigns of sequential Regions as one distinct item.
 
 Here's a visual for a Level Set folder:
 
@@ -42,18 +42,14 @@ And another for a Region folder:
 
 ![a file browser inside a region's folder](images/pakfolderregion.png)
 
-In fact, the folder name of the Level Set is more or less irrelevent; Workshop Sets are downloaded to Steam's `workshop` folder and named with their Workshop ID.
-- The Development Folder is only for developing Level Sets. To play Level Sets from outside the Workshop, add them to the Custom Levels Folder instead.
+Linux people: the above images were taken inside a Wine Prefix so Windows people can follow the exact path in the top bar; please use the Linux path unless you happen to be running the Windows version under Wine/Proton, though note issues with this setup may not be supported; the Native Linux version is the first-class build here.
 
-Sets will be built directly into the Custom Levels Folder, with a structure like so:
+Pakify will build sets directly into the Custom Levels Folder - if we build `setA`, then we will get the following structure:
 - `customPacks/` < Custom Levels Folder
   - `setA/` < Level Set
     - `set.json` < Set Metadata
     - `regionA.ncl` < Region
     - `regionB.ncl` < Region
-  - `setB/` < Level Set
-    - `set.json` < Set Metadata
-    - `levels.ncl` < Region
 
 ## Basic Workflow
 Usage of Ogmo Editor itself will not be covered here.
