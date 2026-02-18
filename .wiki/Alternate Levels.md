@@ -1,9 +1,9 @@
 # Alternate Levels
-For Standalone pakify, Alternate Levels are named in the following format: `<level>_<condition>.json`, like `1_goldRush.json`
+For Integrated pakify, the filename is irrelevant; Alternates are described as part of the `order.json` file. I personally like to indent Alternates so I can see where they are more easily.
+
+For Standalone pakify, Alternate Levels are instead named in the following format: `<level>_<condition>.json`, like `1_goldRush.json`
 - The important part is the `_`. That marks where the condition starts. You should only ever have ONE `_` in the filename.
 - I would recommend following a format like `<index>-<name>_<condition>.json`, so `01-first-level_goldRush.json` or `03-pacifist-hallway_pacifism.json`, but as long as the levels are sorted as you like the only part of the name that matters is the condition.
-
-For Integrated pakify, the filename is irrelevant; Alternates are instead described as part of the `order.json` file.
 
 ## Sorting Order (Integrated pakify)
 Alternates will be appended to the previous listed level. That is, having the following `order.json`:
