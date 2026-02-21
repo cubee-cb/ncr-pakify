@@ -4,11 +4,11 @@
   "worldSky": "night",
   "worldFade": "cut",
   "displayName": {
-    "english": "a domain past",
+    "english": "A Domain Past",
     "meowlang": "meow meow"
   },
   "description": {
-    "english": "return to the past of tiger domain",
+    "english": "Return to the past of Tiger Domain",
     "meowlang": "meow meow meow"
   },
   // shown in the menu. pico-8 gfx data, 32x32, 0 is transparent. remove gfx tags, keep the size bytes.

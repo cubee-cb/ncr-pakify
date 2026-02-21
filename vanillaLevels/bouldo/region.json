@@ -4,11 +4,11 @@
   "worldSky": "night",
   "worldFade": "special",
   "displayName": {
-    "english": "greed of bouldo", // prism highway
+    "english": "Greed of Bouldo", // prism highway
     "meowlang": "meow mew"
   },
   "description": {
-    "english": "bouldo reaches his melting point",
+    "english": "Bouldo reaches his melting point",
     "meowlang": "meow meow meow"
   },
   // shown in the menu. pico-8 gfx data, 32x32, 0 is transparent. remove gfx tags, keep the size bytes.

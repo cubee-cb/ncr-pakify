@@ -69,6 +69,15 @@
       "exportMode": 0,
       "arrayMode": 1,
       "defaultTileset": "world3"
+    },
+    {
+      "definition": "tile",
+      "name": "background tiles",
+      "gridSize": {"x": 8, "y": 8},
+      "exportID": "58656142",
+      "exportMode": 0,
+      "arrayMode": 1,
+      "defaultTileset": "world3"
     }
   ],
   "entities": [
