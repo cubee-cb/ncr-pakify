@@ -34,10 +34,10 @@ Continuing a Region after using this menu will place a marker on its score, so t
 
 If you have access to a **Debug build**, the following are available:
 - The Dev Menu is added to the base System Menu while in-game.
-- `Tab` will reload level packs in-place.
+- `Tab` will rebuild and reload all level sets in-place.
 - `[` and `]` skip between levels.
 - `T` when held will force the touch layers to be shown.
-- `Right Alt` toggles whether the UI layer is shown.
-- `Left Alt` toggles whether the System Menu is disabled when in-game.
+- `Right Alt` toggles whether the UI layer is shown. This includes the in-game UI and all non-game screens, except the System Menu.
+- `Left Alt` toggles whether the System Menu is hidden/disabled when in-game.
   - This allows the game to be paused without showing the System Menu, which is useful for screenshots.
-- `Right Control` will step one frame when the game is paused.
+- `Right Control` will step one frame when the game is paused. Again useful for screenshots, but also debugging frame-by-frame.
