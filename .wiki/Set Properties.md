@@ -30,7 +30,7 @@ May be used for Steam Workshop or removed in the future.
 ### `requireGameVersion` - Minimum Game Version
 Valid Values:
 - `0` - Any Version
-- `1` - v1.2mg - Region Packs introduced.
+- `1` - v1.2mg - Custom Levels introduced.
 
 `0` and `1` are interchangeable.
 
