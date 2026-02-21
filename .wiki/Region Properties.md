@@ -9,11 +9,11 @@
   "hidden": false,
 
   "displayName": {
-    "english": "template",
+    "english": "Template Region",
     "meowlang": "meow"
   },
   "description": {
-    "english": "a template ripe for editing!",
+    "english": "A template ripe for editing!",
     "meowlang": "meow meow meow"
   },
 
