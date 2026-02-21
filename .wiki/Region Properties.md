@@ -4,7 +4,7 @@
 ```json
 {
   "id": "template",
-  "requireGameVersion": 1, // v1.2mg
+  "requireGameVersion": 1,
   "unlocked": true,
   "hidden": false,
 
