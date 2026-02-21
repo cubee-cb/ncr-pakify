@@ -66,7 +66,7 @@ This field is also part of `set.json`; this one can be used if you have only som
 
 Valid Values:
 - `0` - Any Version
-- `1` - v1.2mg - Level Sets introduced.
+- `1` - v1.2mg - Custom Levels introduced.
 
 `0` and `1` are interchangeable.
 
