@@ -87,7 +87,8 @@ There is an example Level Set included, [`exampleSet`](../exampleSet).
 
 #### And finally, to pakify:
 - Open Ninja Cat Remewstered.
-- Go to the `System Menu` > `Options` > `Technical` > `Pakify`
+- Go to the Title Screen, open the System Menu, and select `Pakify`.
+  - Or from `Options` anywhere: `Options` > `Technical` > `Pakify`
 
 ![pakify root menu](images/pakroot.png)
 
@@ -120,7 +121,7 @@ There is an example Level Set included, [`exampleSet`](../exampleSet).
 ### Troubleshooting
 If your pack does not appear in the `New Game` menu:
 - Try running Ninja Cat Remewstered through a console, then rebuild.
-  - It will provide detailed output about what exactly pakify or the Level Set importer is failing on -> look for lines tagged with `[pakify]`.
+  - It will provide detailed output about what exactly pakify or the Level Set importer is failing on -> look for lines tagged with `[pakify]` or `[pakify (ERROR)]`.
 - Make sure your files are formatted correctly.
 
 Pakify doesn't see the pack:
