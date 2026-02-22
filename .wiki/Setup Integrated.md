@@ -23,12 +23,12 @@ The Pakify Folder should be formatted like so:
     - `regionA/` < Region Folder
       - `levelA.json` < Ogmo Levels
       - `levelB.json`
-      - `region.json` < [Region Properties](Region%20Properties.md)
       - `order.json` < Level Order
+      - `region.json` < [Region Properties](Region%20Properties.md)
     - `regionB/` < Region Folder
       - `levelA.json` < Ogmo Level
-      - `region.json` < [Region Properties](Region%20Properties.md)
       - `order.json` < Level Order
+      - `region.json` < [Region Properties](Region%20Properties.md)
     - `set.json` < [Set Properties](Set%20Properties.md)
   - `ninja-cat-remewstered.ogmo` < [Ogmo Project](Ogmo%20Project.md)
 
