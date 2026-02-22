@@ -63,7 +63,8 @@ Place the `.ogmo` file and `.assets` folder from this repository into your Pakif
 These files are required for level creation and are not included with the game. To obtain them:
 - Go to the main [GitHub Page](https://github.com/cubee-cb/ncr-pakify/).
 - Click the green `Code` button and then `Download ZIP`.
-- Extract the ZIP file.
+- Place the ZIP file into the Pakify Folder, then extract it.
+  - If the ZIP gets extracted into its own sub-folder, move its content back into the Pakify Folder.
 
 ### Steps
 There is an example Level Set included, [`exampleSet`](../exampleSet).
