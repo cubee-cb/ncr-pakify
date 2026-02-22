@@ -4,6 +4,8 @@
 ```json
 {
   "id": "level set",
+  "title": "Level Set",
+  "description": "A set of levels!",
   "author": "author",
   "revision": 1,
   "requireGameVersion": 1,
@@ -19,13 +21,17 @@
 ### `id` - Identifier
 Not visible to the player. Used for debugging output.
 
+### `title` - Steam Workshop Title
+Sets the title of the Level Set when published to the Steam Workshop.
+
+### `description` - Steam Workshop Description
+Sets the description of the Level Set when published to the Steam Workshop.
+
 ### `author` - Creator of the Set
 Currently unused.
-May be a User ID for Steam Workshop Uploads.
 
 ### `revision` - Version of the Set
 Currently unused.
-May be used for Steam Workshop or removed in the future.
 
 ### `requireGameVersion` - Minimum Game Version
 Valid Values:
