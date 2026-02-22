@@ -91,9 +91,11 @@ Unlocking a hidden region will display alternative unlock text, saying that a **
 ### `glyph` - Region Glyph
 The `glyph` property expects a string in the PICO-8 gfx string format. It will be shown in the New Game and Leaderboard menus alongside the other regions.
 Glyphs can be made inside PICO-8 and copy-pasted directly from the sprite editor to the text file. (the web-based [Education Edition](https://www.pico-8-edu.com/) works fine for this use case)
-- Omitting/removing the region glyph will result in a generic icon being used. If you want your region to be easily recognisable, make sure to give it a cool icon!
 
-Typical glyph size is 16x16px plus a 1px border, drawn in the centre of a 32x32px sprite.
+Notes:
+- Typical glyph size is 16x16px plus a 1px border, drawn in the centre of a 32x32px sprite, though they can be up to 128x128px in size (the same size as the PICO-8 spritesheet)
+- The Title Menu will show where each Region is sourced from, using a little icon that is overlayed onto the lower-right corner their Glyphs. This may cover part of the Glyph, so try not to put anything important there.
+- Omitting/removing the region glyph will result in a generic icon being used. If you want your region to be easily recognisable, make sure to give it a cool icon!
 
 ```
 // pico-8 sprite string format
@@ -105,8 +107,6 @@ Typical glyph size is 16x16px plus a 1px border, drawn in the centre of a 32x32p
   "glyph": "[gfx]WWHHxxxxxxxxxxxxxxxx[/gfx]",
   "glyph": "WWHHxxxxxxxxxxxxxxxx",
 ```
-
-Region Glyphs can be up to 128x128px in size (the same size as the PICO-8 spritesheet)
 
 ### `worldTheme` - Background
 World background to use on the region's leaderboard page. Valid values:

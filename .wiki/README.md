@@ -3,11 +3,13 @@
 I've just written this here as GitHub does not allow Wikis on private repos.
 
 Note: there are two versions of pakify:
-- Integrated - is built into Ninja Cat Remewstered, and comes with a simple user-facing interface.
-- Standalone (deprecated) - requires Python, but can be used in external workflows.
+- Integrated - is built into Ninja Cat Remewstered, and comes with a simple user-facing interface. This supports publishing directly to Steam Workshop, as well.
+- Standalone (deprecated) - requires Python, but can be used in external workflows. Only packs Regions.
 
-Steam Workshop support is planned, but is not implemented at the present time. Hold tight while I workshop (heh) a way to implement that.
-- Please ignore any mentions of Steam Workshop in this Wiki as long as this notice exists.
+The Title Menu will show where each Region is sourced from, using a little icon on their Glyphs:
+- No icon - Built-in
+- Folder - Custom Levels folder
+- Spanner/Wrench - Steam Workshop
 
 ## Contents
 
@@ -26,9 +28,9 @@ Steam Workshop support is planned, but is not implemented at the present time. H
 - [Modifier Considerations](Modifier%20Considerations.md)
 
 ## Developer Tools
-To access the in-game Dev Menu, open the System Menu and go to `Options` > `Technical` > `Developer Tools`.
+To access the in-game Developer Tools, open the System Menu and go to `Options` > `Technical` > `Developer Tools`.
 
-Here you can do various things, like hot-reload the level packs, grant yourself all upgrades, restore or set health, change modifiers, and so on. Most of these will only have a visible effect while in a level.
+Here you can do various things, like hot-reload the level sets, grant yourself all upgrades, restore or set health, change modifiers, and so on. Most of these will only have a visible effect while in a level.
 
 Continuing a Region after using this menu will place a marker on its score, so that you can still tell which scores are legitimate.
 
