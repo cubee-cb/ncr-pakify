@@ -4,16 +4,16 @@
 ```json
 {
   "id": "template",
-  "requireGameVersion": 1, // v1.2mg
+  "requireGameVersion": 1,
   "unlocked": true,
   "hidden": false,
 
   "displayName": {
-    "english": "template",
+    "english": "Template Region",
     "meowlang": "meow"
   },
   "description": {
-    "english": "a template ripe for editing!",
+    "english": "A template ripe for editing!",
     "meowlang": "meow meow meow"
   },
 
@@ -41,6 +41,12 @@ When choosing an `id`, try to think of something unique to avoid conflicting wit
 If the game tries to load a region with an `id` that is already taken, the new region will be skipped and a warning popup will be shown.
 - In `save.json`, you can set it to replace loaded regions instead and/or turn off the warning popups. (for example, if you're editing the Vanilla regions)
 
+When uploading to Steam Workshop, `id` will be prefixed with the Workshop ID, like so:
+- `workshop.<workshop-id>.<region-id>`
+- `workshop.1234567890.doomcastle by creampuff`
+
+This applies to packs downloaded from the Steam Workshop as well.
+
 ### `displayName` - Name of the Region
 Shown in the New Game menu under the Region Glyph.
 Contains a Dictionary of language keys, with corresponding text.
@@ -66,7 +72,7 @@ This field is also part of `set.json`; this one can be used if you have only som
 
 Valid Values:
 - `0` - Any Version
-- `1` - v1.2mg - Level Sets introduced.
+- `1` - v1.2mg - Custom Levels introduced.
 
 `0` and `1` are interchangeable.
 
