@@ -1,5 +1,7 @@
 {
   "id": "example",
+  "title": "Example Set",
+  "description": "An example Level Set from the Pakify documentation.",
   "author": "author",
   "revision": 1,
   "requireGameVersion": 1,
