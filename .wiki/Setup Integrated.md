@@ -108,6 +108,7 @@ There is an example Level Set included, [`exampleSet`](../exampleSet).
 
 #### Publishing to Steam Workshop:
 - You may only upload Level Sets you have the source for. That is, Sets that Pakify can see.
+  - Make sure you have `title` and `description` set up for your Level Set.
 - Go to the Title Screen, open the System Menu, and select `Pakify`.
   - Or from `Options` anywhere: `Options` > `Technical` > `Pakify`
 
@@ -120,8 +121,9 @@ There is an example Level Set included, [`exampleSet`](../exampleSet).
 
 ![pakify publish menu](images/pakpublish.png)
 
-- Pakify will build the Level Set and upload it with the details specified in `set.json`.
+- Pakify will build the Level Set and upload it to the Workshop using the details specified in `set.json`.
   - The Set will have a `workshop.json` file added to its project folder. Do not remove or modify this unless you want to upload the Level Set again as a new item.
+  - This will not build the pack to the Custom Levels folder; you will need to Pakify Build separately to update your local copy.
 
 ### Troubleshooting
 If your pack does not appear in the `New Game` menu:
