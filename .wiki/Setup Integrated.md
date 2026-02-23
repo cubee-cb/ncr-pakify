@@ -100,6 +100,8 @@ There is an example Level Set included, [`exampleSet`](../exampleSet).
 
 ![pakify set menu](images/paksets.png)
 
+![pakify build button](images/pakbuild.png)
+
 ![pakify success banner](images/pakok.png)
 
 - Once complete, go to `New Game` in the main menu and see if your Regions are there.
@@ -107,8 +109,10 @@ There is an example Level Set included, [`exampleSet`](../exampleSet).
 ![new game screen](images/paknewgame.png)
 
 #### Publishing to Steam Workshop:
-- You may only upload Level Sets you have the source for. That is, Sets that Pakify can see.
-  - Make sure you have `title` and `description` set up for your Level Set.
+Sets can only be published to the Steam Workshop using the Steam build of the game, while Steam is running.
+- To check if this is the case, either see if the Sets listed by Pakify have a Publish option, or check if the console output has `connected to steam!` followed by a greeting (e.g. `hello cubee!`).
+
+You may only upload Level Sets you have the source for. That is, Sets that Pakify can see. Make sure you have `title` and `description` set up for your Level Set.
 - Go to the Title Screen, open the System Menu, and select `Pakify`.
   - Or from `Options` anywhere: `Options` > `Technical` > `Pakify`
 
@@ -119,20 +123,29 @@ There is an example Level Set included, [`exampleSet`](../exampleSet).
     - If the item was deleted from Steam Workshop, the game will attempt to create a new item instead.
   - !! You will be returned to the title screen automatically when it finishes.
 
-![pakify publish menu](images/pakpublish.png)
+![pakify set menu](images/paksets.png)
 
-- Pakify will build the Level Set and upload it to the Workshop using the details specified in `set.json`.
+![pakify publish button](images/pakpublish.png)
+
+- Pakify will build the Level Set and upload it to the Workshop using the details specified in `set.json`. This may take a few moments.
   - The Set will have a `workshop.json` file added to its project folder. Do not remove or modify this unless you want to upload the Level Set again as a new item.
   - This will not build the pack to the Custom Levels folder; you will need to Pakify Build separately to update your local copy.
+  - If the upload fails, please check Troubleshooting below.
 
 ### Troubleshooting
-If your pack does not appear in the `New Game` menu:
+**If your pack does not appear in the `New Game` menu:**
 - Try running Ninja Cat Remewstered through a console, then rebuild.
-  - It will provide detailed output about what exactly pakify or the Level Set importer is failing on -> look for lines tagged with `[pakify]` or `[pakify (ERROR)]`.
+  - It will provide detailed output about what exactly Pakify or the Level Set importer is failing on -> look for lines tagged with `[pakify]` or `[pakify (ERROR)]`.
 - Make sure your files are formatted correctly.
 
-Pakify doesn't see the pack:
+**Pakify doesn't see the pack:**
 - Make sure it's in the right folder and contains a properly-formatted `set.json`.
+
+**Publish fails:**
+- Try running Ninja Cat Remewstered through a console, then publish again.
+  - It will provide detailed output about what exactly Pakify is failing on -> look for lines tagged with `[pakify]` or `[pakify (ERROR)]`.
+- Make sure your files are formatted correctly.
+- Check that you have agreed to the Steam Subscriber Agreement / Workshop ToS.
 
 ### `order.json` example
 Format:
