@@ -1,6 +1,8 @@
 # Region Properties
 ## Template
 
+Some properties are omitted; see below for a full list of properties and their allowed values.
+
 ```json
 {
   "id": "template",
@@ -22,8 +24,7 @@
   "worldSky": "night",
   "worldFade": "cut",
 
-  "rewards": [],
-  "newGamePlusItems": []
+  "rewards": []
 }
 ```
 
@@ -32,20 +33,23 @@
 ### `id` - Identifier
 Used internally for scoreboards, save files, and the like. This is not typically visible to the player. (see `displayName` and `description`)
 
-When choosing an `id`, try to think of something unique to avoid conflicting with other people's regions. A good idea might be to include your username with it, or add some random words:
+When choosing an `id`, try to think of something unique to avoid conflicting with other people's regions. A good idea might be to include your username with it, or add some random words.
+You do not need to worry about this too much for Workshop packs, as their Workshop ID will be added to the Region IDs automatically when uploading.
+- `<region-id>.<workshop-id>`
+- `demake by cubee.3671698094`
+- `plateplus.3671342679`
+
+Sets from the Workshop will use different scoreboards due to the above.
+When building your Level Set, don't accommodate for the changing Region ID (for example, with rewards); as long as your Set has working IDs locally, Pakify will handle it for you.
+
+Some examples for "unique" names, for distribution outside Steam Workshop:
 - `NinjaCatPlayer UltraChallengePack`
 - `doomcastle by creampuff`
 - `kaizo observatory - charlise hopscotch`
-- `orangejuice ledgehop inmost magicat`
+- `orangejuice ledgehop inmost 20mtd`
 
 If the game tries to load a region with an `id` that is already taken, the new region will be skipped and a warning popup will be shown.
 - In `save.json`, you can set it to replace loaded regions instead and/or turn off the warning popups. (for example, if you're editing the Vanilla regions)
-
-When uploading to Steam Workshop, `id` will be prefixed with the Workshop ID, like so:
-- `workshop.<workshop-id>.<region-id>`
-- `workshop.1234567890.doomcastle by creampuff`
-
-This applies to packs downloaded from the Steam Workshop as well.
 
 ### `displayName` - Name of the Region
 Shown in the New Game menu under the Region Glyph.
@@ -90,12 +94,13 @@ Unlocking a hidden region will display alternative unlock text, saying that a **
 
 ### `glyph` - Region Glyph
 The `glyph` property expects a string in the PICO-8 gfx string format. It will be shown in the New Game and Leaderboard menus alongside the other regions.
-Glyphs can be made inside PICO-8 and copy-pasted directly from the sprite editor to the text file. (the web-based [Education Edition](https://www.pico-8-edu.com/) works fine for this use case)
+Glyphs can be made inside PICO-8 and copy-pasted directly from the sprite editor to the text file. (the web-based [Education Edition](https://www.pico-8-edu.com/) works fine for this use case) Remember, Black is treated as transparent and will not be shown.
 
 Notes:
 - Typical glyph size is 16x16px plus a 1px border, drawn in the centre of a 32x32px sprite, though they can be up to 128x128px in size (the same size as the PICO-8 spritesheet)
 - The Title Menu will show where each Region is sourced from, using a little icon that is overlayed onto the lower-right corner their Glyphs. This may cover part of the Glyph, so try not to put anything important there.
 - Omitting/removing the region glyph will result in a generic icon being used. If you want your region to be easily recognisable, make sure to give it a cool icon!
+- Because these use the PICO-8 format, and to keep thing simple, the extra colours and transparency used in the rest of the game are not supported.
 
 ```
 // pico-8 sprite string format
@@ -159,12 +164,30 @@ Example:
   ],
 ```
 
-### `newGamePlusItems`
-A list of items to grant the player in New Game Plus mode.
+You do not need to worry about the Region ID being changed for Workshop uploads; Pakify will automatically update them.
+
+### `startingItems` and `startingItemsNewGamePlus`
+Optional lists of items to grant the player when starting a new game, and another for starting in New Game Plus mode. These can be set to empty lists to remove all starting items.
+
+When `startingItems` is not specified, the game will start Ensy with Shuriken, and Elenn with the Sword.
+- This can be set to contain only `"shuriken"` or `"sword"` if you want/need both characters to start with the same item.
+
+When `startingItemsNewGamePlus` is not specified, New Game Plus grants the following items:
+- Shuriken
+- Sword
+- Double Jump
 
 Example of all valid values:
 ```
-  "newGamePlusItems": [
+  "startingItems": [
+    "shuriken",
+    "sword",
+    "bow",
+    "double jump",
+    "climbing claws"
+  ],
+
+  "startingItemsNewGamePlus": [
     "shuriken",
     "sword",
     "bow",
@@ -172,11 +195,6 @@ Example of all valid values:
     "climbing claws"
   ],
 ```
-
-When not specified, New Game Plus grants the following items:
-- Shuriken
-- Sword
-- Double Jump
 
 ### `levels` - Levels
 Normally, this should be left blank as it will be filled in by `pakify`.

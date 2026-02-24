@@ -1,7 +1,7 @@
 {
   "id": "example",
-  "title": "Example Set",
-  "description": "An example Level Set from the Pakify documentation.",
+  "title": "Pakify Example Set",
+  "description": "An example Level Set from the Pakify documentation, containing two Regions:\n- Template (a basic level with a house)\n- Test Pack (a bunch of levels for testing the game mechanics)",
   "author": "author",
   "revision": 1,
   "requireGameVersion": 1,
