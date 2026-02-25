@@ -6,7 +6,6 @@ Some properties are omitted; see below for a full list of properties and their a
 ```json
 {
   "id": "template",
-  "requireGameVersion": 1,
   "unlocked": true,
   "hidden": false,
 
@@ -197,6 +196,8 @@ Example of all valid values:
 ```
 
 ### `levels` - Levels
-Normally, this should be left blank as it will be filled in by `pakify`.
+Normally, this should be omitted or left blank as it will be filled in by the converted Ogmo Levels. However, if you have an external tool to convert levels, you can target the Ninja Cat Level Format and this property to have them pre-filled.
 
 `basepak` is pre-filled, as there are no Ogmo-format levels for the original stages.
+
+Pakify will skip packing Ogmo Levels for Regions with pre-filled levels. They will still be processed for size reduction and other changes, but no Ogmo levels will be added.
