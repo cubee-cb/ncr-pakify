@@ -23,6 +23,7 @@ The Title Menu will show where each Region is sourced from, using a little icon 
 - [Set Properties](Set%20Properties.md)
 
 ### Extra Info
+- [Entities](Entities.md)
 - [Tile Mechanics](Tile%20Mechanics.md)
 - [Alternate Levels](Alternate%20Levels.md)
 - [Modifier Considerations](Modifier%20Considerations.md)

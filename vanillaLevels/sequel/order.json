@@ -15,6 +15,8 @@
     "3-8b_notShuriken.json:notShuriken",
   "3-9.json",
   "3-a.json",
+    "3-a_hasDoubleJump.json:hasDoubleJump",
+    "3-a_goldRush.json:goldRush",
   "3-b.json",
     "3-b_pacifism.json:pacifism",
 

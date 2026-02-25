@@ -19,11 +19,8 @@
   "unlocked": true,
   "rewards": [],
 
-  "startingItems": [
-    "shuriken",
-    "sword",
-    "double jump"
-  ],
+  // specifically no starting items
+  "startingItems": [],
 
   "levels": []
 }
