@@ -8,13 +8,15 @@ Some entities will activate when "hearing" noise nearby. Some actions are louder
 ### `start point` - Start Point
 Marks where the player starts. There can be only one in a level.
 
+You can change what entrance animation is used when starting the level here.
+
 ### `checkpoint` - Checkpoint
-When the player enters its area, the level state is saved. Dying will respawn the player at the checkpoint's position.
+When the player enters its area, the level state is saved. Dying will respawn the player at the checkpoint's position. Checkpoints cannot be re-activated until a different checkpoint is activated.
 
 Restarting the level ignores checkpoints.
 
 ### `elenn npc` - Elenn NPC
-Executes a behaviour, then despawns. Variants are more-or-less self-explanatory.
+Executes a behaviour, then despawns. Variants are more-or-less self-explanatory, and control what animation sequence she plays.
 
 Despawns immediately when playing as Elenn.
 
@@ -22,6 +24,7 @@ Can take damage in some animations, falling off the stage and interrupting the a
 - e.g. in the `steal tile` animation, the player can hit Elenn with a weapon to prevent her from stealing the tile.
 
 Attacking Elenn will mark her as a "rival" for future levels. (unimplemented)
+- This can be used to change levels with the `rival` Alternate.
 
 ### `bouldo` - Gold Rush Bouldo
 Spawns automatically in Gold Rush mode, blocking the goal until all treasures are collected. Does nothing important otherwise, and may misbehave outside of Gold Rush. (untested)
@@ -33,7 +36,7 @@ Spawns automatically in Gold Rush mode, blocking the goal until all treasures ar
 An electrified/spiky box that usually covers level goals. If it lands over a tile, it will remove it from the stage until defeated.
 
 ### `searchlight` - Searchlight
-A beam of light which moves back and forth in a definable range of pixels.
+A beam of light which moves back and forth, where Variant defines the range of pixels to sweep over.
 
 Player can pass using a Sword Dash.
 
@@ -57,7 +60,7 @@ Arrow can be parried, destroying the Arrow Shooter.
 Cycles faster in New Game Plus.
 
 ### `plant` - Potted Plant
-Mostly exists to look pretty. Leaves can block two Shuriken.
+Mostly exists to look pretty. Leaves can block two Shuriken. Variant controls the style of plant, but has no effect gameplay-wise.
 
 Sword can destroy leaves, and also cut the stem.
 
@@ -67,6 +70,10 @@ Chopping its stem with the leaves still on makes more noise than destroying them
 
 Variants `camellia`, `holly`, `lily` do not have final textures.
 
+Flags can be set:
+- Trapped: Spawns a bomb when the leaves are destroyed.
+- Restorative: Does nothing.
+- Gilded: Does nothing.
 
 ## Enemies
 
@@ -143,17 +150,19 @@ Beefy dragon warrior. Can be parried.
 
 ### `boss 1` and `boss 2` - Tiga, The Last Tiger Ninja
 
-Gained magic from the Kitsune-Tiger alliance. Spawn-relative movement.
+Gained magic from the Kitsune-Tiger alliance. Spawn-relative movement. `boss 2` is effectively a `super` variant for `boss 1`; Tiga was implemented before Variants existed.
 
 Summons spirits, uses sword dash, and casts death spells.
 
+It is not currently possible to program Tiga's behaviour through level data, and as such his patterns may not play well with custom arenas, especially if their size differs from the default ones.
+
 ### `boss kitsu` - Kitsu, The Elder Kitsune
 
-Uses magic fireballs and fire walls, as well as magic barriers. Level-relative movement.
+Uses magic fireballs and fire walls, as well as magic barriers. Level-relative movement. Variant `super` uses different attack patterns.
 
 Controls Cassette Blocks (Red and Green)
 
-`super` variant uses a different, more difficult attack pattern.
+Kitsu's behaviours and arenas were built to complement each other. It is not currently possible to program her behaviour through level data, and as such her patterns may not play well with custom arenas which aren't designed to match her default behaviours.
 
 ### `boss dago` - Dago, The Trial Dragon
 Unimplemented
