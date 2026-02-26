@@ -173,11 +173,11 @@ Moves directly downwards, and despawns when it leaves the stage.
 
 In New Game Plus, they move slightly toward the player as they descend.
 
-### `old ghost` - Chasing Spirit (old)
-Moves towards player, slowing as it gets near, colliding with walls and platforms.
-
 ### `demond ghost` - Chasing Spirit
 Moves towards player with inertia, colliding with walls and platforms.
+
+### `old ghost` - Chasing Spirit (legacy)
+Moves towards player, slowing as it gets near, colliding with walls and platforms.
 
 ### `bomb` - Bomb
 Falls, bounces, and explodes after a short delay. Explodes immediately when pierced by an arrow.
@@ -190,5 +190,5 @@ Falls and damages the player. Goes through tiles.
 
 ## Deprecated
 
-### `bomb maker` - Bomb Dropper (old)
+### `bomb maker` - Bomb Dropper (legacy)
 An older version of `bomb dropper`, retained for the original stages. Its cycle offset is determined by where it's placed, rather than being configurable.
