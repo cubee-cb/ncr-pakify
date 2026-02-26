@@ -3,6 +3,24 @@ This documents the properties accessible within the Ogmo Project File.
 
 **Before you proceed**, there will be values available that may spoil potential future content. Whether these are or will be implemented in any current or future release of the game is not guaranteed, and any implementation of these values that exist now may change in the future.
 
+## Layers
+
+There are three layers read by Pakify:
+- Entities
+- Tiles
+- Background Tiles
+
+### Entities
+The layout of objects that will spawn in the level. All entities can be used in any theme.
+
+### Tiles
+The base tilemap the player will interact with. The available tiles differ between level styles, so for your own sanity try to settle on a level theme before decorating your level.
+
+### Background Tiles
+These tiles are intangible, and serve as decoration only. Its theme can be chosen separately from the main Tiles layer, so you can mix and match decorations.
+
+Solid tiles in the background layer will be rendered darker than other tiles. This is so decorative tiles can be stacked behind tangible tiles without being visually different from those placed in the foreground, while reducing confusion as to why otherwise solid tiles cannot be stood on.
+
 ## Level Properties
 Right-click on the selected level in the sidebar, then click "Properties".
 
@@ -21,6 +39,7 @@ Select the background music to play during the level.
 - `strange` - How To Play theme
 - `sleepy` - A short and peaceful theme, originally from Marshmallow Infinity
 - `snowflakes` - A cold but hopeful theme, created for Marshmallow Adventures (unreleased)
+- `creepy night` - A weird, gloomy theme from Terra - A Terraria Demake (Forest Night)
 
 The following are missing, but may be added in the future:
 - `stilt town` - World 5 (Dragon Spires A)

@@ -18,9 +18,10 @@
   "unlocked": false,
   "rewards": [
     "region:finale", // unlock pack "finale"
-    "modifier:new game plus", // unlock New Game Plus mode
     "gold rush;region:bouldo", // unlock pack "bouldo" if beaten with Gold Rush
-    "modifier:ln" // unlock Play as Elenn mode
+    "modifier:new game plus", // unlock New Game Plus mode
+    "modifier:ln", // unlock Play as Elenn mode
+    "perfection;modifier:randomiser"
   ],
   "startingItemsNewGamePlus": [
     "shuriken",

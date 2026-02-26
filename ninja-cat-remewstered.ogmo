@@ -15,7 +15,7 @@
       "name": "music",
       "definition": "Enum",
       "display": 0,
-      "choices": ["sneaking", "wind", "last ninjacat", "eighty-six", "moss town", "kitsune underpass", "trance of kitsu", "stilt town", "dragon spires", "trial of dago", "land of greed", "bouldos tantrum", "strange", "chill", "snowflakes", "vaulter", "catwalk to victory", "cactuckey cackle", "sleepy"],
+      "choices": ["sneaking", "wind", "last ninjacat", "eighty-six", "moss town", "kitsune underpass", "trance of kitsu", "stilt town", "dragon spires", "trial of dago", "land of greed", "bouldos tantrum", "strange", "chill", "snowflakes", "vaulter", "catwalk to victory", "cactuckey cackle", "sleepy", "creepy night"],
       "defaults": 0
     },
     {

@@ -160,7 +160,7 @@ Unimplemented
 
 `super` variant uses a different, more difficult attack pattern.
 
-### `boss bouldo` - Golden Bouldo, The Greed-Molten Bould
+### `boss bouldo` - Golden Alloy, The Greed-Bound Bould
 Unimplemented
 
 `super` variant uses a different, more difficult attack pattern.

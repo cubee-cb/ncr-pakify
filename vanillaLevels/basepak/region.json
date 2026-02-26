@@ -18,7 +18,8 @@
   "requireGameVersion": 1,
   "unlocked": true,
   "rewards": [
-    "gold rush;region:bouldo" // unlock pack "bouldo" if beaten with Gold Rush
+    "gold rush;region:bouldo", // unlock pack "bouldo" if beaten with Gold Rush
+    "perfection;modifier:randomiser"
   ],
 
   "levels": [
