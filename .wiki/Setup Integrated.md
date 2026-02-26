@@ -26,7 +26,7 @@ The Pakify Folder should be formatted like so (items with a trailing `/` are fol
   - `setC/` < Level Set
   - `ninja-cat-remewstered.ogmo` < [Ogmo Project](Ogmo%20Project.md)
 
-And for a Level Set, for example `setA`:
+Level Sets use the following structure, using `setA` as an example:
 - `setA/` < Level Set
   - `regionA/` < Region Folder
     - `levelA.json` < Ogmo Levels
