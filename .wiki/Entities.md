@@ -36,7 +36,7 @@ Spawns automatically in Gold Rush mode, blocking the goal until all treasures ar
 An electrified/spiky box that usually covers level goals. If it lands over a tile, it will remove it from the stage until defeated.
 
 ### `searchlight` - Searchlight
-A beam of light which moves back and forth, where Variant defines the range of pixels to sweep over.
+A beam of light which moves back and forth, where Variant defines the range of pixels to sweep over. Cycle offset can be adjusted: Higher value (0-1) makes it drop before others.
 
 Player can pass using a Sword Dash.
 
