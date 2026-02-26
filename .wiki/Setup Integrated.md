@@ -141,6 +141,10 @@ Next:
   - This will not build the pack to the Custom Levels folder; you will need to Pakify Build separately to update your local copy.
   - If the upload fails, please check Troubleshooting below.
 
+- Once complete, Steam will open your new Workshop page.
+  - Here you can change the visibility of your Level Set. By default it will be set to Hidden, meaning other players cannot see it. Change this to Friends-only or Publish when you're ready to share it with others!
+  - If you haven't set `title` and `description`, you can update these through Steam.
+
 ## Troubleshooting
 
 ### **If your pack does not appear in the `New Game` menu:**
