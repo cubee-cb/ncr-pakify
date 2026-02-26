@@ -50,7 +50,7 @@ And another for a Region folder:
 
 ![a file browser inside a region's folder](images/pakfolderregion.png)
 
-Linux people: the above images were taken inside a Wine Prefix so Windows people can follow the exact path in the top bar; please use the Linux path unless you happen to be running the Windows version under Wine/Proton, though note issues with this setup may not be supported; the Native Linux version is the first-class build here.
+Linux/SteamOS people: the above images were taken inside a Wine Prefix so Windows people can follow the exact path in the top bar; please use the Linux path unless you happen to be running the Windows version under Wine/Proton.
 
 Pakify will Build sets directly into the Custom Levels Folder - if we build `setA`, then we will get the following structure:
 - `customPacks/` < Custom Levels Folder
