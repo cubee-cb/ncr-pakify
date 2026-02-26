@@ -143,24 +143,24 @@ Next:
 
 ## Troubleshooting
 
-## **If your pack does not appear in the `New Game` menu:**
+### **If your pack does not appear in the `New Game` menu:**
 
 - Try running Ninja Cat Remewstered through a console, then rebuild.
   - It will provide detailed output about what exactly Pakify or the Level Set importer is failing on -> look for lines tagged with `[pakify]` or `[pakify (ERROR)]`.
 - Make sure your files are formatted correctly.
 
-## **Pakify doesn't see the pack:**
+### **Pakify doesn't see the pack:**
 
 - Make sure it's in the right folder and contains a properly-formatted `set.json`.
 
-## **Publish fails:**
+### **Publish fails:**
 
 - Try running Ninja Cat Remewstered through a console, then publish again.
   - It will provide detailed output about what exactly Pakify is failing on -> look for lines tagged with `[pakify]` or `[pakify (ERROR)]`.
 - Make sure your files are formatted correctly.
 - Check that you have agreed to the Steam Subscriber Agreement / Workshop ToS.
 
-## **What does "running through a console" mean?**
+### **What does "running through a console" mean?**
 
 Please research "how to run applications through console linux/windows", it's fairly straightforward.
 - For Windows, you would use CMD or PowerShell.
