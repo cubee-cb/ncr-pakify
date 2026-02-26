@@ -18,21 +18,27 @@ The Pakify Folder is only for developing Level Sets. To play Level Sets from out
 - Linux: `/home/<user>/.config/cubee/ninjacat/customLevels`
 - Linux (Steam Flatpak): `/home/<user>/.var/app/com.ValveSoftware.Steam/.config/cubee/ninjacat/customLevels`
 
-The Pakify Folder should be formatted like so:
+The Pakify Folder should be formatted like so (items with a trailing `/` are folders):
 - `pakify/` < Pakify Folder
   - `.assets/` < Ogmo Project assets folder
   - `setA/` < Level Set
-    - `regionA/` < Region Folder
-      - `levelA.json` < Ogmo Levels
-      - `levelB.json`
-      - `order.json` < Level Order
-      - `region.json` < [Region Properties](Region%20Properties.md)
-    - `regionB/` < Region Folder
-      - `levelA.json` < Ogmo Level
-      - `order.json` < Level Order
-      - `region.json` < [Region Properties](Region%20Properties.md)
-    - `set.json` < [Set Properties](Set%20Properties.md)
+  - `setB/` < Level Set
+  - `setC/` < Level Set
   - `ninja-cat-remewstered.ogmo` < [Ogmo Project](Ogmo%20Project.md)
+
+And for a Level Set, for example `setA`:
+- `setA/` < Level Set
+  - `regionA/` < Region Folder
+    - `levelA.json` < Ogmo Levels
+    - `levelB.json`
+    - `order.json` < Level Order
+    - `region.json` < [Region Properties](Region%20Properties.md)
+  - `regionB/` < Region Folder
+    - `levelA.json` < Ogmo Level
+    - `order.json` < Level Order
+    - `region.json` < [Region Properties](Region%20Properties.md)
+  - `preview.png`
+  - `set.json` < [Set Properties](Set%20Properties.md)
 
 That is, each "Set" of Region Packs is stored in its own folder. This is for organisational purposes, and so that it is possible to group Campaigns of sequential Regions as one distinct item.
 
@@ -112,7 +118,10 @@ There is an example Level Set included, [`exampleSet`](../exampleSet).
 Sets can only be published to the Steam Workshop using the Steam build of the game, while Steam is running.
 - To check if this is the case, either see if the Sets listed by Pakify have a Publish option, or check if the console output has `connected to steam!` followed by a greeting (e.g. `hello cubee!`).
 
-You may only upload Level Sets you have the source for. That is, Sets that Pakify can see. Make sure you have `title` and `description` set up for your Level Set.
+You can set a preview image to show on the Workshop by adding `preview.png` next to your `set.json`.
+Preview images use your cloud storage, so If you plan to upload lots of Level Sets, please keep the file size low. Let me know if you run out of space, and I may consider increasing it.
+
+Next:
 - Go to the Title Screen, open the System Menu, and select `Pakify`.
   - Or from `Options` anywhere: `Options` > `Technical` > `Pakify`
 
@@ -146,6 +155,12 @@ You may only upload Level Sets you have the source for. That is, Sets that Pakif
   - It will provide detailed output about what exactly Pakify is failing on -> look for lines tagged with `[pakify]` or `[pakify (ERROR)]`.
 - Make sure your files are formatted correctly.
 - Check that you have agreed to the Steam Subscriber Agreement / Workshop ToS.
+
+**What does "running through a console" mean?**
+Please research "how to run applications through console linux/windows", it's fairly straightforward.
+- For Windows, you would use CMD or PowerShell.
+- For Steam Deck and other systems running KDE Plasma, it's most likely Konsole.
+- For other Linux users, it depends on what exact flavour of Linux you have.
 
 ### `order.json` example
 Format:
