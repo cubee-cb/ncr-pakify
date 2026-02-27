@@ -13,7 +13,7 @@ You can change what entrance animation is used when starting the level here.
 ### `checkpoint` - Checkpoint
 When the player enters its area, the level state is saved. Dying will respawn the player at the checkpoint's position. Checkpoints cannot be re-activated until a different checkpoint is activated.
 
-Restarting the level ignores checkpoints.
+Checkpoints are ignored when restarting the level and in Randomiser Mode.
 
 ### `elenn npc` - Elenn NPC
 Executes a behaviour, then despawns. Variants are more-or-less self-explanatory, and control what animation sequence she plays.
