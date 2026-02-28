@@ -82,7 +82,7 @@
           "values": {"variant": "cherry", "trapped": false, "gilded": false, "restorative": false}
         },
         {
-          "name": "elenn npc",
+          "name": "rival npc",
           "id": 12,
           "_eid": "91931981",
           "x": 608,
@@ -90,7 +90,7 @@
           "originX": 0,
           "originY": 0,
           "flippedX": false,
-          "values": {"variant": "looking jump away"}
+          "values": {"variant": "looking run away"}
         }
       ]
     },

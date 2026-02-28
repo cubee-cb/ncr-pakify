@@ -1,10 +1,8 @@
-# Setup (Integrated)
-
-This page is for the version of pakify built-in to Ninja Cat Remewstered. For the Python version, see [Setup (pakify Standalone)](Setup%20Standalone.md).
+# Setup
 
 You will need:
 - Ogmo Editor 3 (from [here](https://ogmo-editor-3.github.io/) or a compatible version)
-- Ninja Cat Remewstered 1.2mg or higher
+- Ninja Cat Remewstered V1.2mg or higher
 
 ## Required Information
 

@@ -2,10 +2,6 @@
 
 I've just written this here as GitHub does not allow Wikis on private repos.
 
-Note: there are two versions of pakify:
-- Integrated - is built into Ninja Cat Remewstered, and comes with a simple user-facing interface. This supports publishing directly to Steam Workshop, as well.
-- Standalone (deprecated) - requires Python, but can be used in external workflows. Only packs Regions.
-
 The Title Menu will show where each Region is sourced from, using a little icon on their Glyphs:
 - No icon - Built-in
 - Folder - Custom Levels folder
@@ -14,15 +10,14 @@ The Title Menu will show where each Region is sourced from, using a little icon 
 ## Contents
 
 ### Tutorials
-- [Setup (pakify Integrated)](Setup%20Integrated.md)
-- [Setup (pakify Standalone)](Setup%20Standalone.md) (deprecated)
+- [Setup](Setup.md)
 
 ### Properties and Templates
 - [Ogmo Project](Ogmo%20Project.md)
 - [Region Properties](Region%20Properties.md)
 - [Set Properties](Set%20Properties.md)
 
-### Extra Info
+### Extra Notes
 - [Entities](Entities.md)
 - [Tile Mechanics](Tile%20Mechanics.md)
 - [Alternate Levels](Alternate%20Levels.md)
@@ -33,7 +28,7 @@ To access the in-game Developer Tools, open the System Menu and go to `Options` 
 
 Here you can do various things, like hot-reload the level sets, grant yourself all upgrades, restore or set health, change modifiers, and so on. Most of these will only have a visible effect while in a level.
 
-Continuing a Region after using this menu will place a marker on its score, so that you can still tell which scores are legitimate.
+Continuing a saved game after using this menu will place a marker on its score, so that you can still tell which scores are legitimate.
 
 If you have access to a **Debug build**, the following are available:
 - The Dev Menu is added to the base System Menu while in-game.

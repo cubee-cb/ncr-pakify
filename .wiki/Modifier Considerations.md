@@ -36,10 +36,14 @@ In practice, she can do almost everything Ensy can, but it may be beneficial to 
 Players can simply walk through all damage sources; the only things that cause the level to restart are Pits and Suffocation, or any "Miss" when combined with Perfection or Pacifism.
 
 ## Randomiser
-The order of levels is randomised, as are most entities. The player can restart to re-generate another level.
+The order of levels is randomised. The player can Restart Level to re-generate another level if the current one is impossible. Should never repeat a level.
+
+Entities will be randomised within small groups of allowed replacements, and offset by a small, random amount horizontally.
+
+Bosses will randomly replace each other.
 
 ## Dogblaster
-Not really any concerns here; Dogblaster is added to the starting items so its inability to activate targets is not an issue, since the player should have Shuriken or the Sword already.
+Dogblaster is added to the starting items. It cannot activate Targets.
 
 ## Terra Guy
 Terra Guy has really slow movement, and a shorter jump. However, he also starts with the Pickaxe Weapon, which can destroy any solid tile and build anywhere with empty space, so he can cheese pretty much any level.

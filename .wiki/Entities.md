@@ -2,7 +2,6 @@
 
 Some entities will activate when "hearing" noise nearby. Some actions are louder than others: e.g. a shuriken landing in wood is quieter than if it deflected off metal, and will activate entities in a smaller range.
 
-
 ## Player and Allies
 
 ### `start point` - Start Point
@@ -15,16 +14,19 @@ When the player enters its area, the level state is saved. Dying will respawn th
 
 Checkpoints are ignored when restarting the level and in Randomiser Mode.
 
-### `elenn npc` - Elenn NPC
-Executes a behaviour, then despawns. Variants are more-or-less self-explanatory, and control what animation sequence she plays.
+### `rival npc` - Rival NPC
+Executes a behaviour, then despawns. Variants are more-or-less self-explanatory, and control what animation sequence it plays.
 
-Despawns immediately when playing as Elenn.
+Appears as Elenn by default, but when playing as her the Rival will use Ensy's sprites instead. Notes will refer to the Rival as Elenn going forward.
 
 Can take damage in some animations, falling off the stage and interrupting the animation.
 - e.g. in the `steal tile` animation, the player can hit Elenn with a weapon to prevent her from stealing the tile.
 
-Attacking Elenn will mark her as a "rival" for future levels. (unimplemented)
-- This can be used to change levels with the `rival` Alternate.
+Interactions will modify the Rival Friendship value for the current playthrough:
+- Attacking Elenn will reduce Friendship by 2.
+  - Doing so after she fires a Bow for you will count doubly; this is betrayal.
+
+Rival Friendship can be used for Alternates with the `Rival Friend` and `Rival Enemy` conditions.
 
 ### `bouldo` - Gold Rush Bouldo
 Spawns automatically in Gold Rush mode, blocking the goal until all treasures are collected. Does nothing important otherwise, and may misbehave outside of Gold Rush. (untested)
