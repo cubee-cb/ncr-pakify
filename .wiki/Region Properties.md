@@ -54,13 +54,13 @@ If the game tries to load a region with an `id` that is already taken, the new r
 Shown in the New Game menu under the Region Glyph.
 Contains a Dictionary of language keys, with corresponding text.
 
-Each line of this label fits 16 characters, so keep these names reasonably short.
+There is a very limited amount of space, so keep these names within 2-3 shorter words.
 
 ### `description` - Short Description.
 Shown in the New Game menu at the top of the screen.
 Contains a Dictionary of language keys, with corresponding text.
 
-Descriptions can be longer than the Display Name, but try to keep them within 32-64 characters.
+Descriptions can be a lot longer than the Display Name, but try to keep them within one line.
 
 ### `author` - Creator of the Region.
 Currently unused. You can use this to credit whoever made this Region directly.
@@ -69,7 +69,6 @@ If multiple people worked on it, preferably use comma separation.
 
 ### `revision` - Version of the Region.
 Currently unused.
-May be used for Steam Workshop or removed in the future.
 
 ### `unlocked` - Unlocked by Default
 Set this to `false` if you would like this region to be locked initially.
@@ -130,7 +129,8 @@ These allow you to unlock certain things for the player when they complete your 
 
 Valid items for type `modifier` (case and spacing insensitive):
 - `new game plus` - Unlock "New Game Plus" mode.
-- `elenn` - Unlock "Play As Elenn" mode.
+- `elenn` - Unlock "Elenn" mode.
+- `randomiser` - Unlock "Randomiser" mode.
 
 Valid items for type `region`:
 - The `id` of any Region. If the region isn't loaded, this will be done without creating the notification.
