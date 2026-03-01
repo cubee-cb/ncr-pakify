@@ -1,8 +1,8 @@
-# ncr-pakify
+# Pakify Documentation for Ninja Cat Remewstered
 
-Documentation and resources for making Custom Levels for Ninja Cat Remewstered, using [Ogmo Editor 3](https://github.com/Ogmo-Editor-3/OgmoEditor3-CE).
+Documentation and resources for making Custom Levels for [Ninja Cat Remewstered](https://store.steampowered.com/app/4409630/Ninja_Cat_Remewstered/), using the integrated Pakify tool and [Ogmo Editor 3](https://github.com/Ogmo-Editor-3/OgmoEditor3-CE).
 
-Included is an Ogmo Project with all of the entities and tilesets already set up.
+Included is an Ogmo Project with all of the entities and tilesets already set up, as well as the Vanilla Level Set containing the default levels.
 
 ![screenshot of the ogmo editor next to ninja cat remewstered, editing one of its levels](.github/preview.png)
 
