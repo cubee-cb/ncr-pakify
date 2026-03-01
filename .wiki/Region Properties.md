@@ -63,23 +63,13 @@ Contains a Dictionary of language keys, with corresponding text.
 Descriptions can be longer than the Display Name, but try to keep them within 32-64 characters.
 
 ### `author` - Creator of the Region.
-Currently unused.
-May be a User ID for Steam Workshop Uploads.
+Currently unused. You can use this to credit whoever made this Region directly.
+
+If multiple people worked on it, preferably use comma separation.
 
 ### `revision` - Version of the Region.
 Currently unused.
 May be used for Steam Workshop or removed in the future.
-
-### `requireGameVersion` - Minimum Game Version
-This field is also part of `set.json`; this one can be used if you have only some Regions that require a newer version, but others will work on a lower version.
-
-Valid Values:
-- `0` - Any Version
-- `1` - v1.2mg - Custom Levels introduced.
-
-`0` and `1` are interchangeable.
-
-Regions made for a newer version of the game will not be loaded, and a notification will be displayed informing the user to update their game.
 
 ### `unlocked` - Unlocked by Default
 Set this to `false` if you would like this region to be locked initially.
@@ -138,35 +128,34 @@ Format: `<type>:<item>` or `<condition>;<type>:<item>`
 
 These allow you to unlock certain things for the player when they complete your region.
 
-Valid items for type `modifier`:
+Valid items for type `modifier` (case and spacing insensitive):
 - `new game plus` - Unlock "New Game Plus" mode.
-- `ln` - Unlock "Play As Elenn" mode.
+- `elenn` - Unlock "Play As Elenn" mode.
 
 Valid items for type `region`:
 - The `id` of any Region. If the region isn't loaded, this will be done without creating the notification.
+- You do not need to change this Region ID for Workshop uploads; Pakify will automatically update them.
 
-Valid for `condition`:
+Valid for `condition` (case and spacing insensitive):
 - `guard bell` - Unlock only if Guard Bell is active.
 - `gold rush` - Unlock only if Gold Rush is active.
 - `one life` - Unlock only if One Life is active.
 - `perfection` - Unlock only if Perfection Mode is active.
 - `pacifism` - Unlock only if Pacifism Mode is active.
 - `new game plus` - Unlock only if New Game Plus is active.
-- `ln` - Unlock only if playing as Elenn.
+- `elenn` - Unlock only if playing as Elenn.
 
 Example:
 ```
   "rewards": [
     "region:sequel", // unlock region "sequel"
     "modifier:new game plus", // unlock New Game Plus mode
-    "gold rush;region:bouldo" // unlock region "bouldo" if beaten with Gold Rush enabled
+    "gold rush;region:gilded highway" // unlock region "gilded highway" if beaten with Gold Rush enabled
   ],
 ```
 
-You do not need to worry about the Region ID being changed for Workshop uploads; Pakify will automatically update them.
-
 ### `startingItems` and `startingItemsNewGamePlus`
-Optional lists of items to grant the player when starting a new game, and another for starting in New Game Plus mode. These can be set to empty lists to remove all starting items.
+Optional lists of items to grant the player when starting a new game, and another for starting in New Game Plus mode. These can be set to empty lists to remove all starting items, or omitted completely to use the defaults.
 
 When `startingItems` is not specified, the game will start Ensy with Shuriken, and Elenn with the Sword.
 - This can be set to contain only `"shuriken"` or `"sword"` if you want/need both characters to start with the same item.
@@ -176,7 +165,7 @@ When `startingItemsNewGamePlus` is not specified, New Game Plus grants the follo
 - Sword
 - Double Jump
 
-Example of all valid values:
+Examples of all valid values (case and spacing insensitive):
 ```
   "startingItems": [
     "shuriken",
@@ -194,6 +183,13 @@ Example of all valid values:
     "climbing claws"
   ],
 ```
+
+Some work with multiple names:
+- Skuriken - `shuriken`, `star`
+- Jump Scroll - `double jump`, `jump scroll`, `scroll`
+- Climbing Claws - `climbing claws`, `claws`, `walljump`
+
+If the player has no starting items, they can "Meow" to alert nearby enemies.
 
 ### `levels` - Levels
 Normally, this should be omitted or left blank as it will be filled in by the converted Ogmo Levels. However, if you have an external tool to convert levels, you can target the Ninja Cat Level Format and this property to have them pre-filled.

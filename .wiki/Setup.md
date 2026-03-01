@@ -78,28 +78,29 @@ There is an example Level Set included, [`exampleSet`](../exampleSet).
 
 #### If you're making a new Level Set or Region:
 - Go to the Level Pakify Folder.
-- Create the Structure for your level set.
-  - See [Set Properties](Set%20Properties.md) and [Region Properties](Region%20Properties.md) for templates, and [Required Information](#required-information) for file structure.
+- Create the Structure for your Level Set or Region.
+  - See [Required Information](#required-information) for file structure.
+  - See [Set Properties](Set%20Properties.md) and [Region Properties](Region%20Properties.md) for templates.
 
 ![a file browser inside a level set's folder](images/pakfolderset.png)
 
 ![a file browser inside a region's folder](images/pakfolderregion.png)
 
 #### To create a Level for a Region:
-- Using Ogmo Editor, open the `.ogmo` project file.
+- Open the Ogmo Editor, then press "Open Project" and find the `.ogmo` project file.
 - Find the Region's folder, then right click it and press **Create Level Here**. Name it whatever you like.
-  - Remember to add it into the Region's `order.json`. See [Alternate Levels](Alternate%20Levels.md) for modifier-specific level replacement.
+  - Remember to add it into the Region's `order.json`. See [Alternate Levels](Alternate%20Levels.md) for replacing the level layout depending on the selected modifiers.
 
 ![image showing the previous steps in ogmo editor](images/ogmonew.png)
 
-#### And finally, to pakify:
+#### To Pakify your Level Set:
 - Open Ninja Cat Remewstered.
 - Go to the Title Screen, open the System Menu, and select `Pakify`.
   - Or from `Options` anywhere: `Options` > `Technical` > `Pakify`
 
 ![pakify root menu](images/pakroot.png)
 
-- Select the Level Set to run through pakify, then select `Build`.
+- Select the Level Set to run through Pakify, then select `Build`.
   - !! You will be returned to the title screen automatically when it finishes.
 
 ![pakify set menu](images/paksets.png)
@@ -113,7 +114,7 @@ There is an example Level Set included, [`exampleSet`](../exampleSet).
 ![new game screen](images/paknewgame.png)
 
 #### Publishing to Steam Workshop:
-Sets can only be published to the Steam Workshop using the Steam build of the game, while Steam is running.
+Sets can only be published to the Steam Workshop using the Steam build of the game, while it is connected to Steam.
 - To check if this is the case, either see if the Sets listed by Pakify have a Publish option, or check if the console output has `connected to steam!` followed by a greeting (e.g. `hello cubee!`).
 
 You can set a preview image to show on the Workshop by adding `preview.png` next to your `set.json`.
@@ -141,26 +142,34 @@ Next:
 
 - Once complete, Steam will open your new Workshop page.
   - Here you can change the visibility of your Level Set. By default it will be set to Hidden, meaning other players cannot see it. Change this to Friends-only or Publish when you're ready to share it with others!
-  - If you haven't set `title` and `description`, you can update these through Steam.
+  - If you haven't set `title` and `description` in the `set.json`, you can update these through Steam. *Remember that these fields will overwrite any changes you make in Steam, if present.*
 
 ## Troubleshooting
 
-### **If your pack does not appear in the `New Game` menu:**
+Common stuff:
+- Double- and triple-check your files for incorrect filenames, missing commas or brackets, and general syntax errors.
+- Try running Ninja Cat Remewstered through a console. This will provide detailed output about what exactly Pakify or the Level Set importer is failing on -> look for lines tagged with `[pakify]` or `[pakify (ERROR)]`.
 
-- Try running Ninja Cat Remewstered through a console, then rebuild.
-  - It will provide detailed output about what exactly Pakify or the Level Set importer is failing on -> look for lines tagged with `[pakify]` or `[pakify (ERROR)]`.
+### **Pakify Failed!**
+
+- Make sure your Regions have both `region.json` and `order.json`.
+
+### **Region does not appear in the `New Game` menu**
+
+- Make sure the Region files are formatted correctly, and `region.json` exists with valid content.
+
+### **A level or alternate is missing!**
+
+- Check `order.json` and ensure that you spelt its name and/or condition correctly.
+
+### **Pakify doesn't see the Level Set!**
+
+- Make sure it's in the Pakify Folder (**NOT** the Custom Levels folder) and contains a properly-formatted `set.json`.
+
+### **Publish fails**
+
 - Make sure your files are formatted correctly.
-
-### **Pakify doesn't see the pack:**
-
-- Make sure it's in the right folder and contains a properly-formatted `set.json`.
-
-### **Publish fails:**
-
-- Try running Ninja Cat Remewstered through a console, then publish again.
-  - It will provide detailed output about what exactly Pakify is failing on -> look for lines tagged with `[pakify]` or `[pakify (ERROR)]`.
-- Make sure your files are formatted correctly.
-- Check that you have agreed to the Steam Subscriber Agreement / Workshop ToS.
+- Check that you have agreed to the Steam Subscriber Agreement / Workshop Terms of Service.
 
 ### **What does "running through a console" mean?**
 

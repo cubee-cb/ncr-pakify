@@ -6,7 +6,6 @@
   "id": "level set",
   "author": "author",
   "revision": 1,
-  "requireGameVersion": 1,
   "regions": [
     "region1",
     "region2"
@@ -30,19 +29,20 @@ Optionally sets the description of the Level Set when published to the Steam Wor
 If you edit the description through Steam, omit this property. Re-uploading the pack will overwrite any changes if this property exists.
 
 ### `author` - Creator of the Set
-Currently unused.
+Currently unused. You can use this to credit whoever made this Level Set directly.
+
+If multiple people worked on it, preferably use comma separation.
 
 ### `revision` - Version of the Set
 Currently unused.
 
 ### `requireGameVersion` - Minimum Game Version
+This property is set by Pakify on build. Level Sets built by a newer version of the game cannot be loaded in an older one.
+- A notification will be displayed informing the user to update their game if necessary.
+
 Valid Values:
-- `0` - Any Version
+- `0` - v1.1mg - Cannot load Level Sets.
 - `1` - v1.2mg - Custom Levels introduced.
-
-`0` and `1` are interchangeable.
-
-Level Sets made for a newer version of the game will not be loaded, and a notification will be displayed informing the user to update their game.
 
 ### `regions` - List of regions to include in this Set
 Used by pakify to determine what Regions to build, and by the game to determine which Regions to load.

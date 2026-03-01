@@ -15,7 +15,7 @@ See [the wiki folder](.wiki) for [documentation](.wiki/README.md).
 Some things to keep in mind with regards to the different builds of the game:
 - The native **Linux build** is what I would call the "first-class" build; this is the one I can test the most and will be supporting at all costs.
   - Primarily because I run Linux, but also as Valve is investing heavily on Linux with the Steam Deck, Machine and such. Why not run natively on their hardware?
-- The **Windows build** is secondary; I will support it to the best of my ability, but I do not run Windows myself so help with any issues is limited.
+- The **Windows build** is secondary; I will support it to the best of my ability, but I do not use Windows as my main operating system so help with any issues is limited.
   - As for *why* I made this game in Mono + C# when I'm not using Windows... shush. I like MonoGame.
 - **Wine/Proton** are *NOT* supported; through limited testing I can confirm that the game at least runs, but any issues encountered that are exclusive to Wine/Proton will most likely not be worked on. Please use the native Linux build if possible.
   - Using Proton will make it more difficult to find the game's data folders. They will be under the Windows path in `steamapps/compatdata/4409630/pfx/drive_c/users/steamuser/`.
