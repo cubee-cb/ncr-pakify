@@ -984,7 +984,7 @@
           "name": "variant",
           "definition": "Enum",
           "display": 1,
-          "choices": ["jump away", "run away", "looking jump away", "looking run away", "hello", "friends", "fire bow left", "steal tile"],
+          "choices": ["jump away", "run away", "looking jump away", "looking run away", "hello", "friends", "fire bow", "steal tile"],
           "defaults": 0
         }
       ],
