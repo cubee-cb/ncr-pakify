@@ -6,9 +6,10 @@
     "cassetteblocks-gold-pacif.json  :   GOLDRUSH,paci fism",
     " cassetteblocks-gold-pacif-ngp.json: goldrush,pacifism ,                new GAM e Plus  ",
   "bosses.json",
-  "1-6-doorpuzzle.json",
   " collectathonA.json ",
   "  collectathonB.json",
   "collectathonC.json  ",
   "object-layering.json",
+  "1-6-doorpuzzle.json",
+  "4-9-timed-cassetteblocks.json",
 ]
