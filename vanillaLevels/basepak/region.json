@@ -134,7 +134,7 @@
         [33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33]
       ],
       "alternateMaps": {
-        "notHasShuriken" : {
+        "notShuriken" : {
           "theme": "world1",
           "music": "wind",
           "spawn": {"x": 1, "y": 10},
