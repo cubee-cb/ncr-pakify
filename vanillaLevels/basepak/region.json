@@ -19,6 +19,7 @@
   "unlocked": true,
   "rewards": [
     "gold rush;region:bouldo", // unlock pack "bouldo" if beaten with Gold Rush
+    "modifier:new game plus",
     "perfection;modifier:randomiser"
   ],
 
