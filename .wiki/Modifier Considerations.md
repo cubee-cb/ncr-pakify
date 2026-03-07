@@ -35,12 +35,21 @@ In practice, she can do almost everything Ensy can, but it may be beneficial to 
 ## Invulnerability
 Players can simply walk through all damage sources; the only things that cause the level to restart are Pits and Suffocation, or any "Miss" when combined with Perfection or Pacifism.
 
+## Mirror Mode
+The order of levels is reversed. When combined with Randomiser, this may have a slight effect on the outcome of random level selection.
+
+Upgrade Goals will *remove* upgrades instead, as if the character is going back through the levels and putting everything back on their way.
+
 ## Randomiser
 The order of levels is randomised. The player can Restart Level to re-generate another level if the current one is impossible. Should never repeat a level.
 
-Entities will be randomised within small groups of allowed replacements, and offset by a small, random amount horizontally.
+Enemies and objects will be randomised within small groups of allowed replacements.
 
-Bosses will randomly replace each other.
+Upgrades are replaced with a random upgrade the player does not have, or the Sword if the player does not already have it.
+
+Bosses will randomly replace each other, and drop a random Upgrade with the same rules mentioned.
+
+Bomb Droppers, Arrow Shooters, and Searchlights will have speed and cycle offsets randomised. The legacy Bomb Makers are unaffected.
 
 ## Dogblaster
 Dogblaster is added to the starting items. It cannot activate Targets.
