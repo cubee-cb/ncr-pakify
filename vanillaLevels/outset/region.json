@@ -19,9 +19,7 @@
   "unlocked": true,
   "rewards": [
     "region:sequel", // unlock pack "sequel"
-    "modifier:new game plus", // unlock New Game Plus mode
-    "gold rush;region:bouldo", // unlock pack "bouldo" if beaten with Gold Rush
-    "perfection;modifier:randomiser"
+    "gold rush;region:bouldo" // unlock pack "bouldo" if beaten with Gold Rush
   ],
   "startingItemsNewGamePlus": [
     "shuriken",
