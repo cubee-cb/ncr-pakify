@@ -21,9 +21,7 @@ Some properties are omitted; see below for a full list of properties and their a
   "glyph": "202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000dddddddd0000000000000000000000ddd677776ddd0000000000000000000dd6777777776dd00000000000000000dd677777737776dd0000000000000000d67777773337776d000000000000000dd777777bb377777dd00000000000000d677777bbb7777776d00000000000000d677773bb77777776d00000000000000d6777b33777777776d00000000000000d6677bbddddd77766d00000000000000d6667777777777666d00000000000000d7666677777766667d00000000000000dd66666666666666dd000000000000000d76666666666667d0000000000000000dd766666666667dd00000000000000000dd7766666677dd0000000000000000000ddd777777ddd0000000000000000000000dddddddd00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "worldTheme": "world1",
   "worldSky": "night",
-  "worldFade": "cut",
-
-  "rewards": []
+  "worldFade": "cut"
 }
 ```
 
@@ -76,7 +74,7 @@ Set this to `false` if you would like this region to be locked initially.
 This region can then be added as a `reward` for completing a different region, for example as part of a larger campaign.
 
 ### `hidden` - Hide when Locked
-Set this to `true` if you would like this region to be hidden until it is unlocked; it will not appear in the menus, nor the leaderboards. Good for "secret" regions.
+Set this to `true` if you would like this region to be hidden until it is unlocked; it will not appear in the menus, nor the leaderboards.
 
 Unlocking a hidden region will display alternative unlock text, saying that a **secret region** was found.
 
@@ -128,12 +126,17 @@ Format: `<type>:<item>` or `<condition>;<type>:<item>`
 These allow you to unlock certain things for the player when they complete your region.
 
 Valid items for type `modifier` (case and spacing insensitive):
-- `new game plus` - Unlock "New Game Plus" mode.
-- `elenn` - Unlock "Elenn" mode.
-- `randomiser` - Unlock "Randomiser" mode.
+- `elenn` - Unlock the Elenn modifier. (see `sequel`)
+  - This will also grant the Steam Achievement.
+- `mirror mode` - Unlock the Mirror Mode modifier. (see `basepak`)
+  - This will also grant the Steam Achievement.
+
+Some modifiers cannot be unlocked through Region rewards:
+- New Game Plus unlocks when any built-in Region is completed.
+- Randomiser unlocks when any built-in Region is completed in Mirror Mode.
 
 Valid items for type `region`:
-- The `id` of any Region. If the region isn't loaded, this will be done without creating the notification.
+- The `id` of any Region. If the Region isn't loaded, this will be done without creating the notification, and the Region will be unlocked if it is loaded in the future.
 - You do not need to change this Region ID for Workshop uploads; Pakify will automatically update them.
 
 Valid for `condition` (case and spacing insensitive):
@@ -143,24 +146,26 @@ Valid for `condition` (case and spacing insensitive):
 - `perfection` - Unlock only if Perfection Mode is active.
 - `pacifism` - Unlock only if Pacifism Mode is active.
 - `new game plus` - Unlock only if New Game Plus is active.
+- `randomiser` - Unlock only if Randomiser is active.
+- `mirror` - Unlock only if Mirror Mode is active.
 - `elenn` - Unlock only if playing as Elenn.
 
 Example:
 ```
   "rewards": [
-    "region:sequel", // unlock region "sequel"
-    "modifier:new game plus", // unlock New Game Plus mode
-    "gold rush;region:gilded highway" // unlock region "gilded highway" if beaten with Gold Rush enabled
+    "region:scary castle", // unlock region with id "scary castle"
+    "modifier:elenn", // unlock Elenn
+    "gold rush;region:gilded castle" // unlock region "gilded castle" if beaten with Gold Rush enabled
   ],
 ```
 
 ### `startingItems` and `startingItemsNewGamePlus`
-Optional lists of items to grant the player when starting a new game, and another for starting in New Game Plus mode. These can be set to empty lists to remove all starting items, or omitted completely to use the defaults.
+Optional lists of items to grant the player when starting a new game, and another for starting in New Game Plus or Mirror Mode. These can be set to empty lists to remove all starting items, or omitted completely to use the defaults.
 
 When `startingItems` is not specified, the game will start Ensy with Shuriken, and Elenn with the Sword.
 - This can be set to contain only `"shuriken"` or `"sword"` if you want/need both characters to start with the same item.
 
-When `startingItemsNewGamePlus` is not specified, New Game Plus grants the following items:
+When `startingItemsNewGamePlus` is not specified, New Game Plus and Mirror Mode grants the following items:
 - Shuriken
 - Sword
 - Double Jump
@@ -190,6 +195,8 @@ Some work with multiple names:
 - Climbing Claws - `climbing claws`, `claws`, `walljump`
 
 If the player has no starting items, they can "Meow" to alert nearby enemies.
+
+A good rule of thumb for `startingItemsNewGamePlus` is to just add all the upgrades the player can obtain throughout this Region.
 
 ### `levels` - Levels
 Normally, this should be omitted or left blank as it will be filled in by the converted Ogmo Levels. However, if you have an external tool to convert levels, you can target the Ninja Cat Level Format and this property to have them pre-filled.
