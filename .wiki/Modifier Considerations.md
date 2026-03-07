@@ -31,12 +31,15 @@ Elenn has vastly altered physics;
 - Less powerful Shuriken throws, but are affected by movement speed.
 
 In practice, she can do almost everything Ensy can, but it may be beneficial to make adjustments to cater to Elenn's physics.
+- For example, 1-tile-wide platforms are already difficult for Ensy to land on. For Elenn, this is unreasonably difficult. I have a rule for my own levels that any surface the player can walk on with no walls must be at least 3 tiles wide, and I often add drop-through platforms extending ledges for some extra leeway.
 
 ## Invulnerability
 Players can simply walk through all damage sources; the only things that cause the level to restart are Pits and Suffocation, or any "Miss" when combined with Perfection or Pacifism.
 
 ## Mirror Mode
 The order of levels is reversed. When combined with Randomiser, this may have a slight effect on the outcome of random level selection.
+
+The entire internal screen is flipped, and the in-game left-right controls are flipped such that they feel normal. The UI and System Menu are unaffected.
 
 The player will start with the same items as New Game Plus.
 
