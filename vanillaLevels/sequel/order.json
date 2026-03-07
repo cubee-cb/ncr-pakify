@@ -23,6 +23,7 @@
   // world 4
   "4-1.json",
   "4-2.json",
+    "4-2_notShuriken.json:notShuriken",
   "4-3.json",
     "4-3_hasDoubleJump.json:hasDoubleJump",
   "4-4.json",
