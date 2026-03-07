@@ -40,8 +40,6 @@ The order of levels is reversed. When combined with Randomiser, this may have a 
 
 The player will start with the same items as New Game Plus.
 
-Upgrade Goals will *remove* upgrades instead, as if the character is going back through the levels and putting everything back on their way.
-
 ## Randomiser
 The order of levels is randomised. The player can Restart Level to re-generate another level if the current one is impossible. Should never repeat a level.
 
