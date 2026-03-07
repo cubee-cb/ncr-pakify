@@ -48,16 +48,14 @@ A beam of light.
 Player can pass using a Sword Dash.
 
 ### `bomb dropper` - Bomb Dropper
-Creates a `bomb` at a regular interval. Cycle offset can be adjusted: Higher value (0-1) makes it drop before others.
-
-Can be damaged with the Sword. (think of it like, prying it off the roof)
+Creates a `bomb` at a regular interval. Cycle offset can be adjusted: Higher value (0-1) makes it drop before others. Immune to all attacks.
 
 Cycles faster in New Game Plus.
 
 ### `arrow shooter` - Arrow Shooter
-Shoots an arrow sideways at a regular interval, direction dependent on flip. Cycle offset can be adjusted: Higher value (0-1) makes it shoot before others.
+Shoots an arrow sideways at a regular interval, direction dependent on flip. Cycle offset can be adjusted: Higher value (0-1) makes it shoot before others. Immune to all attacks.
 
-Arrow can be parried, destroying the Arrow Shooter.
+Arrow can be parried with a Sword Dash, but this has no effect on the Arrow Shooter itself.
 
 Cycles faster in New Game Plus.
 
@@ -101,18 +99,18 @@ These appear on gems that replace upgrades the player has already obtained.
 In New Game Plus, they have more health and release a `demond ghost` when defeated.
 
 ### `magitsu` - Magitsu
-Stands in place and casts magic fireballs that chase the player. These do not travel through walls.
+Stands in place and casts magic fireballs that move towards the player's position at casting time. These do not travel through walls. Fireballs can be parried with Sword Dash and Shuriken.
 
 Normally deals no contact damage. When low on health, enters "rabid mode" where they rapidly chase the player and deal contact damage.
 
 In New Game Plus, they cast faster, enter "rabid mode" earlier, and have more health.
 
 ### `archer` - Archi
-Stands in place and fires arrows at the player. These can stick to some walls, and allow the player and other objects to bounce on them.
+Stands in place and fires arrows at the player. These can stick to certain walls, and allow the player and other objects to bounce on them. Arrows can be parried with the Sword Dash.
 
 Normally deals no contact damage. When low on health, enters "rabid mode" where they rapidly chase the player and deal contact damage.
 
-In New Game Plus, they take less time to reload, enter "rabid mode" earlier, and have more health.
+In New Game Plus, they take significantly less time to reload, enter "rabid mode" earlier, and have more health.
 
 ### `durgen` - Flame Dragon
 Unimplemented
@@ -154,17 +152,19 @@ Beefy dragon warrior. Can be parried.
 
 Gained magic from the Kitsune-Tiger alliance. Spawn-relative movement. `boss 2` is effectively a `super` variant for `boss 1`; Tiga was implemented before Variants existed.
 
-Summons spirits, uses sword dash, and casts death spells.
+Summons Descending Spirits, uses Sword Dash, and casts Death Pillar spells. Tiga's Sword Dash can be parried with the player's Sword Dash.
 
-It is not currently possible to program Tiga's behaviour through level data, and as such his patterns may not play well with custom arenas, especially if their size differs from the default ones.
+It is not currently possible to program Tiga's behaviour through level data, and as such his patterns may not play well with custom arenas, especially if they allow the player to move far from the spawn point.
 
 ### `boss kitsu` - Kitsu, The Elder Kitsune
 
 Uses magic fireballs and fire walls, as well as magic barriers. Level-relative movement. Variant `super` uses different attack patterns.
 
-Controls Cassette Blocks (Red and Green)
+Fireballs can be parried with Sword Dash and Shuriken, and Fire Walls can be "parried" and passed through with a well-timed Sword Dash. 
 
-Kitsu's behaviours and arenas were built to complement each other. It is not currently possible to program her behaviour through level data, and as such her patterns may not play well with custom arenas which aren't designed to match her default behaviours.
+Controls Cassette Blocks. (Red and Green channels)
+
+Kitsu's behaviours and arenas were built to complement each other. It is not currently possible to program her behaviour through level data, and as such her patterns may not play well with custom arenas which aren't designed to match her default behaviours and block channel controls.
 
 ### `boss dago` - Dago, The Trial Dragon
 Unimplemented
@@ -191,7 +191,7 @@ Moves towards player with inertia, colliding with walls and platforms.
 Moves towards player, slowing as it gets near, colliding with walls and platforms.
 
 ### `bomb` - Bomb
-Falls, bounces, and explodes after a short delay. Explodes immediately when pierced by an arrow.
+Falls, bounces, and explodes after a short delay. Explodes immediately when pierced by an arrow. Explosions only cover areas with line of sight to the bomb.
 
 Creates a larger explosion in New Game Plus.
 
