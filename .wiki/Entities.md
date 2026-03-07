@@ -25,8 +25,9 @@ Can take damage in some animations, falling off the stage and interrupting the a
 Interactions will modify the Rival Friendship value for the current playthrough:
 - Attacking Elenn will reduce Friendship by 2.
   - Doing so after she fires a Bow for you will count doubly; this is betrayal.
+- Letting Elenn do her thing will gradually raise Friendship, depending on the sequence playing.
 
-Rival Friendship can be used for Alternates with the `Rival Friend` and `Rival Enemy` conditions.
+Rival Friendship can be used to determine Alternates with the `Rival Friend` and `Rival Enemy` conditions. For example, a level late in the Region may change Elenn's behaviour and surrounding level design to assist or hinder the player depending on how they treated her in earlier stages.
 
 ### `bouldo` - Gold Rush Bouldo
 Spawns automatically in Gold Rush mode, blocking the goal until all treasures are collected. Does nothing important otherwise, and may misbehave outside of Gold Rush. (untested)
