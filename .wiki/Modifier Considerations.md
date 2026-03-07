@@ -21,7 +21,7 @@ The player will start with the following Upgrades by default:
 - Sword
 - Double Jump Scroll
 
-You can set different starter upgrade for New Game Plus in the [Region Properties](Region%20Properties.md).
+You can set different starter upgrades for New Game Plus in the [Region Properties](Region%20Properties.md).
 
 ## Play As Elenn
 Elenn has vastly altered physics;
@@ -37,6 +37,8 @@ Players can simply walk through all damage sources; the only things that cause t
 
 ## Mirror Mode
 The order of levels is reversed. When combined with Randomiser, this may have a slight effect on the outcome of random level selection.
+
+The player will start with the same items as New Game Plus.
 
 Upgrade Goals will *remove* upgrades instead, as if the character is going back through the levels and putting everything back on their way.
 
