@@ -60,4 +60,4 @@ Dogblaster is added to the starting items. It cannot activate Targets.
 ## Terra Guy
 Terra Guy has really slow movement, and a shorter jump. However, he also starts with the Pickaxe Weapon, which can destroy any solid tile and build anywhere with empty space, so he can cheese pretty much any level.
 
-The main blockage for Terra Guy is Spotlights combined with spike pits; he can't build or dig past the light at its wider points, and his short Sword Dash won't allow him to clear the other side of the spike pit.
+The main blockage for Terra Guy is Spotlights combined with spike pits; he can't build or dig past the light at its wider points, and his short Sword Dash won't allow him to clear the other side of the spike pit. Try to ensure that spike pits are flat around the areas Spotlights overlap them, so Terra Guy can walk through the spikes.
