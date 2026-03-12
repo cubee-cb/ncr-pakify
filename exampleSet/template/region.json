@@ -1,15 +1,14 @@
 // base.ncl template
 {
   "id": "template",
-  "requireGameVersion": 1, // v1.2mg
   "unlocked": true,
 
   "displayName": {
-    "english": "template",
+    "english": "Template",
     "meowlang": "meow"
   },
   "description": {
-    "english": "a template ripe for editing!",
+    "english": "A template ripe for editing!",
     "meowlang": "meow meow meow"
   },
 
