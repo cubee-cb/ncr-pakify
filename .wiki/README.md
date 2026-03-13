@@ -11,6 +11,8 @@ The Title Menu will show where each Region is sourced from, using a little icon 
 
 ### Tutorials
 - [Setup](Setup.md)
+- [Basic Workflow](Basic%20Workflow.md)
+- [Steam Workshop](Steam%20Workshop.md)
 
 ### Properties and Templates
 - [Ogmo Project](Ogmo%20Project.md)
