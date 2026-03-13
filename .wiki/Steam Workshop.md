@@ -22,7 +22,7 @@ Go to the Title Screen, open the System Menu, and select `Pakify`.
 Select the Level Set you want to publish, then select `Publish/Update set`.
 - If the Level Set has already been published, it will be updated instead.
   - If the item was deleted from Steam Workshop, the game will attempt to create a new item instead.
-- !! You will be returned to the title screen automatically when it finishes.
+- !! If you are not already on the Title Screen, you will be returned there when Publish finishes.
 
 ![pakify set menu](images/paksets.png)
 
