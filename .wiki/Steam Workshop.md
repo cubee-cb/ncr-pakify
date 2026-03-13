@@ -43,26 +43,18 @@ Common stuff:
 - Double- and triple-check your files for incorrect filenames, missing commas or brackets, and general syntax errors.
 - Try running Ninja Cat Remewstered through a console. This will provide detailed output about what exactly Pakify or the Level Set importer is failing on -> look for lines tagged with `[pakify]` or `[pakify (ERROR)]`.
 
+### **Publish Failed!**
+
+- Make sure your files are formatted correctly.
+- Check that you have agreed to the Steam Subscriber Agreement / Workshop Terms of Service.
+
 ### **Pakify Failed!**
 
 - Make sure your Regions have both `region.json` and `order.json`.
 
-### **Region does not appear in the `New Game` menu**
-
-- Make sure the Region files are formatted correctly, and `region.json` exists with valid content.
-
 ### **A level or alternate is missing!**
 
 - Check `order.json` and ensure that you spelt its name and/or condition correctly.
-
-### **Pakify doesn't see the Level Set!**
-
-- Make sure it's in the Pakify Folder (**NOT** the Custom Levels folder) and contains a properly-formatted `set.json`.
-
-### **Publish fails**
-
-- Make sure your files are formatted correctly.
-- Check that you have agreed to the Steam Subscriber Agreement / Workshop Terms of Service.
 
 ### **What does "running through a console" mean?**
 
