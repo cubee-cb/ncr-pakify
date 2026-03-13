@@ -47,7 +47,7 @@ Currently these blocks are toggled by the corresponding target colour, and turne
 
 Why "Cassette Blocks" and not, like, Toggle Blocks?:
 - Named after the Cassette areas in Celeste, for the similar toggling behaviour of blocks. *looks it up - oh wait they genuinely are just called cassette blocks in celeste as well lol*
-- Also a play on [Cassette Fox](https://cubee.games/wiki/?cat=characters&page=misc#cassette).
+- Also a play on [Cassette Fox](https://cubee.games/wiki/?cat=characters&page=misc#cassette)'s name.
 
 ## Climbable Tiles
 Some tiles can be climbed when the player has Climbing Claws. (this is always the case in New Game Plus)
@@ -59,6 +59,14 @@ Typically, tiles that shuriken can stick to are climbable, but there are some ex
   - **High** impaling force required.
 
 ## Spikes
-Spikes will damage the player when fallen onto from above.
+Spikes will damage the player when fallen onto from above. Wall Spikes currently have somewhat broken collisions and may not work as expected.
 
 Players can walk through spikes horizontally without harm, similarly to Spelunky.
+
+## Goals
+Upgrade Goals will be replaced with Gems when the upgrade is already owned.
+
+About the Dogblaster and Pickaxe Goals:
+- These will also be replaced with Gems if their respective modifiers aren't unlocked, keep this in mind if making a level dependent on them.
+- You can still grant these as `startingItem`s -> add `"dog"` or `"tool"`.
+- Obtaining these Upgrades in any way other than through the intended unlocks (i.e. starting items, save editing) will not unlock the modifiers, nor grant any achievements.
