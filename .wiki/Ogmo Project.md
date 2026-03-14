@@ -27,7 +27,7 @@ Right-click on the selected level in the sidebar, then click "Properties".
 ### Music
 Select the background music to play during the level.
 - `wind` - Ambient Wind
-- `sneaking` - World 1 (Tiger Domain A)
+- `shuriken` - World 1 (Tiger Domain A)
 - `last ninjacat` - World 2 (Tiger Domain B)
 - `moss town` - World 3 (Kitsune Depths A) - missing
 - `kitsune underpass` - World 4 (Kitsune Depths B)
@@ -53,10 +53,11 @@ The following are missing, but may be added in the future:
 ### Background
 `default` will use the background for the current level theme.
 Set to anything other than `default` to use the background from that level theme:
-- `world1` - Sky Mountains
-- `world2` - Sky Mountains with trees and houses. (Skyscrapers in Old Style)
-- `world3` - Forest
-- `world4` - Underground Cavern
+- `Mountains` - Sky Mountains
+- `MountainsTrees` - Sky Mountains with trees and houses.
+- `Skyscrapers` - Office Buildings in the sky. Honestly, idk what 2020 me was thinking putting modern office buildings in a ninja game lol.
+- `Forest` - Forest in front of mountains
+- `Underground` - Underground Cavern
 
 ### Sky
 Sky variant to use. Valid values:

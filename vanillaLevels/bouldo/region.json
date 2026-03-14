@@ -1,8 +1,5 @@
 {
   "id": "bouldo",
-  "worldTheme": "world4",
-  "worldSky": "night",
-  "worldFade": "special",
   "displayName": {
     "english": "Greed of Bouldo", // prism highway
     "meowlang": "meow mew"
@@ -19,6 +16,11 @@
   "hidden": true,
   "unlocked": false,
   "rewards": [],
+  "startingItems": [
+    "star",
+    "sword",
+    "jump"
+  ],
 
   "levels": []
 

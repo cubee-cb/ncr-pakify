@@ -4,7 +4,7 @@
   "height": 120,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "sneaking", "background": "default", "sky": "dawn", "fadeVariant": "square", "goalMode": "collectathon"},
+  "values": {"music": "Shuriken", "background": "Mountains", "foreground": "Clouds", "sky": "Night", "fadeVariant": "Cut", "goalMode": "Normal"},
   "layers": [
     {
       "name": "entities",
@@ -27,7 +27,7 @@
           "values": {"entrance": "rappel"}
         },
         {
-          "name": "elenn npc",
+          "name": "rival npc",
           "id": 1,
           "_eid": "91931981",
           "x": 192,
@@ -48,7 +48,7 @@
       "gridCellHeight": 8,
       "gridCellsX": 27,
       "gridCellsY": 15,
-      "tileset": "world3",
+      "tileset": "Moss Town",
       "data2D": [
         [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 33, 33, -1, -1, -1, -1, -1],
         [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 33, 33, -1, -1, -1, -1, -1],
@@ -78,7 +78,7 @@
       "gridCellHeight": 8,
       "gridCellsX": 27,
       "gridCellsY": 15,
-      "tileset": "world3",
+      "tileset": "Moss Town",
       "data2D": [
         [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
         [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
