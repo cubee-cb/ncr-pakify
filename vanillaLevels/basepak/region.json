@@ -1,6 +1,6 @@
 {
   "id": "basepak",
-  "worldTheme": "world1",
+  "worldTheme": "tigerscaffolds",
   "worldSky": "night",
   "worldFade": "cut",
   "displayName": {
@@ -24,8 +24,8 @@
 
   "levels": [
     {
-      "theme": "world1",
-      "music": "sneaking",
+      "theme": "tigerscaffolds",
+      "music": "shuriken",
       "spawn": {"x": 1, "y": 10},
       "objects": [
         {"id": "sparkler", "x": 61, "y": 4, "flipped": true},
@@ -52,8 +52,8 @@
       ]
       },
       {
-      "theme": "world1",
-      "music": "sneaking",
+      "theme": "tigerscaffolds",
+      "music": "shuriken",
       "spawn": {"x": 0, "y": 9},
       "objects": [
         {"id": "bomb maker", "x": 35, "y": 1, "flipped": true},
@@ -82,8 +82,8 @@
       ]
       },
       {
-      "theme": "world1",
-      "music": "sneaking",
+      "theme": "tigerscaffolds",
+      "music": "shuriken",
       "spawn": {"x": 1, "y": 2},
       "objects": [
         {"id": "sparkler", "x": 89, "y": 1, "flipped": false},
@@ -110,7 +110,7 @@
       ]
       },
       {
-      "theme": "world1",
+      "theme": "tigerscaffolds",
       "music": "wind",
       "spawn": {"x": 1, "y": 10},
       "objects": [
@@ -135,7 +135,7 @@
       ],
       "alternateMaps": {
         "notShuriken" : {
-          "theme": "world1",
+          "theme": "tigerscaffolds",
           "music": "wind",
           "spawn": {"x": 1, "y": 10},
           "objects": [
@@ -162,8 +162,8 @@
       }
       },
       {
-      "theme": "world1",
-      "music": "sneaking",
+      "theme": "tigerscaffolds",
+      "music": "shuriken",
       "spawn": {"x": 1, "y": 6},
       "objects": [
         {"id": "searchlight", "x": 13, "y": 0, "flipped": true},
@@ -189,8 +189,8 @@
       ]
       },
       {
-      "theme": "world1",
-      "music": "sneaking",
+      "theme": "tigerscaffolds",
+      "music": "shuriken",
       "spawn": {"x": 1, "y": 6},
       "objects": [
         {"id": "bomb maker", "x": 50, "y": 3, "flipped": true},
@@ -216,8 +216,8 @@
       ]
       },
       {
-      "theme": "world1",
-      "music": "sneaking",
+      "theme": "tigerscaffolds",
+      "music": "shuriken",
       "spawn": {"x": 1, "y": 10},
       "objects": [
         {"id": "sparkler", "x": 92, "y": 4, "flipped": true},
@@ -242,8 +242,8 @@
       ]
       },
       {
-      "theme": "world1",
-      "music": "sneaking",
+      "theme": "tigerscaffolds",
+      "music": "shuriken",
       "spawn": {"x": 1, "y": 11},
       "objects": [
         {"id": "sparkler", "x": 94, "y": 1, "flipped": false},
@@ -272,8 +272,8 @@
       ]
       },
       {
-      "theme": "world1",
-      "music": "sneaking",
+      "theme": "tigerscaffolds",
+      "music": "shuriken",
       "spawn": {"x": 1, "y": 5},
       "objects": [
         {"id": "searchlight", "x": 98, "y": 0, "flipped": true},
@@ -302,7 +302,7 @@
       ]
       },
       {
-      "theme": "world1",
+      "theme": "tigerscaffolds",
       "music": "wind",
       "spawn": {"x": 12, "y": 10},
       "objects": [
@@ -327,7 +327,7 @@
       ],
       "alternateMaps": {
         "pacifism" : {
-          "theme": "world1",
+          "theme": "tigerscaffolds",
           "music": "wind",
           "spawn": {"x": 12, "y": 11},
           "objects": [
@@ -356,8 +356,9 @@
         }
       },
       {
-      "theme": "world2",
-      "music": "last ninjacat",
+      "theme": "bricktownold",
+      "background": "skyscrapers",
+      "music": "thelastninjacat",
       "spawn": {"x": 7, "y": 3},
       "objects": [
         {"id": "bomb maker", "x": 70, "y": 0, "flipped": false},
@@ -388,7 +389,8 @@
       ]
       },
       {
-      "theme": "world2",
+      "theme": "bricktownold",
+      "background": "skyscrapers",
       "music": "wind",
       "spawn": {"x": 1, "y": 9},
       "objects": [
@@ -413,8 +415,9 @@
       ]
       },
       {
-      "theme": "world2",
-      "music": "last ninjacat",
+      "theme": "bricktownold",
+      "background": "skyscrapers",
+      "music": "thelastninjacat",
       "spawn": {"x": 67, "y": 9},
       "objects": [
         {"id": "searchlight", "x": 13, "y": 2, "flipped": false},
@@ -439,8 +442,9 @@
       ]
       },
       {
-      "theme": "world2",
-      "music": "last ninjacat",
+      "theme": "bricktownold",
+      "background": "skyscrapers",
+      "music": "thelastninjacat",
       "spawn": {"x": 3, "y": 12},
       "objects": [
         {"id": "searchlight", "x": 16, "y": 1, "flipped": false},
@@ -467,8 +471,9 @@
       ]
       },
       {
-      "theme": "world2",
-      "music": "last ninjacat",
+      "theme": "bricktownold",
+      "background": "skyscrapers",
+      "music": "thelastninjacat",
       "spawn": {"x": 1, "y": 10},
       "objects": [
         {"id": "ninja", "x": 42, "y": 3, "flipped": true},
@@ -496,8 +501,9 @@
       ]
       },
       {
-      "theme": "world2",
-      "music": "last ninjacat",
+      "theme": "bricktownold",
+      "background": "skyscrapers",
+      "music": "thelastninjacat",
       "spawn": {"x": 1, "y": 11},
       "objects": [
         {"id": "searchlight", "x": 18, "y": 1, "flipped": true},
@@ -526,8 +532,9 @@
       ]
       },
       {
-      "theme": "world2",
-      "music": "last ninjacat",
+      "theme": "bricktownold",
+      "background": "skyscrapers",
+      "music": "thelastninjacat",
       "spawn": {"x": 2, "y": 3},
       "objects": [
         {"id": "sparkler", "x": 47, "y": 1, "flipped": false},
@@ -556,8 +563,9 @@
       ]
       },
       {
-      "theme": "world2",
-      "music": "last ninjacat",
+      "theme": "bricktownold",
+      "background": "skyscrapers",
+      "music": "thelastninjacat",
       "spawn": {"x": 1, "y": 10},
       "objects": [
         {"id": "demond", "x": 30, "y": 2, "flipped": false, "easy": true},
@@ -593,8 +601,9 @@
       ]
       },
       {
-      "theme": "world2",
-      "music": "last ninjacat",
+      "theme": "bricktownold",
+      "background": "skyscrapers",
+      "music": "thelastninjacat",
       "spawn": {"x": 1, "y": 11},
       "objects": [
         {"id": "searchlight", "x": 65, "y": 0, "flipped": true},
@@ -624,8 +633,9 @@
       ]
       },
       {
-      "theme": "world2",
-      "music": "last ninjacat",
+      "theme": "bricktownold",
+      "background": "skyscrapers",
+      "music": "thelastninjacat",
       "spawn": {"x": 1, "y": 10},
       "objects": [
         {"id": "searchlight", "x": 17, "y": 0, "flipped": false},
@@ -658,7 +668,8 @@
       ]
       },
       {
-      "theme": "world2",
+      "theme": "bricktownold",
+      "background": "skyscrapers",
       "music": "wind",
       "spawn": {"x": 17, "y": 11},
       "objects": [
@@ -683,7 +694,8 @@
       ],
       "alternateMaps": {
         "pacifism": {
-          "theme": "world2",
+          "theme": "bricktownold",
+          "background": "skyscrapers",
           "music": "wind",
           "spawn": {"x": 17, "y": 10},
           "objects": [
@@ -718,7 +730,8 @@
       }
       },
       {
-      "theme": "world2",
+      "theme": "bricktownold",
+      "background": "skyscrapers",
       "music": "wind",
       "spawn": {"x": 1, "y": 10},
       "objects": [

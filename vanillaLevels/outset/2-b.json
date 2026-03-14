@@ -4,7 +4,7 @@
   "height": 120,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "wind", "background": "default", "sky": "night", "fadeVariant": "special", "goalMode": "normal"},
+  "values": {"music": "Wind", "background": "MountainsTrees", "foreground": "Clouds", "sky": "Night", "fadeVariant": "Special", "goalMode": "Normal"},
   "layers": [
     {
       "name": "entities",
@@ -98,7 +98,7 @@
       "gridCellHeight": 8,
       "gridCellsX": 31,
       "gridCellsY": 15,
-      "tileset": "world2",
+      "tileset": "Brick Town",
       "data2D": [
         [34, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 32],
         [34, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 32],
@@ -128,7 +128,7 @@
       "gridCellHeight": 8,
       "gridCellsX": 31,
       "gridCellsY": 15,
-      "tileset": "world2",
+      "tileset": "Brick Town",
       "data2D": [
         [-1, 27, 27, 27, 33, 27, 33, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 33, 27, 27, 27, 27, 27, 27, 27, 27, -1],
         [-1, 33, 33, 27, 27, 27, 27, 27, 27, 27, 27, 33, 33, 33, 33, 33, 33, 33, 33, 27, 27, 27, 27, 27, 27, 27, 33, 33, 33, 33, -1],
