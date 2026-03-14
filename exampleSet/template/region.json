@@ -1,6 +1,7 @@
 // base.ncl template
 {
   "id": "template",
+  "author": "author",
   "unlocked": true,
 
   "displayName": {
