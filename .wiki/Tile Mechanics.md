@@ -1,5 +1,35 @@
 # Tile Mechanics
 
+## Tileset Compatibility
+Each tileset has its own set of Tile Flags and overall layout of tiles.
+Many tiles are unique to certain tilesets or are missing from some, especially so for those introduced in Moss Town onwards.
+
+Interchangeable:
+- Brick Town and Brick Town Old
+  - Old lacks any surfaces that can hold arrows and shuriken. Otherwise, they are practically identical.
+- Stilt Town, Spire Summit, and Prismic Highway
+  - These use the same flags. They may not visually mesh, but from a gameplay perspective they are identical.
+
+Unique tilemap layouts:
+- Tiger Scaffolds
+  - 1-tile Small Podium
+  - No Gold Podium
+  - Unique Alt Ground position
+  - No Cassette Blocks
+  - No Wall Spikes
+- Brick Town and Brick Town Old
+  - Inner Corner tiles
+  - Secondary Modular Platform next to Inner Corner Tiles
+  - No Cassette Blocks
+  - No Wall Spikes
+- Moss Town
+  - Alt Ground 9-slice is missing some tiles
+  - 3-tile background pillar next to Alt Ground
+  - Main Platform is Modular Platform
+- Kitsune Depths, Stilt Town and Spire Summit
+  - Ground isn't 9-slice.
+  - Secondary Platform next to Alt Ground
+
 ## Channels and Colours
 There are two Channels in Ninja Cat: Red and Green.
 

@@ -4,7 +4,7 @@
   "height": 376,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "kitsune underpass", "background": "default", "sky": "underground", "fadeVariant": "circle", "goalMode": "normal"},
+  "values": {"music": "KitsuneUnderpass", "background": "Underground", "foreground": "Rocks", "sky": "Underground", "fadeVariant": "Circle", "goalMode": "Normal"},
   "layers": [
     {
       "name": "entities",
@@ -154,7 +154,7 @@
       "gridCellHeight": 8,
       "gridCellsX": 38,
       "gridCellsY": 47,
-      "tileset": "world4",
+      "tileset": "Kitsune Depths",
       "data2D": [
         [0, 33, 0, 33, 49, 49, 48, 49, 48, 48, 49, 48, 48, 49, 49, 0, 33, 49, 48, 25, 26, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 25, 26, 48, 33],
         [0, 0, 0, 49, 48, 48, 26, 25, 25, 25, 26, 25, 25, 48, 48, 33, 0, 49, 26, 34, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 26, 48, 49],
@@ -216,7 +216,7 @@
       "gridCellHeight": 8,
       "gridCellsX": 38,
       "gridCellsY": 47,
-      "tileset": "world4",
+      "tileset": "Kitsune Depths",
       "data2D": [
         [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 48, 49, 33, 49, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 49, 33, 49, 48, -1],
         [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 48, 49, 33, 33, 49, 48, 48, 48, 48, 48, 48, 48, 48, 48, 49, 33, 33, 49, 48, -1],

@@ -4,7 +4,7 @@
   "height": 416,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"music": "moss town", "background": "default", "sky": "night", "fadeVariant": "circle", "goalMode": "normal"},
+  "values": {"music": "MossTown", "background": "Forest", "foreground": "Grass", "sky": "Night", "fadeVariant": "Circle", "goalMode": "Normal"},
   "layers": [
     {
       "name": "entities",
@@ -68,7 +68,7 @@
       "gridCellHeight": 8,
       "gridCellsX": 21,
       "gridCellsY": 52,
-      "tileset": "world3",
+      "tileset": "Moss Town",
       "data2D": [
         [-1, 32, 33, 34, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 49, 32, 33, 34, -1],
         [-1, 32, 33, 34, 86, -1, -1, -1, -1, -1, -1, -1, -1, -1, 87, -1, -1, 32, 33, 34, -1],
@@ -135,7 +135,7 @@
       "gridCellHeight": 8,
       "gridCellsX": 21,
       "gridCellsY": 52,
-      "tileset": "world3",
+      "tileset": "Moss Town",
       "data2D": [
         [-1, -1, -1, -1, 84, -1, -1, -1, -1, -1, -1, -1, -1, -1, 84, -1, -1, -1, -1, -1, -1],
         [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
