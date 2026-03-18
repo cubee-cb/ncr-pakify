@@ -5,10 +5,11 @@ This documents the properties accessible within the Ogmo Project File.
 
 ## Layers
 
-There are three layers read by Pakify:
+There are four layers read by Pakify:
 - Entities
 - Tiles
-- Background Tiles
+- Background Tiles (Near)
+- Background Tiles (Far)
 
 ### Entities
 The layout of objects that will spawn in the level. All entities can be used in any theme.
@@ -16,10 +17,15 @@ The layout of objects that will spawn in the level. All entities can be used in 
 ### Tiles
 The base tilemap the player will interact with. The available tiles differ between level styles, so for your own sanity try to settle on a level theme before decorating your level.
 
-### Background Tiles
-These tiles are intangible, and serve as decoration only. Its theme can be chosen separately from the main Tiles layer, so you can mix and match decorations.
+### Background Tiles (Near)
+These tiles are intangible, and serve as decoration only. Its theme can be chosen separately from the other layers, so you can mix and match decorations.
 
-Solid tiles in the background layer will be rendered darker than other tiles. This is so decorative tiles can be stacked behind tangible tiles without being visually different from those placed in the foreground, while reducing confusion as to why otherwise solid tiles cannot be stood on.
+Most tiles in this layer will be drawn normally, however Solid tiles will be darker. This is to reduce confusion as to why otherwise solid tiles cannot be stood on.
+
+### Background Tiles (Far)
+These tiles are also intangible, and serve as decoration only. Its theme can be chosen separately from the other layers.
+
+ALL tiles in this layer will be rendered darker just like Solids in the Near Layer, so you can for example put structural decorations in front of a background wall or structure.
 
 ## Level Properties
 Right-click on the selected level in the sidebar, then click "Properties".
@@ -51,8 +57,7 @@ The following are missing, but may be added in the future:
 
 
 ### Background
-`default` will use the background for the current level theme.
-Set to anything other than `default` to use the background from that level theme:
+Parallax Background variant to use. Valid values:
 - `Mountains` - Sky Mountains
 - `MountainsTrees` - Sky Mountains with trees and houses.
 - `Skyscrapers` - Office Buildings in the sky. Honestly, idk what 2020 me was thinking putting modern office buildings in a ninja game lol.
@@ -61,17 +66,17 @@ Set to anything other than `default` to use the background from that level theme
 
 ### Sky
 Sky variant to use. Valid values:
-- `night` - Blue night sky with moon.
-- `underground` - Black sky with no moon or stars.
-- `dawn` - An orange sky. Subject to change.
-- `aurora` - Unfinished
+- `Night` - Blue night sky with moon.
+- `Underground` - Black sky with no moon or stars.
+- `Dawn` - An orange sky. Subject to change.
+- `Aurora` - Unfinished
 
 ### Fade Variant
 Fade style to use when entering the level. Valid values:
-- `cut` - Standard triangular fade pattern.
-- `circle` - Large circle fade pattern. (Small circles in Old Style)
-- `square` - Large square fade pattern. (Small squares in Old Style)
-- `special` - Star fade. (Weird pattern in Old Style)
+- `Cut` - Standard triangular fade pattern.
+- `Circle` - Large circle fade pattern. (Small circles in Old Style)
+- `Square` - Large square fade pattern. (Small squares in Old Style)
+- `Special` - Star fade. (Weird pattern in Old Style)
 
 I usually use `special` for non-standard stages, such as:
 - Upgrade Room.
