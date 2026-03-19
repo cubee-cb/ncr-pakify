@@ -136,7 +136,7 @@
           "name": "entrance",
           "definition": "Enum",
           "display": 1,
-          "choices": ["rappel", "walk", "jump", "none", "portal"],
+          "choices": ["rappel", "walk", "jump", "none", "portal", "cactuckey"],
           "defaults": 0
         }
       ],
@@ -1434,7 +1434,7 @@
           "name": "variant",
           "definition": "Enum",
           "display": 1,
-          "choices": ["portal", "gizmo"],
+          "choices": ["portal", "gizmo", "cactuckey"],
           "defaults": 0
         }
       ]

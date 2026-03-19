@@ -1,6 +1,7 @@
 // level order
 [
   "test.json",
+  "test2.json",
   "cassetteblocks.json",
     "  cassetteblocks-gold.json :gol dRu sh",
     "cassetteblocks-gold-pacif.json  :   GOLDRUSH,paci fism",
