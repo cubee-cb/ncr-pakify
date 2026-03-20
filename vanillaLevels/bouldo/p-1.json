@@ -34,6 +34,7 @@
           "y": 88,
           "originX": 0,
           "originY": 0,
+          "flippedX": false,
           "values": {"variant": "portal"}
         },
         {
@@ -44,7 +45,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "greed intro"}
+          "values": {"variant": "dead;proximity:40\ngetup;time:40\nidle;time:20\nshock;time:30\napologise;time:60\ncassette:green:off;time:20\npoint:right"}
         }
       ]
     },

@@ -32,6 +32,29 @@ Rival Friendship can be used to determine Alternates with the `Rival Friend` and
 ### `bouldo` - Gold Rush Bouldo
 Spawns automatically in Gold Rush mode, blocking the goal until all treasures are collected. Does nothing important otherwise, and may misbehave outside of Gold Rush. (untested)
 
+### `cactuckey npc` - Cactuckey NPC
+Scriptable NPC. Placing this object in Ogmo Editor provides a default example script where Cactuckey gets up when the player is near, and lays back down when the player is far.
+
+Script format: `<command>;<next condition>`
+- `command` format: `action:param`
+- `next condition` format: `type:param`
+
+`command`:
+- `idle` - Regular idle animation. Faces player.
+- `dead` - Grounded "dead" or unconscious animation.
+- `getup` - Grounded getting up animation.
+- `shock` - Shocked eyes.
+- `apologise` - Bowing apologise animation. Faces player.
+- `point` - Point in a direction. `point:left` or `point:right`.
+- `loop` / `restart` - If final state, loops back to the first state. Otherwise NOOP.
+- `cassette` - Set Cassette Block state: `cassette:<channel>:<state>` e.g. `cassette:red:on` or `cassette:green:off`
+
+`next condition`:
+- `time` / `t` - Proceed after specified frames. `action;time:60` to proceed from `action` after 1 second.
+- `proximity` / `p` - Proceed when player is nearby. `action:proximity:32` to proceed when player is within 4 tiles (32px).
+- `far` / `f` - Proceed when player is far away. `action:far:80` to proceed when player is at least 10 tiles (80px) away.
+- `next` / `n` - Proceed to next state immediately. Useful with `cassette` action: `cassette:r:on;next` then `cassette:g:off` to swap Red and Green Cassette Blocks at once. (more-or-less)
+- `stop` / `s` - Stop script here. Same effect as having no condition.
 
 ## Objects
 

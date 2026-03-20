@@ -1421,7 +1421,7 @@
       "resizeableY": false,
       "rotatable": false,
       "rotationDegrees": 360,
-      "canFlipX": false,
+      "canFlipX": true,
       "canFlipY": false,
       "canSetColor": false,
       "hasNodes": false,
@@ -1434,7 +1434,7 @@
           "name": "variant",
           "definition": "Enum",
           "display": 1,
-          "choices": ["portal", "gizmo", "cactuckey"],
+          "choices": ["portal", "gizmo", "cactuckey", "basic"],
           "defaults": 0
         }
       ]
@@ -1474,13 +1474,7 @@
       "nodeGhost": true,
       "tags": [],
       "values": [
-        {
-          "name": "variant",
-          "definition": "Enum",
-          "display": 0,
-          "choices": ["greed intro"],
-          "defaults": 0
-        }
+        {"name": "variant", "definition": "Text", "display": 1, "defaults": "dead;proximity:40\ngetup;time:30\nidle;far:80\nshock;time:30\ngetup;time:10\nloop"}
       ]
     }
   ],
