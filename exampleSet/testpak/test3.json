@@ -78,7 +78,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "greed intro"}
+          "values": {"variant": "idle;prox:120\nblush;prox:80\nidle;prox:40\nshock;time:60\napologise;time:120\npoint:left;time:30\ncassette:g:off"}
         }
       ]
     },

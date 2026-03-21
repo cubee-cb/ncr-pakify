@@ -35,26 +35,33 @@ Spawns automatically in Gold Rush mode, blocking the goal until all treasures ar
 ### `cactuckey npc` - Cactuckey NPC
 Scriptable NPC. Placing this object in Ogmo Editor provides a default example script where Cactuckey gets up when the player is near, and lays back down when the player is far.
 
-Script format: `<command>;<next condition>`
-- `command` format: `action:param`
-- `next condition` format: `type:param`
+Script format: `<command>;<next condition>`. For example:
+- `idle;proximity:40` - Idle until the player enters a 40px radius.
+- `cassette:red:on;next` - Set Red Cassette Blocks ON, then go to next action.
+- `idle;far:80` - Idle until the player leaves an 80px radius.
+- `cassette:red:off;next` - Set Red Cassette Blocks OFF, then go to next action.
+- `loop` - Restart cycle.
 
-`command`:
+`<command>` supports:
 - `idle` - Regular idle animation. Faces player.
+- `lookaway` - Faces player, with eyes averted.
+- `trackeyes` - Eyes track player. Does not change facing direction.
 - `dead` - Grounded "dead" or unconscious animation.
 - `getup` - Grounded getting up animation.
 - `shock` - Shocked eyes.
 - `apologise` - Bowing apologise animation. Faces player.
-- `point` - Point in a direction. `point:left` or `point:right`.
+- `blush` - Blushin animation with eyes averted. Faces player.
+- `say:<n>` - Set speech bubble frame. `say:0` to turn speech bubble off.
+- `point:<direction>` - Point in a direction. `point:left` or `point:right`.
 - `loop` / `restart` - If final state, loops back to the first state. Otherwise NOOP.
-- `cassette` - Set Cassette Block state: `cassette:<channel>:<state>` e.g. `cassette:red:on` or `cassette:green:off`
+- `cassette:<channel>:<state>` - Set Cassette Block state. e.g. `cassette:red:on` or `cassette:green:off`
 
-`next condition`:
-- `time` / `t` - Proceed after specified frames. `action;time:60` to proceed from `action` after 1 second.
-- `proximity` / `p` - Proceed when player is nearby. `action:proximity:32` to proceed when player is within 4 tiles (32px).
-- `far` / `f` - Proceed when player is far away. `action:far:80` to proceed when player is at least 10 tiles (80px) away.
-- `next` / `n` - Proceed to next state immediately. Useful with `cassette` action: `cassette:r:on;next` then `cassette:g:off` to swap Red and Green Cassette Blocks at once. (more-or-less)
-- `stop` / `s` - Stop script here. Same effect as having no condition.
+`<next condition>` supports:
+- `time:<frames>` / `t:<frames>` - Proceed after specified frames. `action;time:60` to proceed from `action` after 1 second.
+- `proximity:<px>` / `p:<px>` - Proceed when player is nearby. `action:proximity:32` to proceed when player is within 4 tiles (32px).
+- `far:<px>` / `f:<px>` - Proceed when player is far away. `action:far:80` to proceed when player is at least 10 tiles (80px) away.
+- `next` / `n` - Proceed to next state immediately, identical to `time:0`. Useful with `cassette` action: `cassette:r:on;next` then `cassette:g:off` to swap Red and Green Cassette Blocks at once. (more-or-less)
+- `stop` / `s` - Stop script here.
 
 ## Objects
 

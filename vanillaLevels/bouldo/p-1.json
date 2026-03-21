@@ -45,7 +45,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
-          "values": {"variant": "dead;proximity:40\ngetup;time:40\nidle;time:20\nshock;time:30\napologise;time:60\ncassette:green:off;time:20\npoint:right"}
+          "values": {"variant": "dead;proximity:40\nshake;time:20\ngetup;time:30\nshake;time:20\nidle;time:20\nshock;time:30\napologise;time:80\nidle;time:10\npoint:right;time:20\ncassette:green:off;next\npoint:right;time:60\nidle"}
         }
       ]
     },
