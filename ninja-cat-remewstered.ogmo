@@ -1434,6 +1434,42 @@
       ]
     },
     {
+      "exportID": "34543834",
+      "name": "camera focus area",
+      "limit": -1,
+      "size": {"x": 120, "y": 120},
+      "origin": {"x": 56, "y": 56},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#0099ff32",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 8, "y": 8},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": []
+    },
+    {
       "exportID": "57557449",
       "name": "dynamic goal",
       "limit": -1,

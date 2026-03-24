@@ -46,7 +46,8 @@
           "originX": 0,
           "originY": 0,
           "values": {"variant": "dead;proximity:40\nshake;time:20\ngetup;time:30\nshake;time:20\nidle;time:20\nshock;time:30\napologise;time:80\nidle;time:10\npoint:right;time:20\ncassette:green:off;next\npoint:right;time:60\nidle"}
-        }
+        },
+        {"name": "camera focus area", "id": 12, "_eid": "34543834", "x": 640, "y": 64, "originX": 52, "originY": 64}
       ]
     },
     {
