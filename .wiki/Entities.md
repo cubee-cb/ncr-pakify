@@ -9,10 +9,12 @@ Marks where the player starts. There can be only one in a level.
 
 You can change what entrance animation is used when starting the level here.
 
-### `checkpoint` - Checkpoint
-When the player enters its area, the level state is saved. Dying will respawn the player at the checkpoint's position. Checkpoints cannot be re-activated until a different checkpoint is activated.
+### `bouldo` - Bouldo NPC
+Spawns automatically in Gold Rush mode, blocking the goal until all treasures are collected.
 
-Checkpoints are ignored when restarting the level and in Randomiser Mode.
+If he does not have a saved tile set (i.e. when placed in a level manually), he will spawn a Bouldo Portal when approached instead of placing a Goal tile.
+
+Variants are currently unused.
 
 ### `rival npc` - Rival NPC
 Executes a behaviour, then despawns. Variants are more-or-less self-explanatory, and control what animation sequence it plays.
@@ -29,8 +31,7 @@ Interactions will modify the Rival Friendship value for the current playthrough:
 
 Rival Friendship can be used to determine Alternates with the `Rival Friend` and `Rival Enemy` conditions. For example, a level late in the Region may change Elenn's behaviour and surrounding level design to assist or hinder the player depending on how they treated her in earlier stages.
 
-### `bouldo` - Gold Rush Bouldo
-Spawns automatically in Gold Rush mode, blocking the goal until all treasures are collected. Does nothing important otherwise, and may misbehave outside of Gold Rush. (untested)
+Her behaviour variants may be replaced in the future with Cactuckey's scripting.
 
 ### `cactuckey npc` - Cactuckey NPC
 Scriptable NPC. Placing this object in Ogmo Editor provides a default example script where Cactuckey gets up when the player is near, and lays back down when the player is far.
@@ -55,6 +56,7 @@ Script format: `<command>;<next condition>`. For example:
 - `point:<direction>` - Point in a direction. `point:left` or `point:right`.
 - `loop` / `restart` - If final state, loops back to the first state. Otherwise NOOP.
 - `cassette:<channel>:<state>` - Set Cassette Block state. e.g. `cassette:red:on` or `cassette:green:off`
+- `removecamfocus` - Deletes the object overriding camera focus. Useful when there is a Camera Focus Area over a room Cactuckey is to un-focus the room when his animation finishes.
 
 `<next condition>` supports:
 - `time:<frames>` / `t:<frames>` - Proceed after specified frames. `action;time:60` to proceed from `action` after 1 second.
@@ -62,6 +64,39 @@ Script format: `<command>;<next condition>`. For example:
 - `far:<px>` / `f:<px>` - Proceed when player is far away. `action:far:80` to proceed when player is at least 10 tiles (80px) away.
 - `next` / `n` - Proceed to next state immediately, identical to `time:0`. Useful with `cassette` action: `cassette:r:on;next` then `cassette:g:off` to swap Red and Green Cassette Blocks at once. (more-or-less)
 - `stop` / `s` - Stop script here.
+
+## Areas
+
+### `dynamic goal` - Dynamic Goal
+Allows the player to complete the stage without using a Gem or Upgrade. Closes in Gold Rush mode.
+
+Variants:
+- `portal` - Bouldo's portals. Bouldo will spawn this if he does not have a saved tile.
+- `gizmo` - Rainbow goal portal from Fire Dino.
+- `cactuckey` - Cactuckey. Hovers then flies away.
+- `basic` - Default portal. Green circle.
+
+Variants can have different delays before completing the stage, to give time for their animations to play.
+
+Does not count as a Goal for Collectathon, but will be closed until the conditions are met to clear the level.
+
+### `checkpoint` - Checkpoint
+When the player enters its area, the level state is saved. Dying will respawn the player at the checkpoint's position. Checkpoints cannot be re-activated until a different checkpoint is activated.
+
+Checkpoints are ignored when restarting the level and in Randomiser Mode.
+
+### `camera pan area` - Camera Pan Area
+While the player is within its area, the camera will pan, similar to Camera Pan Tiles.
+
+Variant acts as a multiplier for how far the camera will pan (set negative to pan left). Panning is most effective at Original resolution, and lowers in strength as the resolution widens.
+
+### `camera focus area` - Camera Focus Area
+While the player is within its area, the camera will detach from the player and focus on this object. (note the `Focus!` point on its visual is the centre)
+
+The area is about the same as the base internal resolution, so everything inside it is guaranteed to be visible while focused.
+
+*yeah, it's a Mesmeriser reference. shush.*
+
 
 ## Objects
 
@@ -83,12 +118,16 @@ Creates a `bomb` at a regular interval. Cycle offset can be adjusted: Higher val
 
 Cycles faster in New Game Plus.
 
+Falls and breaks when unsupported above. Level Upper Bound counts as support.
+
 ### `arrow shooter` - Arrow Shooter
 Shoots an arrow sideways at a regular interval, direction dependent on flip. Cycle offset can be adjusted: Higher value (0-1) makes it shoot before others. Immune to all attacks.
 
 Arrow can be parried with a Sword Dash, but this has no effect on the Arrow Shooter itself.
 
 Cycles faster in New Game Plus.
+
+Falls and breaks when unsupported behind.
 
 ### `plant` - Potted Plant
 Mostly exists to look pretty. Leaves can block two Shuriken. Variant controls the style of plant, but has no effect gameplay-wise.
@@ -97,7 +136,7 @@ Sword can destroy leaves, and also cut the stem.
 
 Chopping its stem with the leaves still on makes more noise than destroying them individually.
 
-`whisk` variant is usually placed around level goals.
+`whisk` variant is usually placed around level goals to signal the level end and as a "valuable" decoration.
 
 Variants `camellia`, `holly`, `lily` do not have final textures.
 
@@ -181,15 +220,18 @@ Beefy dragon warrior. Can be parried.
 
 ### `boss 1` and `boss 2` - Tiga, The Last Tiger Ninja
 
-Gained magic from the Kitsune-Tiger alliance. Spawn-relative movement. `boss 2` is effectively a `super` variant for `boss 1`; Tiga was implemented before Variants existed.
+Gained magic from the Kitsune-Tiger alliance. Spawn-relative movement.
 
 Summons Descending Spirits, uses Sword Dash, and casts Death Pillar spells. Tiga's Sword Dash can be parried with the player's Sword Dash.
 
 It is not currently possible to program Tiga's behaviour through level data, and as such his patterns may not play well with custom arenas, especially if they allow the player to move far from the spawn point.
 
+Notes:
+- `boss 2` is Tiga's `super` variant; Tiga was implemented before Variants existed.
+
 ### `boss kitsu` - Kitsu, The Elder Kitsune
 
-Uses magic fireballs and fire walls, as well as magic barriers. Level-relative movement. Variant `super` uses different attack patterns.
+Casts magic fireballs and fire beams, as well as magic barriers (as Cassette Blocks). Level-relative movement. Variant `super` uses different attack patterns.
 
 Fireballs can be parried with Sword Dash and Shuriken, and Fire Walls can be "parried" and passed through with a well-timed Sword Dash. 
 
@@ -203,7 +245,7 @@ Unimplemented
 `super` variant uses a different, more difficult attack pattern.
 
 ### `boss bouldo` - Golden Alloy, The Greed-Bound Bould
-Unimplemented
+Unimplemented. Can be defeated.
 
 `super` variant uses a different, more difficult attack pattern.
 
@@ -233,4 +275,5 @@ Falls and damages the player. Goes through tiles.
 ## Deprecated
 
 ### `bomb maker` - Bomb Dropper (legacy)
-An older version of `bomb dropper`, retained for the original stages. Its cycle offset is determined by where it's placed, rather than being configurable.
+An older version of `bomb dropper`, retained for the original stages. Its cycle offset is determined by where it's placed, rather than being configurable, and its other behaviour is more or less identical.
+
