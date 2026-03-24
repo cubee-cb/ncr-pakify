@@ -118,6 +118,18 @@
           "originX": 0,
           "originY": 0,
           "values": {"variant": "round", "trapped": false, "gilded": false, "restorative": false}
+        },
+        {
+          "name": "camera pan area",
+          "id": 14,
+          "_eid": "34166514",
+          "x": 296,
+          "y": 32,
+          "width": 200,
+          "height": 32,
+          "originX": 0,
+          "originY": 0,
+          "values": {"variant": 0.75}
         }
       ]
     },
