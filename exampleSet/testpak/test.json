@@ -305,10 +305,10 @@
           "values": {"cycleOffset": 0}
         },
         {"name": "archer", "id": 35, "_eid": "26782958", "x": 64, "y": 96, "originX": 0, "originY": 0, "flippedX": false},
-        {"name": "checkpoint", "id": 36, "_eid": "93374337", "x": 496, "y": 176, "originX": 16, "originY": 64},
-        {"name": "checkpoint", "id": 37, "_eid": "93374337", "x": 552, "y": 176, "originX": 16, "originY": 64},
-        {"name": "checkpoint", "id": 39, "_eid": "93374337", "x": 920, "y": 104, "originX": 16, "originY": 64},
-        {"name": "checkpoint", "id": 41, "_eid": "93374337", "x": 224, "y": 104, "originX": 16, "originY": 64},
+        {"name": "checkpoint", "id": 36, "_eid": "93374337", "x": 496, "y": 176, "originX": 16, "originY": 64, "flippedX": true},
+        {"name": "checkpoint", "id": 37, "_eid": "93374337", "x": 552, "y": 176, "originX": 16, "originY": 64, "flippedX": false},
+        {"name": "checkpoint", "id": 39, "_eid": "93374337", "x": 920, "y": 104, "originX": 16, "originY": 64, "flippedX": false},
+        {"name": "checkpoint", "id": 41, "_eid": "93374337", "x": 224, "y": 104, "originX": 16, "originY": 64, "flippedX": false},
         {
           "name": "start point",
           "id": 42,
@@ -317,6 +317,7 @@
           "y": 96,
           "originX": 0,
           "originY": 0,
+          "flippedX": true,
           "values": {"entrance": "none"}
         },
         {"name": "shuriken thrower", "id": 43, "_eid": "26788669", "x": 752, "y": 152, "originX": 0, "originY": 0, "flippedX": false},
@@ -371,7 +372,9 @@
           "originY": 0,
           "values": {"variant": -1}
         },
-        {"name": "camera focus area", "id": 58, "_eid": "34543834", "x": 1376, "y": 88, "originX": 56, "originY": 56}
+        {"name": "camera focus area", "id": 58, "_eid": "34543834", "x": 1376, "y": 88, "originX": 56, "originY": 56},
+        {"name": "checkpoint", "id": 59, "_eid": "93374337", "x": 1016, "y": 104, "originX": 16, "originY": 64, "flippedX": false},
+        {"name": "checkpoint", "id": 60, "_eid": "93374337", "x": 1088, "y": 104, "originX": 16, "originY": 64, "flippedX": false}
       ]
     },
     {

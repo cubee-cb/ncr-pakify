@@ -123,7 +123,7 @@
       "resizeableY": false,
       "rotatable": false,
       "rotationDegrees": 360,
-      "canFlipX": false,
+      "canFlipX": true,
       "canFlipY": false,
       "canSetColor": false,
       "hasNodes": false,
@@ -1383,7 +1383,7 @@
       "resizeableY": false,
       "rotatable": false,
       "rotationDegrees": 360,
-      "canFlipX": false,
+      "canFlipX": true,
       "canFlipY": false,
       "canSetColor": false,
       "hasNodes": false,
@@ -1469,7 +1469,7 @@
       "tags": [],
       "values": [],
       "texture": ".assets/entities/obj-focus.png",
-      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAAAXNSR0IB2cksfwAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+oDGAoWMwfZxvMAAAHySURBVHja7d1bcoJAEAXQadbgHrL/5biH7GHyIxYi+CiTCtN9zg9RK6mC64UhyYyttdZ679026XZ+QE4xf7EXdESEw3Rcj3K7aXC/cMjGD3wzx/X5m3HbvHkNXgYr5LFP1Q8bLOTxr8NPGyzksQdZcqsUvrRBgwENBjQYNBjQYECDAQ0GDQY0GNBg0GANBg0GNBjQYNBgQIMBDX5vZ5ZrRK0fL5+77ny7X53GclJHfrduPN4L7NXXRz8mU6Z36qf7km21v4iIKdNalJ/sS1z8xs/S4H88bc/PXRfrXL02B5vhuFhI1ig6f6sRsAaPFGy1+9yo2t4KAxDXYNDg0Xb6+6vU/k5VbobXwVYIuvfeY/nbm6zBxukc60DjdC7xxi7Z3ipBp2/ws9NwhRaXb3DmoMtcgzW4YIvngVf2a3CJ++A53PWWYtdiDYbDv6M1OO/O+ozk5M2t9sf+ctdg7RWwBsMhBlEmnyWcXfjOwKrC5LPWkv1Hh8ln9/szZZtN98n3Zpt8lm524Sun7UqTz4yiQYMBDQY0GDQY0GBAgwENBg0GNBjQYECDQYMBDQY0GDQY0GBAg/mDtF94jnFyu2lw1nWiKoa8md16xRmHbdyQHzZYuOOHvNtg4eYIeRn09XOT9sKt8uGVmQZZcqt4H2ybc/sDLq7QquLfzIcAAAAASUVORK5CYII="
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAAAXNSR0IB2cksfwAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+oDGAoxHQHKeVkAAAJFSURBVHja7d1RaoNAEIfxieQGeeteoPc/TS6wjznD9qFQrFXTQqA68/ugSJqmoP/9dsYYNzHGeBuf2CbcXsYYIyJaICXXWbh942+Ef2z2cutzg7tAUwXeIiKmRaBtZ0TgHOHO8+zTSqBCzhFuRESbNqZkIZ8/3E2DhZwj3IiIdhljvDlGecN3HpycSbgMBoPBYDAYDAaDwWAGg8FgMBgMBoPBYDCDwWAwGAwGg8FgMBgMZjAYDAaDwWAwGAwGMxgMBoNxDIP31ug43c7MftYex8rz8Yvnz0y7JjO4rTyeB9aeDJDG4ONb/IpZIM2An5Ib/NfXthf9Lwb/k9FzQ9tG/W0vmg0OMeCtk6WLTm91ZprzYAanrsfpDa5Wg3uyLvnp/lZ8L7pX2l9dtBqcjMe7LrpEsDWCLlCDH+89bvf2I9DbvcTArlGD92zNHXRyg59NwwUsZnDuoIvU4MIG5++ib/e2GuRa4+U8+OSd9NLa/AYXOQ9eBlnkFCl8Ljo/1a4Hl/twQyWDq10qLGXw/BJhpS/dLFeDS10LrliDq6GLZvC5pl83ny2OyTVZXXLz2WL/s9VgN58t9ifbe9FuPktu8DOjq918povWRYPBYDAYDAaDwWAwg8FgMBgMBoPBYDCYwWAwGAwGg8FgMBgMBjMYDAaDwWAwGAwGgxkMBoPBYDAYjNcavLYmRXeIjm/pzu92V9npzD4Fe4urbq6yI9wcIa8aLNw8If8wWLi5Qv7WRfedF+FcTdZXbr4/OHn48xpsm2/bPgAVBnAjQFp27QAAAABJRU5ErkJggg=="
     },
     {
       "exportID": "57557449",
