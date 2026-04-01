@@ -1022,7 +1022,7 @@
     },
     {
       "exportID": "26733713",
-      "name": "boss 1",
+      "name": "boss tiga",
       "limit": -1,
       "size": {"x": 8, "y": 8},
       "origin": {"x": 0, "y": 0},
@@ -1055,50 +1055,17 @@
       "nodeGhost": true,
       "tags": [],
       "values": [
+        {
+          "name": "variant",
+          "definition": "Enum",
+          "display": 1,
+          "choices": ["normal", "super"],
+          "defaults": 0
+        },
         {"name": "savedTile", "definition": "Integer", "display": 2, "defaults": 0, "bounded": false, "min": 0, "max": 100}
       ],
       "texture": ".assets/entities/obj-boss-1.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg4GOH4d6nMAAACbSURBVBjTfY6tCgJBGEXPLPMEg1Us04yGRcQHEDSbhIGt8wA+hHHT1k3CNMVoMdktwpQtA/68geEzbVj8OXDhwj3hwh/EW8na8m0MyaBno4m4Rw+pY0dy+yH35ok+jG+clhtcCXawACA2Owq/ZrpdockjAMeLZv6qAKiufQqAPKLEW2mlD84W9eskgCqjyqRGQjKQx05CMkiNvAHxYTrZehQNJAAAAABJRU5ErkJggg=="
-    },
-    {
-      "exportID": "26732645",
-      "name": "boss 2",
-      "limit": -1,
-      "size": {"x": 8, "y": 8},
-      "origin": {"x": 0, "y": 0},
-      "originAnchored": true,
-      "shape": {
-        "label": "Rectangle",
-        "points": [
-          {"x": -1, "y": -1},
-          {"x": 1, "y": -1},
-          {"x": -1, "y": 1},
-          {"x": 1, "y": -1},
-          {"x": -1, "y": 1},
-          {"x": 1, "y": 1}
-        ]
-      },
-      "color": "#ff0000ff",
-      "tileX": false,
-      "tileY": false,
-      "tileSize": {"x": 16, "y": 16},
-      "resizeableX": false,
-      "resizeableY": false,
-      "rotatable": false,
-      "rotationDegrees": 360,
-      "canFlipX": false,
-      "canFlipY": false,
-      "canSetColor": false,
-      "hasNodes": false,
-      "nodeLimit": 0,
-      "nodeDisplay": 0,
-      "nodeGhost": true,
-      "tags": [],
-      "values": [
-        {"name": "savedTile", "definition": "Integer", "display": 2, "defaults": 0, "bounded": false, "min": 0, "max": 100}
-      ],
-      "texture": ".assets/entities/obj-boss-2.png",
-      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAOUA2wD9W6enoAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kFGg4GM+nPM/sAAACSSURBVBjTfY4hDsJAAATnGoKtxFX1gqrmFTUcFlvFG0qK6j9qDww/oKLhDYerIuEFNYtoKkqATTbZZEYs/ElpnaJpfINZ1mN0SMXmAft8bjRXuKejeWs7qUF6rcc26NZ2Kq1TVIUBgKR2+CLGFzFJ7QCowoAprdMkfeZol5hfJwFO4WwWIpfPenaX1Qz67ROFXG+l/D+cXHhOlQAAAABJRU5ErkJggg=="
     },
     {
       "exportID": "26738341",

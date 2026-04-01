@@ -27,7 +27,7 @@ Can take damage in some animations, falling off the stage and interrupting the a
 Interactions will modify the Rival Friendship value for the current playthrough:
 - Attacking Elenn will reduce Friendship by 2.
   - Doing so after she fires a Bow for you will count doubly; this is betrayal.
-- Letting Elenn do her thing will gradually raise Friendship, depending on the sequence playing.
+- Letting Elenn do her thing will gradually raise Friendship (typically by 1-2), depending on the sequence playing.
 
 Rival Friendship can be used to determine Alternates with the `Rival Friend` and `Rival Enemy` conditions. For example, a level late in the Region may change Elenn's behaviour and surrounding level design to assist or hinder the player depending on how they treated her in earlier stages.
 
@@ -185,14 +185,14 @@ In New Game Plus, they take significantly less time to reload, enter "rabid mode
 ### `durgen` - Flame Dragon
 Unimplemented
 
-Breathes fire.
+Planned: Breathes fire.
 
 ### `bould dasher` - Bould Dasher
 Unimplemented
 
-Jumps to align with player. Can dash similarly to the Sword Dash, and can be parried.
+Planned: Jumps to align with player. Can dash similarly to the Sword Dash, and can be parried.
 
-Hitting with Sword or parrying:
+Planned: Hitting with Sword or parrying:
 - Throws the Bould Dasher away, but deals no damage.
 - Parried Dasher is launched much faster, and will stick to walls.
 - Player will bounce away, similarly to parrying Tiga.
@@ -203,35 +203,38 @@ Jumps in place. Every few jumps, jumps higher.
 ### `bould roller` - Bould Roller
 Unimplemented
 
-Hops, then rolls rowards player. Does not stop until crashing into a wall, causing an explosion.
+Planned: Hops, then rolls rowards player. Does not stop until crashing into a wall, causing an explosion.
 
 ### `shuriken thrower` - Dragon Ninja
 Unimplemented
 
-Nimble dragon ninja. Shuriken can be deflected.
+Planned: Nimble dragon ninja. Shuriken can be deflected.
 
 ### `sworder` - Dragon Warrior
 Unimplemented
 
-Beefy dragon warrior. Can be parried.
+Planned: Beefy dragon warrior. Can be parried to defeat quickly.
 
 
 ## Bosses
 
-### `boss 1` and `boss 2` - Tiga, The Last Tiger Ninja
+### `boss tiga` - Tiga, The Last Tiger
 
-Gained magic from the Kitsune-Tiger alliance. Spawn-relative movement.
+Uses a sword alongside magic gained from an alliance with the Kitsune. Spawn-relative movement.
+
+Uses different attack patterns with variant `super` and/or in New Game Plus.
 
 Summons Descending Spirits, uses Sword Dash, and casts Death Pillar spells. Tiga's Sword Dash can be parried with the player's Sword Dash.
 
 It is not currently possible to program Tiga's behaviour through level data, and as such his patterns may not play well with custom arenas, especially if they allow the player to move far from the spawn point.
 
-Notes:
-- `boss 2` is Tiga's `super` variant; Tiga was implemented before Variants existed.
+Set `savedTile` to specify a specific tile ID to drop when defeated.
 
-### `boss kitsu` - Kitsu, The Elder Kitsune
+### `boss kitsu` - Kitsu, The Eldest Kitsune
 
-Casts magic fireballs and fire beams, as well as magic barriers (as Cassette Blocks). Level-relative movement. Variant `super` uses different attack patterns.
+Casts magic fireballs and fire beams, as well as magic barriers (as Cassette Blocks). Level-relative movement.
+
+Uses different attack patterns with variant `super` and/or in New Game Plus.
 
 Fireballs can be parried with Sword Dash and Shuriken, and Fire Walls can be "parried" and passed through with a well-timed Sword Dash. 
 
@@ -239,15 +242,17 @@ Controls Cassette Blocks. (Red and Green channels)
 
 Kitsu's behaviours and arenas were built to complement each other. It is not currently possible to program her behaviour through level data, and as such her patterns may not play well with custom arenas which aren't designed to match her default behaviours and block channel controls.
 
-### `boss dago` - Dago, The Trial Dragon
-Unimplemented
+Set `savedTile` to specify a specific tile ID to drop when defeated.
 
-`super` variant uses a different, more difficult attack pattern.
+### `boss dago` - Dago, The Trial Dragon
+Unimplemented. Intangible
 
 ### `boss bouldo` - Golden Alloy, The Greed-Bound Bould
 Unimplemented. Can be defeated.
 
-`super` variant uses a different, more difficult attack pattern.
+Drops Region Trophy instead of a Gem by default, and never drops Bouldo in Gold Rush mode.
+
+Set `savedTile` to specify a specific tile ID to drop when defeated.
 
 
 ## Projectile Entities
