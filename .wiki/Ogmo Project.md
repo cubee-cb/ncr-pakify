@@ -12,48 +12,54 @@ There are four layers read by Pakify:
 - Background Tiles (Far)
 
 ### Entities
-The layout of objects that will spawn in the level. All entities can be used in any theme.
+The layout of objects that will spawn in the level. All entities can be used in any theme, and some of them have properties that can be changed to alter their behaviour.
 
-### Tiles
+More information on entities is available at [Entities](Entities.md).
+
+### Tiles (Shown in all styles)
 The base tilemap the player will interact with. The available tiles differ between level styles, so for your own sanity try to settle on a level theme before decorating your level.
 
-### Background Tiles (Near)
-These tiles are intangible, and serve as decoration only. Its theme can be chosen separately from the other layers, so you can mix and match decorations.
+### Background Tiles (Near) (Shown in Remewstered style, partly in Original style)
+This layer is intangible. Use this for nearby decorations like grass, webs, and platoform supports.
 
-Most tiles in this layer will be drawn normally, however Solid tiles will be darker. This is to reduce confusion as to why otherwise solid tiles cannot be stood on.
+Solid tiles in this layer will be darkened as if in the Far layer, and will not be visible in the Original Visual Style. This is to help reduce confusion as to why tiles that would otherwise be solid cannot be stood on.
 
-### Background Tiles (Far)
-These tiles are also intangible, and serve as decoration only. Its theme can be chosen separately from the other layers.
+### Background Tiles (Far) (Shown in Remewstered style only)
+This layer is intangible. Use this for decorations such as background walls and environment structure.
 
-ALL tiles in this layer will be rendered darker just like Solids in the Near Layer, so you can for example put structural decorations in front of a background wall or structure.
+ALL tiles in this layer will be rendered darker.
+
+This layer will not be shown *at all* if Visual Style is set to Original.
 
 ## Level Properties
 Right-click on the selected level in the sidebar, then click "Properties".
 
 ### Music
 Select the background music to play during the level.
-- `wind` - Ambient Wind
-- `shuriken` - World 1 (Tiger Domain A)
-- `last ninjacat` - World 2 (Tiger Domain B)
-- `moss town` - World 3 (Kitsune Depths A) - missing
-- `kitsune underpass` - World 4 (Kitsune Depths B)
-- `eighty-six` - Tiga's boss track
-- `trance of kitsu` - Kitsu's boss track
-- `vaulter` - Vault Room theme
-- `catwalk to victory` - Final Vault theme
-- `chill` - Leaderboards theme
-- `strange` - How To Play theme
-- `sleepy` - A short and peaceful theme, originally from Marshmallow Infinity
-- `snowflakes` - A cold but hopeful theme, created for Marshmallow Adventures (unreleased)
-- `creepy night` - A weird, gloomy theme from Terra - A Terraria Demake (Forest Night)
+- `Wind` - Ambient Wind
+- `Shuriken` - World 1 (Tiger Domain A)
+- `TheLastNinjacat` - World 2 (Tiger Domain B)
+- `MossTown` - World 3 (Kitsune Depths A)
+- `KitsuneUnderpass` - World 4 (Kitsune Depths B)
+- `EightySix` - Tiga's boss track
+- `TranceOfKitsu` - Kitsu's boss track
+- `Vaulter` - Vault Room theme
+- `CatwalkToVictory` - Final Vault theme
+- `Chill` - Leaderboards theme, originally created for Scholarly Complications (unreleased)
+- `Strange` - How To Play theme, originally created for Marshmallow Adventures (unreleased)
+- `Snowflakes` - Special Thanks theme, originally created for Marshmallow Adventures (unreleased)
+- `Sleepy` - A short and peaceful theme, originally from Marshmallow Infinity
+- `CreepyNight` - A weird, gloomy theme from Terra - A Terraria Demake (Forest Night)
+- `Jump` - An upbeat theme originally from Pico Pixel Jump.
+- `Title` - The default title screen music.
 
-The following are missing, but may be added in the future:
-- `stilt town` - World 5 (Dragon Spires A)
-- `dragon spires` - World 6 (Dragon Spires B)
-- `land of greed` - Bouldo's region (Greed of Bouldo A)
-- `trial of dago` - Dago's boss track
-- `bouldos tantrum` - Bouldo's boss track
-- `cactuckey cackle` - Cactuckey's boss track
+The following are missing or use placeholder tracks, but may be added in the future:
+- `StiltTown` - World 5 (Dragon Spires A)
+- `DragonSpires` - World 6 (Dragon Spires B)
+- `LandOfGreed` - Bouldo's region (Greed of Bouldo A)
+- `TrialOfDago` - Dago's boss track
+- `BouldosTantrum` - Bouldo's boss track
+- `CactuckeyCackle` - Cactuckey's boss track
 
 
 ### Background
@@ -69,7 +75,8 @@ Sky variant to use. Valid values:
 - `Night` - Blue night sky with moon.
 - `Underground` - Black sky with no moon or stars.
 - `Dawn` - An orange sky. Subject to change.
-- `Aurora` - Unfinished
+- `Aurora` - Unfinished. Subject to change.
+- `Deep Night` - Black night sky with moon.
 
 ### Fade Variant
 Fade style to use when entering the level. Valid values:
@@ -77,6 +84,7 @@ Fade style to use when entering the level. Valid values:
 - `Circle` - Large circle fade pattern. (Small circles in Old Style)
 - `Square` - Large square fade pattern. (Small squares in Old Style)
 - `Special` - Star fade. (Weird pattern in Old Style)
+- `Portal` - Portal fade used by Dynamic Goals set to `portal`.
 
 I usually use `special` for non-standard stages, such as:
 - Upgrade Room.
@@ -86,10 +94,10 @@ Basically, any stage that has a different pace or goal than others.
 
 ### Goal Mode
 Changes how Goal tiles work. Valid values are the following:
-- `normal` - The level ends when the player touches a Goal Tile.
+- `Normal` - The level ends when the player touches a Goal Tile.
   - This is the "standard" format for Ninja Cat levels. Reach the Goal Tile to finish.
   - If a level contains multiple Goal Tiles, only the one that the player touches will count: remember this if you have a Gem/Statue and an Upgrade in the same level, so the player doesn't softlock later if they lack the Upgrade.
-- `collectathon` - The player must collect ALL Goal Tiles. (Gems, Statues, and Upgrades)
+- `Collectathon` - The player must collect ALL Goal Tiles. (Gems, Statues, and Upgrades)
   - This will cause a "goals" counter to appear, much like Gold Rush's "bars" counter.
   - Upgrade Goals will grant the player the upgrade immediately when collected. You could use this to make metroidvania-like stages with backtracking.
   - This mode is forced if a stage with multiple Goal Tiles is entered in Gold Rush mode, since there is only one Bouldo and he can't logically be at all of the goals at once.
