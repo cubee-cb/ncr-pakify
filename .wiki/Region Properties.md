@@ -138,14 +138,14 @@ Example:
 ### `startingItems` and `startingItemsNewGamePlus`
 Optional lists of items to grant the player when starting a new game:
 - `startingItemsNewGamePlus` is used in New Game Plus and Mirror Mode; both are what I would call "continuation" modes.
-- `startingItems` is used for all other modes.
+- `startingItems` is used for all other modes, and when `startingItemsNewGamePlus` is omitted.
 
 These can be set to empty lists to remove all starting items, or omitted completely to use the defaults.
 
 A good rule of thumb for `startingItemsNewGamePlus` is to just add all upgrades the player can obtain throughout this Region. This way, it's a true New Game Plus, as the player restarts with the same upgrades! Especially since this is used for Mirror Mode; this should contain at least the minimum items a player would require to complete any arbitrary stage.
 
 When `startingItems` is not specified, the game will start Ensy with Shuriken, and Elenn with the Sword.
-- You could set this to contain only `"shuriken"` or `"sword"` if you want/need both characters to start with the same item.
+- You could set this to contain only `"shuriken"` or `"sword"` if you want/need all characters to start with the same item.
 
 When `startingItemsNewGamePlus` is not specified, it will fall back to the normal `startingItems`, and if that's also not set, it will grant the following default items:
 - Shuriken
@@ -155,6 +155,7 @@ When `startingItemsNewGamePlus` is not specified, it will fall back to the norma
 Examples of all valid values (case and spacing insensitive):
 ```
   "startingItems": [
+    "starter",
     "shuriken",
     "sword",
     "bow",
@@ -163,6 +164,7 @@ Examples of all valid values (case and spacing insensitive):
   ],
 
   "startingItemsNewGamePlus": [
+    "starter",
     "shuriken",
     "sword",
     "bow",
@@ -172,11 +174,27 @@ Examples of all valid values (case and spacing insensitive):
 ```
 
 Some work with multiple names:
+- Starting Item - `starter`, `default`
 - Skuriken - `shuriken`, `star`
 - Jump Scroll - `double jump`, `jump scroll`, `scroll`
 - Climbing Claws - `climbing claws`, `claws`, `walljump`
 
-If the player has no starting items, they can use the attack button to "Meow" and alert nearby enemies.
+Entries can also be appended with `>`, such that if the first item is owned already the next will be granted instead. Useful with Starter Item to ensure characters get certain items.
+
+The following will grant Ensy the Bow, while Elenn will get the Shuriken instead as `starter` already grants her the Bow.
+```
+  "startingItems": [
+    "starter",
+    "bow > shuriken",
+  ],
+```
+
+Starting items are the following:
+- Ensy - Shuriken
+- Elenn - Bow (Sword if the Old Elenn Quirk is enabled)
+- Terra Guy - Sword (Pickaxe is also granted as part of the modifier)
+
+If the player has no starting items they can instead use the attack button to "Meow", which will alert nearby enemies.
 
 ### `levels` - Levels
 Normally, this should be omitted or left blank as it will be filled in by the converted Ogmo Levels. However, if you have an external tool to convert levels, you can target the Ninja Cat Level Format and this property to have them pre-filled.

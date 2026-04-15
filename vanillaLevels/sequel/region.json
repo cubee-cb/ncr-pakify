@@ -19,8 +19,8 @@
     "modifier:elenn" // unlock Play as Elenn mode
   ],
   "startingItemsNewGamePlus": [
-    "shuriken",
-    "sword",
+    "starter",
+    "sword>shuriken", // give sword first. if the sword is already added by starter item, give shuriken instead
     "double jump",
     "climbing claws"
   ],

@@ -17,6 +17,7 @@
   "unlocked": false,
   "rewards": [],
   "startingItems": [
+    "starter",
     "star",
     "sword",
     "jump"

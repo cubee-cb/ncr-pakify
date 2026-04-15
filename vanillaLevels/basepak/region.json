@@ -18,6 +18,12 @@
     "gold rush;region:bouldo", // unlock pack "bouldo" if beaten with Gold Rush
     "modifier:mirror mode"
   ],
+  "startingItemsNewGamePlus": [
+    "starter",
+    "shuriken",
+    "sword",
+    "double jump"
+  ],
 
   "levels": [
     {

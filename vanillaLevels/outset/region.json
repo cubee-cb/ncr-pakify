@@ -19,8 +19,8 @@
     "gold rush;region:bouldo" // unlock pack "bouldo" if beaten with Gold Rush
   ],
   "startingItemsNewGamePlus": [
-    "shuriken",
-    "sword",
+    "starter",
+    "sword>shuriken", // give sword first. if the sword is already added by starter item, give shuriken instead
     "double jump"
   ],
 
