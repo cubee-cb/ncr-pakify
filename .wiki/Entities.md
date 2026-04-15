@@ -68,7 +68,7 @@ Script format: `<command>;<next condition>`. For example:
 ## Areas
 
 ### `dynamic goal` - Dynamic Goal
-Allows the player to complete the stage without using a Gem or Upgrade. Closes in Gold Rush mode.
+Allows the player to complete the stage without collecting a Gem or Upgrade.
 
 Variants:
 - `portal` - Bouldo's portals. Bouldo will spawn this if he does not have a saved tile.
@@ -76,9 +76,9 @@ Variants:
 - `cactuckey` - Cactuckey. Hovers then flies away.
 - `basic` - Default portal. Green circle.
 
-Variants can have different delays before completing the stage, to give time for their animations to play.
+Variants may have different delays before completing the stage, to give time for their animations to play.
 
-Does not count as a Goal for Collectathon, but will be closed until the conditions are met to clear the level.
+If present while Collectathon Mode or Gold Rush Mode are active, all Dynamic Goals will close and only open when all regular Goals are collected. Useful to create one or many dedicated exit points for these stages.
 
 ### `checkpoint` - Checkpoint
 When the player enters its area, the level state is saved. Dying will respawn the player at the checkpoint's position. Checkpoints cannot be re-activated until a different checkpoint is activated.
@@ -93,7 +93,7 @@ Variant acts as a multiplier for how far the camera will pan (set negative to pa
 ### `camera focus area` - Camera Focus Area
 While the player is within its area, the camera will detach from the player and focus on this object. (note the `Focus!` point on its visual is the centre)
 
-The area is about the same as the base internal resolution, so everything inside it is guaranteed to be visible while focused.
+The area is about the same as the minimum internal resolution, so everything inside it is guaranteed to be visible while focused.
 
 *yeah, it's a Mesmeriser reference. shush.*
 
@@ -232,7 +232,7 @@ Set `savedTile` to specify a specific tile ID to drop when defeated.
 
 ### `boss kitsu` - Kitsu, The Eldest Kitsune
 
-Casts magic fireballs and fire beams, as well as magic barriers (as Cassette Blocks). Level-relative movement.
+Casts magic fireballs and fire beams, as well as magic barriers (represented in-game using Cassette Blocks). Level-relative movement.
 
 Uses different attack patterns with variant `super` and/or in New Game Plus.
 
