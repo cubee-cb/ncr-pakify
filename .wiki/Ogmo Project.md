@@ -20,7 +20,7 @@ More information on entities is available at [Entities](Entities.md).
 The base tilemap the player will interact with. The available tiles differ between level styles, so for your own sanity try to settle on a level theme before decorating your level.
 
 ### Background Tiles (Near) (Shown in Remewstered style, partly in Original style)
-This layer is intangible. Use this for nearby decorations like grass, webs, and platoform supports.
+This layer is intangible. Use this for nearby decorations like grass, webs, and platform supports.
 
 Solid tiles in this layer will be darkened as if in the Far layer, and will not be visible in the Original Visual Style. This is to help reduce confusion as to why tiles that would otherwise be solid cannot be stood on.
 
