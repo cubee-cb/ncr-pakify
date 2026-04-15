@@ -189,7 +189,7 @@ The following will grant Ensy the Bow, while Elenn will get the Shuriken instead
   ],
 ```
 
-Starting items are the following:
+Starter Items are the following:
 - Ensy - Shuriken
 - Elenn - Bow (Sword if the Old Elenn Quirk is enabled)
 - Terra Guy - Sword (Pickaxe is also granted as part of the modifier)
