@@ -269,7 +269,7 @@ Moves towards player with inertia, colliding with walls and platforms.
 Moves towards player, slowing as it gets near, colliding with walls and platforms.
 
 ### `bomb` - Bomb
-Falls, bounces, and explodes after a short delay. Explodes immediately when pierced by an arrow. Explosions only cover areas with line of sight to the bomb.
+Falls, bounces, and explodes after a short delay. Explodes immediately when pierced by an arrow or spikes. Explosions only cover areas with line of sight to the bomb.
 
 Creates a larger explosion in New Game Plus.
 

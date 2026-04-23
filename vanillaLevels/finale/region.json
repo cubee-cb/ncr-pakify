@@ -15,8 +15,11 @@
   "requireGameVersion": 1,
   "unlocked": false,
   "rewards": [
+    "region:epilogue",
     "gold rush;region:bouldo" // unlock pack "bouldo" if beaten with Gold Rush
   ],
+
+  "startingItems": [],
   "startingItemsNewGamePlus": [
     "bow",
     "climbing claws"
